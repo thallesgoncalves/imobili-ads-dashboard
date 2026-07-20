@@ -22,11 +22,21 @@ function isoDaysAgo(days) {
   return d.toISOString().replace(/\.\d+Z$/, "Z");
 }
 
-async function fetchPage(page, createdGte) {
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function fetchPage(page, createdGte, attempt = 1) {
   const url =
     `${BASE_URL}/leads?page=${page}&perpage=${PER_PAGE}` +
     `&sort=-created_at&created_gte=${encodeURIComponent(createdGte)}`;
   const res = await fetch(url, { headers: { Authorization: TOKEN } });
+
+  if (res.status === 429 && attempt <= 5) {
+    const retryAfter = Number(res.headers.get("retry-after")) || attempt * 5;
+    console.log(`Rate limited on page ${page}, retrying in ${retryAfter}s (attempt ${attempt})`);
+    await sleep(retryAfter * 1000);
+    return fetchPage(page, createdGte, attempt + 1);
+  }
+
   if (!res.ok) {
     throw new Error(`C2S request failed: ${res.status} ${res.statusText}`);
   }
@@ -65,6 +75,7 @@ async function main() {
     const pagination = body.pagination;
     totalPages = pagination ? pagination.total_pages : items.length < PER_PAGE ? page : page + 1;
     page += 1;
+    if (page <= totalPages) await sleep(300);
   } while (page <= totalPages);
 
   const outPath = path.join(__dirname, "..", "data", "c2s.json");
