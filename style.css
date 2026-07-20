@@ -256,6 +256,46 @@ body {
   font-weight: 600;
   border-radius: 999px;
 }
+.custom-range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.custom-range label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.custom-range input[type="date"] {
+  font: inherit;
+  font-size: 13px;
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  outline: none;
+  max-width: 130px;
+}
+@media (max-width: 520px) {
+  .custom-range { flex-wrap: wrap; border-radius: 16px; }
+  .custom-range input[type="date"] { max-width: 110px; }
+}
+.custom-range button {
+  border: none;
+  background: var(--text-primary);
+  color: var(--surface-1);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
 .filter-select select {
   font: inherit;
   font-size: 13px;

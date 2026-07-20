@@ -12,7 +12,15 @@
   let oldestDate = null;
   let c2sLeads = [];
   let c2sLoadFailed = false;
-  let state = { rangeDays: 30, account: "all", search: "", sortKey: "spend", sortDir: "desc" };
+  let state = {
+    rangeMode: "30",
+    customFrom: null,
+    customTo: null,
+    account: "all",
+    search: "",
+    sortKey: "spend",
+    sortDir: "desc",
+  };
 
   const FUNNEL_STAGES = [
     { name: "Novo", color: "var(--funnel-1)" },
@@ -40,38 +48,71 @@
     return d;
   }
 
-  function withinWindow(dateStr, startDaysAgo, endDaysAgo) {
-    const d = new Date(dateStr + "T00:00:00");
-    const base = today0();
-    const start = new Date(base);
-    start.setDate(start.getDate() - startDaysAgo);
-    const end = new Date(base);
-    end.setDate(end.getDate() - endDaysAgo);
-    return d >= start && d <= end;
+  function addDays(date, delta) {
+    const d = new Date(date);
+    d.setDate(d.getDate() + delta);
+    return d;
   }
 
-  function rowsForWindow(startDaysAgo, endDaysAgo) {
+  function toDateOnly(dateStr) {
+    return new Date(dateStr.slice(0, 10) + "T00:00:00");
+  }
+
+  function dayCount(from, to) {
+    return Math.round((to - from) / 86400000) + 1;
+  }
+
+  function getRange() {
+    const to = today0();
+    switch (state.rangeMode) {
+      case "7":
+        return { from: addDays(to, -6), to };
+      case "30":
+        return { from: addDays(to, -29), to };
+      case "90":
+        return { from: addDays(to, -89), to };
+      case "month":
+        return { from: new Date(to.getFullYear(), to.getMonth(), 1), to };
+      case "custom":
+        return {
+          from: state.customFrom || addDays(to, -29),
+          to: state.customTo || to,
+        };
+      default:
+        return { from: addDays(to, -29), to };
+    }
+  }
+
+  function inRange(dateStr, from, to) {
+    const d = toDateOnly(dateStr);
+    return d >= from && d <= to;
+  }
+
+  function rowsForRange(from, to) {
     return allRows.filter((r) => {
-      if (!withinWindow(r.date, startDaysAgo, endDaysAgo)) return false;
+      if (!inRange(r.date, from, to)) return false;
       if (state.account !== "all" && r.account !== state.account) return false;
       return true;
     });
   }
 
   function filteredRows() {
-    return allRows.filter((r) => {
-      if (!withinWindow(r.date, state.rangeDays - 1, 0)) return false;
-      if (state.account !== "all" && r.account !== state.account) return false;
-      return true;
-    });
+    const { from, to } = getRange();
+    return rowsForRange(from, to);
+  }
+
+  function previousRange() {
+    const { from, to } = getRange();
+    const duration = dayCount(from, to);
+    const prevTo = addDays(from, -1);
+    const prevFrom = addDays(prevTo, -(duration - 1));
+    return { from: prevFrom, to: prevTo };
   }
 
   function hasFullPreviousWindow() {
     if (!oldestDate) return false;
-    const base = today0();
-    const prevStart = new Date(base);
-    prevStart.setDate(prevStart.getDate() - (state.rangeDays * 2 - 1));
-    return new Date(oldestDate + "T00:00:00") <= prevStart;
+    const { from: prevFrom } = previousRange();
+    return toDateOnly(oldestDate) <= prevFrom;
   }
 
   function summarize(rows) {
@@ -96,7 +137,8 @@
     const cur = summarize(rows);
     let prev = null;
     if (hasFullPreviousWindow()) {
-      prev = summarize(rowsForWindow(state.rangeDays * 2 - 1, state.rangeDays));
+      const { from, to } = previousRange();
+      prev = summarize(rowsForRange(from, to));
     }
 
     document.getElementById("kpi-hero").innerHTML = `
@@ -290,7 +332,8 @@
   }
 
   function filteredC2SLeads() {
-    return c2sLeads.filter((l) => l.created_at && withinWindow(l.created_at.slice(0, 10), state.rangeDays - 1, 0));
+    const { from, to } = getRange();
+    return c2sLeads.filter((l) => l.created_at && inRange(l.created_at, from, to));
   }
 
   function renderFunnel() {
@@ -371,13 +414,42 @@
   }
 
   function setupFilters(accounts) {
+    const customRangeBox = document.getElementById("custom-range");
+    const dateFromInput = document.getElementById("date-from");
+    const dateToInput = document.getElementById("date-to");
+
+    if (oldestDate) dateFromInput.min = dateToInput.min = oldestDate;
+    const todayStr = today0().toISOString().slice(0, 10);
+    dateFromInput.max = dateToInput.max = todayStr;
+
     document.querySelectorAll("#range-filter button").forEach((btn) => {
       btn.addEventListener("click", () => {
         document.querySelectorAll("#range-filter button").forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
-        state.rangeDays = Number(btn.dataset.range);
+        state.rangeMode = btn.dataset.range;
+
+        if (state.rangeMode === "custom") {
+          customRangeBox.hidden = false;
+          if (!dateFromInput.value) {
+            const { from, to } = getRange();
+            dateFromInput.value = from.toISOString().slice(0, 10);
+            dateToInput.value = to.toISOString().slice(0, 10);
+          }
+        } else {
+          customRangeBox.hidden = true;
+        }
         renderAll();
       });
+    });
+
+    document.getElementById("apply-custom-range").addEventListener("click", () => {
+      if (!dateFromInput.value || !dateToInput.value) return;
+      const from = toDateOnly(dateFromInput.value);
+      const to = toDateOnly(dateToInput.value);
+      if (from > to) return;
+      state.customFrom = from;
+      state.customTo = to;
+      renderAll();
     });
 
     const select = document.getElementById("account-filter");
