@@ -9,7 +9,8 @@
   const fmtPercent = (v) => `${(v || 0).toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%`;
 
   let allRows = [];
-  let state = { rangeDays: 30, account: "all", sortKey: "spend", sortDir: "desc" };
+  let oldestDate = null;
+  let state = { rangeDays: 30, account: "all", search: "", sortKey: "spend", sortDir: "desc" };
 
   async function loadData() {
     const res = await fetch("data/campaigns.json", { cache: "no-store" });
@@ -17,42 +18,95 @@
     return res.json();
   }
 
-  function withinRange(dateStr, days) {
-    const d = new Date(dateStr + "T00:00:00");
-    const cutoff = new Date();
-    cutoff.setHours(0, 0, 0, 0);
-    cutoff.setDate(cutoff.getDate() - (days - 1));
-    return d >= cutoff;
+  function today0() {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    return d;
   }
 
-  function filteredRows() {
+  function withinWindow(dateStr, startDaysAgo, endDaysAgo) {
+    const d = new Date(dateStr + "T00:00:00");
+    const base = today0();
+    const start = new Date(base);
+    start.setDate(start.getDate() - startDaysAgo);
+    const end = new Date(base);
+    end.setDate(end.getDate() - endDaysAgo);
+    return d >= start && d <= end;
+  }
+
+  function rowsForWindow(startDaysAgo, endDaysAgo) {
     return allRows.filter((r) => {
-      if (!withinRange(r.date, state.rangeDays)) return false;
+      if (!withinWindow(r.date, startDaysAgo, endDaysAgo)) return false;
       if (state.account !== "all" && r.account !== state.account) return false;
       return true;
     });
   }
 
-  function renderKPIs(rows) {
+  function filteredRows() {
+    return allRows.filter((r) => {
+      if (!withinWindow(r.date, state.rangeDays - 1, 0)) return false;
+      if (state.account !== "all" && r.account !== state.account) return false;
+      return true;
+    });
+  }
+
+  function hasFullPreviousWindow() {
+    if (!oldestDate) return false;
+    const base = today0();
+    const prevStart = new Date(base);
+    prevStart.setDate(prevStart.getDate() - (state.rangeDays * 2 - 1));
+    return new Date(oldestDate + "T00:00:00") <= prevStart;
+  }
+
+  function summarize(rows) {
     const spend = rows.reduce((s, r) => s + r.spend, 0);
     const impressions = rows.reduce((s, r) => s + r.impressions, 0);
     const clicks = rows.reduce((s, r) => s + r.clicks, 0);
     const leads = rows.reduce((s, r) => s + r.leads, 0);
     const ctr = impressions > 0 ? (clicks / impressions) * 100 : 0;
     const cpl = leads > 0 ? spend / leads : null;
+    return { spend, impressions, clicks, leads, ctr, cpl };
+  }
 
-    const tiles = [
-      { label: "Investimento", value: fmtCurrency(spend) },
-      { label: "Leads", value: fmtNumber(leads) },
-      { label: "Custo por lead", value: cpl == null ? "—" : fmtCurrency2(cpl) },
-      { label: "Cliques", value: fmtNumber(clicks) },
-      { label: "CTR", value: fmtPercent(ctr) },
-      { label: "Impressões", value: fmtNumber(impressions) },
+  function trendBadge(current, previous) {
+    if (previous == null || previous === 0 || current == null) return "";
+    const delta = ((current - previous) / previous) * 100;
+    const dir = delta >= 0 ? "up" : "down";
+    const arrow = delta >= 0 ? "↑" : "↓";
+    return `<div class="trend ${dir}">${arrow} ${Math.abs(delta).toLocaleString("pt-BR", { maximumFractionDigits: 0 })}% vs período anterior</div>`;
+  }
+
+  function renderKPIs(rows) {
+    const cur = summarize(rows);
+    let prev = null;
+    if (hasFullPreviousWindow()) {
+      prev = summarize(rowsForWindow(state.rangeDays * 2 - 1, state.rangeDays));
+    }
+
+    document.getElementById("kpi-hero").innerHTML = `
+      <div>
+        <div class="label">Investimento total</div>
+        <div class="value">${fmtCurrency(cur.spend)}</div>
+      </div>
+      ${prev ? trendBadge(cur.spend, prev.spend) : ""}
+    `;
+
+    const secondary = [
+      { label: "Leads", value: fmtNumber(cur.leads), trend: prev ? trendBadge(cur.leads, prev.leads) : "" },
+      { label: "Custo por lead", value: cur.cpl == null ? "—" : fmtCurrency2(cur.cpl), trend: prev ? trendBadge(cur.cpl, prev.cpl) : "" },
+      { label: "Cliques", value: fmtNumber(cur.clicks), trend: prev ? trendBadge(cur.clicks, prev.clicks) : "" },
+      { label: "CTR", value: fmtPercent(cur.ctr), trend: prev ? trendBadge(cur.ctr, prev.ctr) : "" },
+      { label: "Impressões", value: fmtNumber(cur.impressions), trend: prev ? trendBadge(cur.impressions, prev.impressions) : "" },
     ];
 
-    const el = document.getElementById("kpi-row");
-    el.innerHTML = tiles
-      .map((t) => `<div class="stat-tile"><div class="label">${t.label}</div><div class="value">${t.value}</div></div>`)
+    document.getElementById("kpi-secondary").innerHTML = secondary
+      .map(
+        (t) => `<div class="stat-tile">
+          <div class="label">${t.label}</div>
+          <div class="value">${t.value}</div>
+          ${t.trend}
+        </div>`
+      )
       .join("");
   }
 
@@ -66,7 +120,7 @@
       .map(([date, value]) => ({ date, value }));
   }
 
-  function renderLineChart(containerId, series, color, formatter) {
+  function renderBarChart(containerId, series, color, formatter) {
     const container = document.getElementById(containerId);
     container.innerHTML = "";
     if (series.length === 0) {
@@ -81,16 +135,24 @@
 
     const maxV = Math.max(1, ...series.map((d) => d.value));
     const n = series.length;
-    const x = (i) => padL + (n === 1 ? plotW / 2 : (i / (n - 1)) * plotW);
-    const y = (v) => padT + plotH - (v / maxV) * plotH;
-
-    const linePoints = series.map((d, i) => `${x(i)},${y(d.value)}`).join(" ");
-    const areaPoints = `${x(0)},${padT + plotH} ${linePoints} ${x(n - 1)},${padT + plotH}`;
+    const gap = 2;
+    const barW = Math.max(1.5, plotW / n - gap);
+    const x = (i) => padL + i * (plotW / n);
+    const barH = (v) => (v / maxV) * plotH;
 
     const gridLines = [0, 0.5, 1]
       .map((frac) => {
         const gy = padT + plotH * frac;
         return `<line class="chart-grid" x1="${padL}" y1="${gy}" x2="${width - padR}" y2="${gy}" />`;
+      })
+      .join("");
+
+    const bars = series
+      .map((d, i) => {
+        const h = Math.max(1, barH(d.value));
+        const bx = x(i);
+        const by = padT + plotH - h;
+        return `<rect class="chart-bar" data-i="${i}" x="${bx}" y="${by}" width="${barW}" height="${h}" rx="3" fill="${color}" />`;
       })
       .join("");
 
@@ -100,85 +162,53 @@
       .filter(Boolean)
       .map(({ i, date }) => {
         const short = date.slice(5).replace("-", "/");
-        return `<text class="chart-axis-label" x="${x(i)}" y="${height - 6}" text-anchor="middle">${short}</text>`;
+        return `<text class="chart-axis-label" x="${x(i) + barW / 2}" y="${height - 6}" text-anchor="middle">${short}</text>`;
       })
       .join("");
 
-    const svgNS = "http://www.w3.org/2000/svg";
     container.innerHTML = `
       <svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Série diária">
         ${gridLines}
         <line class="chart-baseline" x1="${padL}" y1="${padT + plotH}" x2="${width - padR}" y2="${padT + plotH}" />
-        <polygon class="chart-area" points="${areaPoints}" fill="${color}" />
-        <polyline class="chart-line" points="${linePoints}" stroke="${color}" />
+        <g id="${containerId}-bars">${bars}</g>
         ${labels}
-        <g id="${containerId}-hover">
-          <line class="chart-crosshair" x1="0" y1="${padT}" x2="0" y2="${padT + plotH}" />
-          <circle class="chart-dot" cx="0" cy="0" r="4" fill="${color}" style="opacity:0" />
-        </g>
-        <rect x="${padL}" y="${padT}" width="${plotW}" height="${plotH}" fill="transparent" style="cursor:crosshair" id="${containerId}-hitrect" />
       </svg>
       <div class="chart-tooltip" id="${containerId}-tooltip"></div>
     `;
 
     const svg = container.querySelector("svg");
-    const hitrect = document.getElementById(`${containerId}-hitrect`);
-    const hoverGroup = document.getElementById(`${containerId}-hover`);
-    const crosshair = hoverGroup.querySelector(".chart-crosshair");
-    const dot = hoverGroup.querySelector(".chart-dot");
     const tooltip = document.getElementById(`${containerId}-tooltip`);
+    const barEls = Array.from(document.querySelectorAll(`#${containerId}-bars .chart-bar`));
 
-    function pointFromEvent(evt) {
-      const rect = svg.getBoundingClientRect();
-      const scaleX = width / rect.width;
-      const px = (evt.clientX - rect.left) * scaleX;
-      let idx = 0;
-      let best = Infinity;
-      for (let i = 0; i < n; i++) {
-        const dist = Math.abs(x(i) - px);
-        if (dist < best) { best = dist; idx = i; }
-      }
-      return idx;
-    }
-
-    function showAt(idx) {
+    function showAt(idx, clientX, clientY) {
       const d = series[idx];
-      const cx = x(idx), cy = y(d.value);
-      crosshair.setAttribute("x1", cx);
-      crosshair.setAttribute("x2", cx);
-      crosshair.classList.add("visible");
-      dot.setAttribute("cx", cx);
-      dot.setAttribute("cy", cy);
-      dot.style.opacity = 1;
       tooltip.innerHTML = `<div class="t-date">${d.date}</div><div class="t-value">${formatter(d.value)}</div>`;
-      const rect = svg.getBoundingClientRect();
-      const leftPx = rect.left + (cx / width) * rect.width - container.getBoundingClientRect().left;
-      const topPx = rect.top + (cy / height) * rect.height - container.getBoundingClientRect().top;
-      tooltip.style.left = `${leftPx}px`;
-      tooltip.style.top = `${topPx}px`;
+      const rect = container.getBoundingClientRect();
+      tooltip.style.left = `${clientX - rect.left}px`;
+      tooltip.style.top = `${clientY - rect.top - 12}px`;
       tooltip.classList.add("visible");
     }
-
     function hide() {
-      crosshair.classList.remove("visible");
-      dot.style.opacity = 0;
       tooltip.classList.remove("visible");
     }
 
-    hitrect.addEventListener("mousemove", (evt) => showAt(pointFromEvent(evt)));
-    hitrect.addEventListener("mouseleave", hide);
-    hitrect.addEventListener(
-      "touchstart",
-      (evt) => {
-        const touch = evt.touches[0];
-        showAt(pointFromEvent(touch));
-      },
-      { passive: true }
-    );
+    barEls.forEach((bar, i) => {
+      bar.addEventListener("mousemove", (evt) => showAt(i, evt.clientX, evt.clientY));
+      bar.addEventListener("mouseleave", hide);
+      bar.addEventListener(
+        "touchstart",
+        (evt) => {
+          const t = evt.touches[0];
+          showAt(i, t.clientX, t.clientY);
+        },
+        { passive: true }
+      );
+    });
+    svg.addEventListener("mouseleave", hide);
   }
 
   function campaignAggregates(rows) {
-    const key = (r) => `${r.account}${r.campaign}`;
+    const key = (r) => `${r.account}${r.campaign}`;
     const map = new Map();
     for (const r of rows) {
       const k = key(r);
@@ -211,7 +241,12 @@
   }
 
   function renderTable(rows) {
-    const sorted = sortRows(campaignAggregates(rows));
+    let aggregates = campaignAggregates(rows);
+    if (state.search.trim()) {
+      const q = state.search.trim().toLowerCase();
+      aggregates = aggregates.filter((c) => c.campaign.toLowerCase().includes(q) || c.account.toLowerCase().includes(q));
+    }
+    const sorted = sortRows(aggregates);
     document.getElementById("table-count").textContent = `${sorted.length} campanhas`;
     const tbody = document.getElementById("campaign-tbody");
     tbody.innerHTML = sorted
@@ -241,9 +276,27 @@
   function renderAll() {
     const rows = filteredRows();
     renderKPIs(rows);
-    renderLineChart("chart-spend", dailySeries(rows, "spend"), "var(--series-spend)", fmtCurrency);
-    renderLineChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
+    renderBarChart("chart-spend", dailySeries(rows, "spend"), "var(--series-spend)", fmtCurrency);
+    renderBarChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
     renderTable(rows);
+  }
+
+  function setGreeting() {
+    const hour = new Date().getHours();
+    const text = hour < 12 ? "Bom dia" : hour < 18 ? "Boa tarde" : "Boa noite";
+    document.getElementById("greeting-text").textContent = text;
+  }
+
+  function setupSidebarNav() {
+    const buttons = Array.from(document.querySelectorAll(".sidebar-nav button"));
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const target = document.querySelector(btn.dataset.scroll);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
   }
 
   function setupFilters(accounts) {
@@ -268,6 +321,12 @@
       renderAll();
     });
 
+    const search = document.getElementById("campaign-search");
+    search.addEventListener("input", () => {
+      state.search = search.value;
+      renderTable(filteredRows());
+    });
+
     document.querySelectorAll("#campaign-table thead th[data-sort]").forEach((th) => {
       th.addEventListener("click", () => {
         const key = th.dataset.sort;
@@ -283,9 +342,12 @@
   }
 
   async function init() {
+    setGreeting();
+    setupSidebarNav();
     try {
       const payload = await loadData();
       allRows = payload.rows || [];
+      oldestDate = allRows.reduce((min, r) => (!min || r.date < min ? r.date : min), null);
       const accounts = Array.from(new Set(allRows.map((r) => r.account))).sort();
       setupFilters(accounts);
 
@@ -296,7 +358,8 @@
 
       renderAll();
     } catch (err) {
-      document.getElementById("kpi-row").innerHTML =
+      document.getElementById("kpi-hero").innerHTML = "";
+      document.getElementById("kpi-secondary").innerHTML =
         `<p class="muted">Não foi possível carregar os dados: ${err.message}</p>`;
       console.error(err);
     }
