@@ -10,11 +10,27 @@
 
   let allRows = [];
   let oldestDate = null;
+  let c2sLeads = [];
+  let c2sLoadFailed = false;
   let state = { rangeDays: 30, account: "all", search: "", sortKey: "spend", sortDir: "desc" };
+
+  const FUNNEL_STAGES = [
+    { name: "Novo", color: "var(--funnel-1)" },
+    { name: "Em negociação", color: "var(--funnel-2)" },
+    { name: "Convertido", color: "var(--funnel-3)" },
+    { name: "Negócio fechado", color: "var(--funnel-4)" },
+    { name: "Finalizado", color: "var(--funnel-4)" },
+  ];
 
   async function loadData() {
     const res = await fetch("data/campaigns.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`Failed to load data/campaigns.json (${res.status})`);
+    return res.json();
+  }
+
+  async function loadC2SData() {
+    const res = await fetch("data/c2s.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`Failed to load data/c2s.json (${res.status})`);
     return res.json();
   }
 
@@ -273,12 +289,67 @@
     });
   }
 
+  function filteredC2SLeads() {
+    return c2sLeads.filter((l) => l.created_at && withinWindow(l.created_at.slice(0, 10), state.rangeDays - 1, 0));
+  }
+
+  function renderFunnel() {
+    if (c2sLoadFailed) return;
+    const leads = filteredC2SLeads();
+    const total = leads.length;
+    const won = leads.filter((l) => l.done).length;
+    const lost = leads.filter((l) => l.archived).length;
+    const open = total - won - lost;
+    const conversion = total > 0 ? (won / total) * 100 : 0;
+
+    document.getElementById("funnel-kpis").innerHTML = [
+      { label: "Leads no CRM", value: fmtNumber(total) },
+      { label: "Em andamento", value: fmtNumber(open) },
+      { label: "Negócios fechados", value: fmtNumber(won) },
+      { label: "Taxa de conversão", value: fmtPercent(conversion) },
+    ]
+      .map((t) => `<div class="stat-tile"><div class="label">${t.label}</div><div class="value">${t.value}</div></div>`)
+      .join("");
+
+    const counts = new Map();
+    for (const l of leads) {
+      if (l.archived) continue;
+      const name = l.status_name || "Outros";
+      counts.set(name, (counts.get(name) || 0) + 1);
+    }
+
+    const rows = [];
+    for (const stage of FUNNEL_STAGES) {
+      if (counts.has(stage.name)) {
+        rows.push({ label: stage.name, count: counts.get(stage.name), color: stage.color });
+        counts.delete(stage.name);
+      }
+    }
+    for (const [name, count] of counts) {
+      rows.push({ label: name, count, color: "var(--funnel-4)" });
+    }
+    rows.push({ label: "Arquivado (perdido)", count: lost, color: "var(--status-critical)" });
+
+    const maxCount = Math.max(1, ...rows.map((r) => r.count));
+    document.getElementById("funnel-bars").innerHTML = rows
+      .map((r) => {
+        const pct = Math.max(2, (r.count / maxCount) * 100);
+        return `<div class="funnel-row">
+          <div class="funnel-label">${r.label}</div>
+          <div class="funnel-track"><div class="funnel-fill" style="width:${pct}%; background:${r.color}"></div></div>
+          <div class="funnel-count">${fmtNumber(r.count)}</div>
+        </div>`;
+      })
+      .join("");
+  }
+
   function renderAll() {
     const rows = filteredRows();
     renderKPIs(rows);
     renderBarChart("chart-spend", dailySeries(rows, "spend"), "var(--series-spend)", fmtCurrency);
     renderBarChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
     renderTable(rows);
+    renderFunnel();
   }
 
   function setGreeting() {
@@ -355,6 +426,22 @@
       document.getElementById("updated-at").textContent = updatedAt
         ? `Atualizado em ${updatedAt.toLocaleString("pt-BR")}`
         : "";
+
+      try {
+        const c2sPayload = await loadC2SData();
+        c2sLeads = c2sPayload.leads || [];
+        const c2sUpdatedAt = c2sPayload.generated_at ? new Date(c2sPayload.generated_at) : null;
+        document.getElementById("funnel-updated").textContent = c2sUpdatedAt
+          ? `Atualizado em ${c2sUpdatedAt.toLocaleString("pt-BR")}`
+          : "";
+      } catch (c2sErr) {
+        c2sLeads = [];
+        c2sLoadFailed = true;
+        document.getElementById("funnel-kpis").innerHTML = "";
+        document.getElementById("funnel-bars").innerHTML =
+          `<p class="muted">Não foi possível carregar os dados do CRM: ${c2sErr.message}</p>`;
+        console.error(c2sErr);
+      }
 
       renderAll();
     } catch (err) {

@@ -22,6 +22,9 @@
       <button type="button" data-scroll="#table" title="Campanhas">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M9 10v9" stroke-linecap="round"/></svg>
       </button>
+      <button type="button" data-scroll="#funnel" title="Funil de vendas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16l-6 8v6l-4-2v-4L4 5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </nav>
     <div class="sidebar-bottom">
       <button type="button" title="Ajuda">
@@ -95,6 +98,15 @@
         </div>
         <div class="chart-wrap" id="chart-leads"></div>
       </div>
+    </section>
+
+    <section class="funnel-card" id="funnel">
+      <div class="chart-head">
+        <h2>Funil de Vendas (CRM)</h2>
+        <span class="muted" id="funnel-updated"></span>
+      </div>
+      <div class="kpi-secondary" id="funnel-kpis"></div>
+      <div class="funnel-bars" id="funnel-bars"></div>
     </section>
 
     <section class="table-card" id="table">

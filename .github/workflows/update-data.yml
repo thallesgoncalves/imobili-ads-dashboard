@@ -24,10 +24,15 @@ jobs:
           WINDSOR_API_KEY: ${{ secrets.WINDSOR_API_KEY }}
         run: node scripts/fetch_data.js
 
+      - name: Fetch leads from Contact2Sale
+        env:
+          C2S_API_TOKEN: ${{ secrets.C2S_API_TOKEN }}
+        run: node scripts/fetch_c2s.js
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/campaigns.json
+          git add data/campaigns.json data/c2s.json
           git diff --quiet --cached || git commit -m "chore: atualizar dados de campanhas"
           git push
