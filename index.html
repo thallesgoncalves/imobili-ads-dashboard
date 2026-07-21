@@ -4,6 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Imobili Consultoria — Dashboard de Campanhas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,6 +27,9 @@
       </button>
       <button type="button" data-scroll="#funnel" title="Funil de vendas">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16l-6 8v6l-4-2v-4L4 5Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" data-scroll="#roi" title="ROI">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v10M9 9.5c0-1.4 1.3-2.5 3-2.5s3 1 3 2.3-1.3 1.9-3 2.2-3 .9-3 2.2S10.6 16 12 16s3-.9 3-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </nav>
     <div class="sidebar-bottom">
@@ -113,7 +119,18 @@
         <span class="muted" id="funnel-updated"></span>
       </div>
       <div class="kpi-secondary" id="funnel-kpis"></div>
-      <div class="funnel-bars" id="funnel-bars"></div>
+      <div class="funnel-distribution">
+        <div class="funnel-seg-bar" id="funnel-seg-bar"></div>
+        <div class="funnel-legend" id="funnel-legend"></div>
+      </div>
+    </section>
+
+    <section class="roi-card" id="roi">
+      <div class="chart-head">
+        <h2>ROI — Anúncios × Negócios Fechados</h2>
+        <span class="muted">Comissão de 5% sobre o valor de venda</span>
+      </div>
+      <div class="roi-grid" id="roi-grid"></div>
     </section>
 
     <section class="table-card" id="table">

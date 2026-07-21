@@ -43,6 +43,15 @@ async function fetchPage(page, createdGte, attempt = 1) {
   return res.json();
 }
 
+// C2S returns done_price as a Brazilian-formatted string, e.g. "377.550,00".
+function parseBRNumber(value) {
+  if (value == null || value === "") return null;
+  if (typeof value === "number") return value;
+  const normalized = String(value).replace(/\./g, "").replace(",", ".");
+  const num = Number(normalized);
+  return Number.isFinite(num) ? num : null;
+}
+
 function normalizeLead(item) {
   const a = item.attributes || {};
   return {
@@ -52,7 +61,7 @@ function normalizeLead(item) {
     status_name: a.lead_status && a.lead_status.name,
     archived: !!(a.archive_details && a.archive_details.archived),
     done: !!(a.done_details && a.done_details.done),
-    done_price: a.done_details ? a.done_details.done_price : null,
+    done_price: a.done_details ? parseBRNumber(a.done_details.done_price) : null,
     company: a.company && a.company.name,
     seller: a.seller && a.seller.name,
     source: a.lead_source && a.lead_source.name,

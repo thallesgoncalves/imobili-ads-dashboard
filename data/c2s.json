@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:21:20.314Z",
+  "generated_at": "2026-07-21T02:53:37.219898Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -7090,7 +7090,7 @@
       "status_name": "Negócio fechado",
       "archived": false,
       "done": true,
-      "done_price": "377.550,00",
+      "done_price": 377550.0,
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Mazzarolo",
       "source": "Instagram Leads",

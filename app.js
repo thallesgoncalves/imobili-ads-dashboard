@@ -361,28 +361,68 @@
       counts.set(name, (counts.get(name) || 0) + 1);
     }
 
-    const rows = [];
+    const segments = [];
     for (const stage of FUNNEL_STAGES) {
       if (counts.has(stage.name)) {
-        rows.push({ label: stage.name, count: counts.get(stage.name), color: stage.color });
+        segments.push({ label: stage.name, count: counts.get(stage.name), color: stage.color });
         counts.delete(stage.name);
       }
     }
     for (const [name, count] of counts) {
-      rows.push({ label: name, count, color: "var(--funnel-4)" });
+      segments.push({ label: name, count, color: "var(--funnel-4)" });
     }
-    rows.push({ label: "Arquivado (perdido)", count: lost, color: "var(--status-critical)" });
+    if (lost > 0) segments.push({ label: "Arquivado (perdido)", count: lost, color: "var(--status-critical)" });
 
-    const maxCount = Math.max(1, ...rows.map((r) => r.count));
-    document.getElementById("funnel-bars").innerHTML = rows
-      .map((r) => {
-        const pct = Math.max(2, (r.count / maxCount) * 100);
-        return `<div class="funnel-row">
-          <div class="funnel-label">${r.label}</div>
-          <div class="funnel-track"><div class="funnel-fill" style="width:${pct}%; background:${r.color}"></div></div>
-          <div class="funnel-count">${fmtNumber(r.count)}</div>
+    const visible = segments.filter((s) => s.count > 0);
+    const barTotal = Math.max(1, visible.reduce((s, r) => s + r.count, 0));
+
+    document.getElementById("funnel-seg-bar").innerHTML = visible
+      .map((s) => `<div class="funnel-seg" style="flex-grow:${s.count}; background:${s.color}" title="${s.label}: ${s.count}"></div>`)
+      .join("");
+
+    document.getElementById("funnel-legend").innerHTML = visible
+      .map((s) => {
+        const pct = (s.count / barTotal) * 100;
+        return `<div class="funnel-legend-item">
+          <span class="funnel-swatch" style="background:${s.color}"></span>
+          <div class="funnel-legend-text">
+            <div class="funnel-legend-label">${s.label}</div>
+            <div class="funnel-legend-value">${fmtNumber(s.count)}</div>
+            <div class="funnel-legend-pct">${pct.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}% do total</div>
+          </div>
         </div>`;
       })
+      .join("");
+  }
+
+  function renderROI() {
+    if (c2sLoadFailed) return;
+    const spend = filteredRows().reduce((s, r) => s + r.spend, 0);
+    const wonLeads = filteredC2SLeads().filter((l) => l.done && l.done_price != null);
+    const totalSold = wonLeads.reduce((s, l) => s + l.done_price, 0);
+    const commission = totalSold * 0.05;
+    const roi = spend > 0 && wonLeads.length > 0 ? ((commission - spend) / spend) * 100 : null;
+    const roiText = roi == null ? "—" : `${roi >= 0 ? "+" : ""}${roi.toLocaleString("pt-BR", { maximumFractionDigits: 0 })}%`;
+
+    const tiles = [
+      { label: "Investimento em anúncios", value: fmtCurrency(spend) },
+      {
+        label: "Valor total vendido",
+        value: fmtCurrency(totalSold),
+        sub: `${fmtNumber(wonLeads.length)} negócio(s) fechado(s)`,
+      },
+      { label: "Comissão estimada (5%)", value: fmtCurrency(commission) },
+      { label: "ROI", value: roiText, highlight: true },
+    ];
+
+    document.getElementById("roi-grid").innerHTML = tiles
+      .map(
+        (t) => `<div class="roi-tile ${t.highlight ? "roi-highlight" : ""}">
+          <div class="label">${t.label}</div>
+          <div class="value">${t.value}</div>
+          ${t.sub ? `<div class="roi-sub">${t.sub}</div>` : ""}
+        </div>`
+      )
       .join("");
   }
 
@@ -393,6 +433,7 @@
     renderBarChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
     renderTable(rows);
     renderFunnel();
+    renderROI();
   }
 
   function setGreeting() {
@@ -509,9 +550,11 @@
       } catch (c2sErr) {
         c2sLeads = [];
         c2sLoadFailed = true;
+        const msg = `<p class="muted">Não foi possível carregar os dados do CRM: ${c2sErr.message}</p>`;
         document.getElementById("funnel-kpis").innerHTML = "";
-        document.getElementById("funnel-bars").innerHTML =
-          `<p class="muted">Não foi possível carregar os dados do CRM: ${c2sErr.message}</p>`;
+        document.getElementById("funnel-seg-bar").innerHTML = "";
+        document.getElementById("funnel-legend").innerHTML = msg;
+        document.getElementById("roi-grid").innerHTML = msg;
         console.error(c2sErr);
       }
 
