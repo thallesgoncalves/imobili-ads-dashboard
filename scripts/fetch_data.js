@@ -23,7 +23,18 @@ const AD_ACCOUNTS = [
 ];
 
 const FIELDS = "campaign_name,spend,impressions,clicks,ctr,cpc,actions,date_start";
-const LEAD_ACTION_TYPES = new Set(["lead", "onsite_conversion.lead_grouped"]);
+
+// Meta reports the same on-Facebook lead form submission under both
+// "onsite_conversion.lead_grouped" and the generic "lead" action type —
+// summing both double-counts every lead. Use lead_grouped when present
+// (native Lead Ads / Instant Forms) and fall back to "lead" for campaigns
+// that only report the generic type (e.g. website/pixel-based leads).
+function leadsFromActions(actions) {
+  if (!Array.isArray(actions)) return 0;
+  const byType = new Map(actions.map((a) => [a.action_type, Number(a.value || 0)]));
+  if (byType.has("onsite_conversion.lead_grouped")) return byType.get("onsite_conversion.lead_grouped");
+  return byType.get("lead") || 0;
+}
 
 function dateRange(days) {
   const to = new Date();
@@ -47,13 +58,6 @@ async function fetchAllPages(url) {
     next = body.paging && body.paging.next ? body.paging.next : null;
   }
   return rows;
-}
-
-function leadsFromActions(actions) {
-  if (!Array.isArray(actions)) return 0;
-  return actions
-    .filter((a) => LEAD_ACTION_TYPES.has(a.action_type))
-    .reduce((sum, a) => sum + Number(a.value || 0), 0);
 }
 
 async function fetchAccount(account, since, until) {
