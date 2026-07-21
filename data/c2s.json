@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:48:26.992Z",
+  "generated_at": "2026-07-21T02:06:27.800Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -1716,9 +1716,9 @@
     {
       "id": "1630ee3a9a04e3a4fcf930ef05fa5b02",
       "created_at": "2026-07-03T03:37:44.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "company": "IMOBILI - Equipe LEGENDS",
@@ -1726,7 +1726,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - OPEN",
-      "lost_reason": "inactive"
+      "lost_reason": "z_others"
     },
     {
       "id": "773d762eb4761356a430ecf0b5aea618",

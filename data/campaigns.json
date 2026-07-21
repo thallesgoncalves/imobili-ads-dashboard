@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T02:02:21.973501Z",
+  "generated_at": "2026-07-21T02:05:50.377Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -141,7 +141,7 @@
       "spend": 39.42,
       "impressions": 800,
       "clicks": 16,
-      "ctr": 2.0,
+      "ctr": 2,
       "cpc": 2.46375,
       "leads": 2,
       "cost_per_lead": 19.71
@@ -294,7 +294,7 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Splendido] - Formulário",
       "adset": "",
-      "spend": 18.0,
+      "spend": 18,
       "impressions": 423,
       "clicks": 14,
       "ctr": 3.309693,
@@ -1454,8 +1454,8 @@
       "spend": 4.01,
       "impressions": 112,
       "clicks": 0,
-      "ctr": 0.0,
-      "cpc": 0.0,
+      "ctr": 0,
+      "cpc": 0,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -3258,11 +3258,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 0.0,
+      "spend": 0,
       "impressions": 0,
       "clicks": 0,
-      "ctr": 0.0,
-      "cpc": 0.0,
+      "ctr": 0,
+      "cpc": 0,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -3508,8 +3508,8 @@
       "spend": 0.03,
       "impressions": 6,
       "clicks": 0,
-      "ctr": 0.0,
-      "cpc": 0.0,
+      "ctr": 0,
+      "cpc": 0,
       "leads": 0,
       "cost_per_lead": null
     }
