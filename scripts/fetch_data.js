@@ -1,78 +1,105 @@
-// Pulls Meta Ads (Facebook/Instagram) campaign data from Windsor.ai for all
-// connected accounts and writes it to data/campaigns.json for the dashboard.
+// Pulls daily campaign-level insights directly from the Meta Marketing API
+// (Graph API) for the Imobili Consultoria ad accounts and writes them to
+// data/campaigns.json for the dashboard.
 //
-// Requires Node 18+ (built-in fetch) and env var WINDSOR_API_KEY.
+// Requires Node 18+ (built-in fetch) and env var META_ACCESS_TOKEN
+// (a non-expiring System User token with the ads_read permission).
 
 const fs = require("fs");
 const path = require("path");
 
-const API_KEY = process.env.WINDSOR_API_KEY;
-if (!API_KEY) {
-  console.error("Missing WINDSOR_API_KEY environment variable.");
+const TOKEN = process.env.META_ACCESS_TOKEN;
+if (!TOKEN) {
+  console.error("Missing META_ACCESS_TOKEN environment variable.");
   process.exit(1);
 }
 
-const FIELDS = [
-  "date",
-  "account_name",
-  "campaign",
-  "adset_name",
-  "spend",
-  "impressions",
-  "clicks",
-  "ctr",
-  "cpc",
-  "actions_lead",
-  "actions_leadgen_grouped",
-].join(",");
-
+const API_VERSION = "v21.0";
 const DAYS_BACK = 90;
 
-async function fetchFacebookData() {
-  const url =
-    `https://connectors.windsor.ai/facebook` +
-    `?api_key=${encodeURIComponent(API_KEY)}` +
-    `&fields=${FIELDS}` +
-    `&date_preset=last_${DAYS_BACK}d` +
-    `&_renderer=json`;
+const AD_ACCOUNTS = [
+  { id: "1789689275316145", name: "CA - LANÇAMENTOS" },
+  { id: "711764884898637", name: "CA - INSTITUCIONAL" },
+];
 
-  const res = await fetch(url);
-  if (!res.ok) {
-    throw new Error(`Windsor.ai request failed: ${res.status} ${res.statusText}`);
-  }
-  const body = await res.json();
-  if (!Array.isArray(body.data)) {
-    throw new Error(`Unexpected Windsor.ai response shape: ${JSON.stringify(body).slice(0, 300)}`);
-  }
-  return body.data;
+const FIELDS = "campaign_name,spend,impressions,clicks,ctr,cpc,actions,date_start";
+const LEAD_ACTION_TYPES = new Set(["lead", "onsite_conversion.lead_grouped"]);
+
+function dateRange(days) {
+  const to = new Date();
+  const from = new Date();
+  from.setDate(from.getDate() - days);
+  const fmt = (d) => d.toISOString().slice(0, 10);
+  return { since: fmt(from), until: fmt(to) };
 }
 
-function normalizeRow(row) {
-  const leads = Number(row.actions_lead || 0) + Number(row.actions_leadgen_grouped || 0);
-  const spend = Number(row.spend || 0);
-  return {
-    date: row.date,
-    account: row.account_name || "",
-    campaign: row.campaign || "",
-    adset: row.adset_name || "",
-    spend,
-    impressions: Number(row.impressions || 0),
-    clicks: Number(row.clicks || 0),
-    ctr: Number(row.ctr || 0),
-    cpc: Number(row.cpc || 0),
-    leads,
-    cost_per_lead: leads > 0 ? spend / leads : null,
-  };
+async function fetchAllPages(url) {
+  const rows = [];
+  let next = url;
+  while (next) {
+    const res = await fetch(next);
+    if (!res.ok) {
+      const body = await res.text();
+      throw new Error(`Meta API request failed: ${res.status} ${res.statusText} — ${body.slice(0, 300)}`);
+    }
+    const body = await res.json();
+    rows.push(...(body.data || []));
+    next = body.paging && body.paging.next ? body.paging.next : null;
+  }
+  return rows;
+}
+
+function leadsFromActions(actions) {
+  if (!Array.isArray(actions)) return 0;
+  return actions
+    .filter((a) => LEAD_ACTION_TYPES.has(a.action_type))
+    .reduce((sum, a) => sum + Number(a.value || 0), 0);
+}
+
+async function fetchAccount(account, since, until) {
+  const params = new URLSearchParams({
+    level: "campaign",
+    fields: FIELDS,
+    time_range: JSON.stringify({ since, until }),
+    time_increment: "1",
+    limit: "500",
+    access_token: TOKEN,
+  });
+  const url = `https://graph.facebook.com/${API_VERSION}/act_${account.id}/insights?${params.toString()}`;
+  const rows = await fetchAllPages(url);
+
+  return rows.map((r) => {
+    const spend = Number(r.spend || 0);
+    const leads = leadsFromActions(r.actions);
+    return {
+      date: r.date_start,
+      account: account.name,
+      campaign: r.campaign_name || "",
+      adset: "",
+      spend,
+      impressions: Number(r.impressions || 0),
+      clicks: Number(r.clicks || 0),
+      ctr: Number(r.ctr || 0),
+      cpc: Number(r.cpc || 0),
+      leads,
+      cost_per_lead: leads > 0 ? spend / leads : null,
+    };
+  });
 }
 
 async function main() {
-  const raw = await fetchFacebookData();
-  const rows = raw.map(normalizeRow);
+  const { since, until } = dateRange(DAYS_BACK);
+  const rows = [];
+  for (const account of AD_ACCOUNTS) {
+    const accountRows = await fetchAccount(account, since, until);
+    rows.push(...accountRows);
+    console.log(`Fetched ${accountRows.length} rows for ${account.name}`);
+  }
 
   const outPath = path.join(__dirname, "..", "data", "campaigns.json");
   const payload = {
     generated_at: new Date().toISOString(),
-    source: "windsor.ai / facebook",
+    source: "meta-marketing-api",
     days_back: DAYS_BACK,
     rows,
   };

@@ -1,30 +1,40 @@
 # Dashboard de Campanhas — Imobili Consultoria
 
-Dashboard estático de performance de Meta Ads (Facebook/Instagram), hospedado no
-GitHub Pages. Os dados vêm da API do [Windsor.ai](https://windsor.ai) e são
+Dashboard estático de performance de Meta Ads (Facebook/Instagram) e do funil
+de vendas do CRM Contact2Sale, hospedado no GitHub Pages. Os dados são
 atualizados automaticamente uma vez por dia via GitHub Actions.
 
 ## Como funciona
 
 - `scripts/fetch_data.js` — busca os últimos 90 dias de dados de campanha
-  (investimento, impressões, cliques, leads) via API do Windsor.ai e grava em
+  (investimento, impressões, cliques, leads) direto da **Meta Marketing API**
+  para as contas CA - LANÇAMENTOS e CA - INSTITUCIONAL, e grava em
   `data/campaigns.json`.
-- `.github/workflows/update-data.yml` — roda o script todo dia às 09:00
-  (America/Maceio) e comita o JSON atualizado. Pode também ser disparado
+- `scripts/fetch_c2s.js` — busca leads dos últimos 90 dias via API do
+  Contact2Sale e grava em `data/c2s.json`.
+- `.github/workflows/update-data.yml` — roda os dois scripts todo dia às 09:00
+  (America/Maceio) e comita os JSONs atualizados. Pode também ser disparado
   manualmente na aba **Actions** do repositório.
-- `index.html` / `style.css` / `app.js` — dashboard estático que lê
-  `data/campaigns.json` e renderiza KPIs, gráficos diários e a tabela de
+- `index.html` / `style.css` / `app.js` — dashboard estático que lê os JSONs
+  e renderiza KPIs, gráficos diários, funil de vendas e a tabela de
   campanhas. Sem build step, sem dependências externas.
 
 ## Rodar localmente
 
 ```bash
-WINDSOR_API_KEY=sua_key node scripts/fetch_data.js
+META_ACCESS_TOKEN=seu_token node scripts/fetch_data.js
+C2S_API_TOKEN=seu_token node scripts/fetch_c2s.js
 python3 -m http.server 8000
 # abrir http://localhost:8000
 ```
 
+`META_ACCESS_TOKEN` deve ser um token de **System User** do Business Manager
+(Configurações do negócio → Usuários → Usuários do sistema) com a permissão
+`ads_read` nas contas de anúncio, gerado com expiração "Nunca" — assim não
+precisa ser renovado.
+
 ## Configuração no GitHub
 
-1. Secret **WINDSOR_API_KEY** em *Settings → Secrets and variables → Actions*.
+1. Secrets **META_ACCESS_TOKEN** e **C2S_API_TOKEN** em
+   *Settings → Secrets and variables → Actions*.
 2. GitHub Pages configurado para publicar a partir da branch `main` (`/root`).

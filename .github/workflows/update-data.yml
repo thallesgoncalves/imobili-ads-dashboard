@@ -19,9 +19,9 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Fetch campaign data from Windsor.ai
+      - name: Fetch campaign data from Meta Marketing API
         env:
-          WINDSOR_API_KEY: ${{ secrets.WINDSOR_API_KEY }}
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
         run: node scripts/fetch_data.js
 
       - name: Fetch leads from Contact2Sale
