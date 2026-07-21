@@ -75,9 +75,15 @@
 
 body {
   margin: 0;
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* --page-plane etc. are scoped to .viz-root, so the background must be
+   painted there too — body sits outside that scope and can't read them. */
+.viz-root {
   background: var(--page-plane);
   color: var(--text-primary);
-  font-family: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+  min-height: 100vh;
 }
 
 .visually-hidden {
