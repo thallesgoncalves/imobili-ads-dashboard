@@ -43,13 +43,46 @@ async function fetchPage(page, createdGte, attempt = 1) {
   return res.json();
 }
 
-// C2S returns done_price as a Brazilian-formatted string, e.g. "377.550,00".
-function parseBRNumber(value) {
+// C2S returns done_price in mixed formats depending on how it was entered —
+// sometimes Brazilian ("377.550,00": dot=thousands, comma=decimal) and
+// sometimes plain/US-style ("210000.00" or "1045000.00": dot=decimal only).
+// Naively assuming BR format inflates plain values by ~100x, so detect which
+// format each string actually uses before parsing.
+function parseMoneyValue(value) {
   if (value == null || value === "") return null;
   if (typeof value === "number") return value;
-  const normalized = String(value).replace(/\./g, "").replace(",", ".");
-  const num = Number(normalized);
+  const s = String(value).trim();
+  if (!s) return null;
+
+  const hasDot = s.includes(".");
+  const hasComma = s.includes(",");
+
+  let num;
+  if (hasDot && hasComma) {
+    num = Number(s.replace(/\./g, "").replace(",", "."));
+  } else if (hasComma && !hasDot) {
+    num = Number(s.replace(",", "."));
+  } else if (hasDot && !hasComma) {
+    const decimalsLen = s.length - s.lastIndexOf(".") - 1;
+    num = decimalsLen === 3 ? Number(s.replace(/\./g, "")) : Number(s);
+  } else {
+    num = Number(s);
+  }
   return Number.isFinite(num) ? num : null;
+}
+
+function summarizeVisit(schedulatedActions) {
+  const visits = (schedulatedActions || []).filter(
+    (s) => s.schedulated_action_type_alias === "scheduled_visit"
+  );
+  if (visits.length === 0) return null;
+  visits.sort((a, b) => (a.schedulated_action_date < b.schedulated_action_date ? 1 : -1));
+  const latest = visits[0];
+  return {
+    count: visits.length,
+    latest_date: latest.schedulated_action_date,
+    latest_status: latest.status,
+  };
 }
 
 function normalizeLead(item) {
@@ -61,13 +94,16 @@ function normalizeLead(item) {
     status_name: a.lead_status && a.lead_status.name,
     archived: !!(a.archive_details && a.archive_details.archived),
     done: !!(a.done_details && a.done_details.done),
-    done_price: a.done_details ? parseBRNumber(a.done_details.done_price) : null,
+    done_price: a.done_details ? parseMoneyValue(a.done_details.done_price) : null,
+    done_deal_at: a.done_deal_at || null,
     company: a.company && a.company.name,
     seller: a.seller && a.seller.name,
     source: a.lead_source && a.lead_source.name,
     channel: a.channel && a.channel.name,
     product: a.product && a.product.description,
     lost_reason: a.lost_reasons && a.lost_reasons.name,
+    tags: Array.isArray(a.tags) ? a.tags.map((t) => t.tag_name).filter(Boolean) : [],
+    visit: summarizeVisit(item.schedulated_actions),
   };
 }
 

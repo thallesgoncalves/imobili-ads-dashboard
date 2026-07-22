@@ -15,9 +15,16 @@ atualizados automaticamente uma vez por dia via GitHub Actions.
 - `.github/workflows/update-data.yml` — roda os dois scripts todo dia às 09:00
   (America/Maceio) e comita os JSONs atualizados. Pode também ser disparado
   manualmente na aba **Actions** do repositório.
-- `index.html` / `style.css` / `app.js` — dashboard estático que lê os JSONs
-  e renderiza KPIs, gráficos diários, funil de vendas e a tabela de
-  campanhas. Sem build step, sem dependências externas.
+- `index.html` / `app.js` — página **Dashboard**: KPIs e gráficos de Meta Ads,
+  resumo do funil de vendas e ROI, tabela de campanhas.
+- `funil-imobili.html` / `funil.js` — página **Funil Imobili**: visão
+  detalhada do funil do CRM (etapas, motivos de perda, performance por
+  corretor, leads por empreendimento/origem), com base no processo comercial
+  documentado internamente (Fluxo de Atendimento Padrão).
+- `common.js` — funções e componentes compartilhados pelas duas páginas
+  (formatação, filtro de período, gráfico de barras).
+- `style.css` — estilos das duas páginas. Sem build step, sem dependências
+  externas além da fonte Lato (Google Fonts).
 
 ## Rodar localmente
 
