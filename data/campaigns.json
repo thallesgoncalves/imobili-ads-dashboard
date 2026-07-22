@@ -1,34 +1,8 @@
 {
-  "generated_at": "2026-07-21T02:20:12.630Z",
+  "generated_at": "2026-07-22T03:22:19.516Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-04-22",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 55.54,
-      "impressions": 1918,
-      "clicks": 31,
-      "ctr": 1.616267,
-      "cpc": 1.791613,
-      "leads": 2,
-      "cost_per_lead": 27.77
-    },
-    {
-      "date": "2026-04-22",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][PréCitecon]",
-      "adset": "",
-      "spend": 53.26,
-      "impressions": 411,
-      "clicks": 14,
-      "ctr": 3.406326,
-      "cpc": 3.804286,
-      "leads": 2,
-      "cost_per_lead": 26.63
-    },
     {
       "date": "2026-04-23",
       "account": "CA - LANÇAMENTOS",

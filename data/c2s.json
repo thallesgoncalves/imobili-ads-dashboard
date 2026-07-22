@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T03:20:39.158672Z",
+  "generated_at": "2026-07-22T03:23:08.853Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -4153,7 +4153,7 @@
       "visit": {
         "count": 2,
         "latest_date": "2026-05-29T11:30:00.000-03:00",
-        "latest_status": "Reagendada"
+        "latest_status": "Realizada"
       }
     },
     {
@@ -10442,7 +10442,7 @@
       "status_name": "Negócio fechado",
       "archived": false,
       "done": true,
-      "done_price": 377550.0,
+      "done_price": 377550,
       "done_deal_at": "2026-05-12T09:00:00.000-03:00",
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Mazzarolo",
