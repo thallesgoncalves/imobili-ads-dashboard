@@ -29,10 +29,15 @@ jobs:
           C2S_API_TOKEN: ${{ secrets.C2S_API_TOKEN }}
         run: node scripts/fetch_c2s.js
 
+      - name: Fetch channels and creatives from Meta Marketing API
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+        run: node scripts/fetch_creatives.js
+
       - name: Commit updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/campaigns.json data/c2s.json
+          git add data/campaigns.json data/c2s.json data/creatives.json
           git diff --quiet --cached || git commit -m "chore: atualizar dados de campanhas"
           git push

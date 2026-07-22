@@ -254,6 +254,7 @@ body {
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
+.filters-compact { margin: 14px 0; }
 .filter-group {
   display: inline-flex;
   border: 1px solid var(--border);
@@ -579,6 +580,63 @@ body {
   font-size: 11.5px;
   opacity: 0.8;
 }
+
+/* Creative grid (Canais & Criativos) */
+.creative-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 4px;
+}
+.creative-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--page-plane);
+}
+.creative-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  background: var(--gridline);
+}
+.creative-thumb-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gridline);
+  color: var(--text-muted);
+}
+.creative-thumb-placeholder svg { width: 32px; height: 32px; }
+.creative-body { padding: 12px 14px; }
+.creative-name {
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.creative-campaign {
+  font-size: 11px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+.creative-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.creative-stats .stat-value { font-weight: 800; }
+.creative-stats .stat-label { color: var(--text-muted); font-size: 10.5px; display: block; }
 
 /* Table */
 .table-head {

@@ -7,6 +7,7 @@
   let allRows = [];
   let oldestDate = null;
   let c2sLeads = [];
+  let c2sOldestDate = null;
   let c2sLoadFailed = false;
   let state = {
     rangeMode: "30",
@@ -17,6 +18,9 @@
     sortKey: "spend",
     sortDir: "desc",
   };
+  // Independent date range for the CRM funnel + ROI cards, decoupled from
+  // the ads filter above — lets you compare a different lead/deal window.
+  let crmState = { rangeMode: "30", customFrom: null, customTo: null };
 
   const FUNNEL_STAGES = [
     { name: "Novo", color: "var(--funnel-1)" },
@@ -173,7 +177,7 @@
   }
 
   function filteredC2SLeads() {
-    const { from, to } = getRange(state);
+    const { from, to } = getRange(crmState);
     return c2sLeads.filter((l) => l.created_at && inRange(l.created_at, from, to));
   }
 
@@ -238,7 +242,8 @@
 
   function renderROI() {
     if (c2sLoadFailed) return;
-    const spend = filteredRows().reduce((s, r) => s + r.spend, 0);
+    const { from, to } = getRange(crmState);
+    const spend = rowsForRange(from, to).reduce((s, r) => s + r.spend, 0);
     const wonLeads = filteredC2SLeads().filter((l) => l.done && l.done_price != null);
     const totalSold = wonLeads.reduce((s, l) => s + l.done_price, 0);
     const commission = totalSold * 0.05;
@@ -267,18 +272,33 @@
       .join("");
   }
 
-  function renderAll() {
+  function renderAdsSection() {
     const rows = filteredRows();
     renderKPIs(rows);
     renderBarChart("chart-spend", dailySeries(rows, "spend"), "var(--series-spend)", fmtCurrency);
     renderBarChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
     renderTable(rows);
+  }
+
+  function renderCrmSection() {
     renderFunnel();
     renderROI();
   }
 
+  function renderAll() {
+    renderAdsSection();
+    renderCrmSection();
+  }
+
   function setupFilters(accounts) {
-    setupRangeFilter(state, oldestDate, renderAll);
+    setupRangeFilter(state, oldestDate, renderAdsSection);
+    setupRangeFilter(crmState, c2sOldestDate, renderCrmSection, {
+      rangeFilter: "#crm-range-filter",
+      customRange: "#crm-custom-range",
+      dateFrom: "#crm-date-from",
+      dateTo: "#crm-date-to",
+      applyBtn: "#crm-apply-custom-range",
+    });
 
     const select = document.getElementById("account-filter");
     for (const acc of accounts) {
@@ -320,7 +340,6 @@
       allRows = payload.rows || [];
       oldestDate = allRows.reduce((min, r) => (!min || r.date < min ? r.date : min), null);
       const accounts = Array.from(new Set(allRows.map((r) => r.account))).sort();
-      setupFilters(accounts);
 
       const updatedAt = payload.generated_at ? new Date(payload.generated_at) : null;
       document.getElementById("updated-at").textContent = updatedAt
@@ -330,6 +349,10 @@
       try {
         const c2sPayload = await loadC2SData();
         c2sLeads = c2sPayload.leads || [];
+        c2sOldestDate = c2sLeads.reduce(
+          (min, l) => (l.created_at && (!min || l.created_at < min) ? l.created_at.slice(0, 10) : min),
+          null
+        );
         const c2sUpdatedAt = c2sPayload.generated_at ? new Date(c2sPayload.generated_at) : null;
         document.getElementById("funnel-updated").textContent = c2sUpdatedAt
           ? `Atualizado em ${c2sUpdatedAt.toLocaleString("pt-BR")}`
@@ -345,6 +368,7 @@
         console.error(c2sErr);
       }
 
+      setupFilters(accounts);
       renderAll();
     } catch (err) {
       document.getElementById("kpi-hero").innerHTML = "";

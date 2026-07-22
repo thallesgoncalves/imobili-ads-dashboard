@@ -12,18 +12,27 @@ atualizados automaticamente uma vez por dia via GitHub Actions.
   `data/campaigns.json`.
 - `scripts/fetch_c2s.js` — busca leads dos últimos 90 dias via API do
   Contact2Sale e grava em `data/c2s.json`.
-- `.github/workflows/update-data.yml` — roda os dois scripts todo dia às 09:00
+- `scripts/fetch_creatives.js` — busca dados diários por anúncio (nível ad) e
+  por canal/posicionamento (breakdowns `publisher_platform`/`platform_position`)
+  na Meta Marketing API, mais thumbnail e formulário de lead dos criativos com
+  maior investimento, e grava em `data/creatives.json`.
+- `.github/workflows/update-data.yml` — roda os três scripts todo dia às 09:00
   (America/Maceio) e comita os JSONs atualizados. Pode também ser disparado
   manualmente na aba **Actions** do repositório.
 - `index.html` / `app.js` — página **Dashboard**: KPIs e gráficos de Meta Ads,
-  resumo do funil de vendas e ROI, tabela de campanhas.
+  resumo do funil de vendas e ROI (com filtro de período próprio), tabela de
+  campanhas.
 - `funil-imobili.html` / `funil.js` — página **Funil Imobili**: visão
   detalhada do funil do CRM (etapas, motivos de perda, performance por
   corretor, leads por empreendimento/origem), com base no processo comercial
   documentado internamente (Fluxo de Atendimento Padrão).
-- `common.js` — funções e componentes compartilhados pelas duas páginas
-  (formatação, filtro de período, gráfico de barras).
-- `style.css` — estilos das duas páginas. Sem build step, sem dependências
+- `canais-criativos.html` / `canais.js` — página **Canais & Criativos**:
+  investimento/leads por canal e posicionamento, ranking de criativos (com
+  thumbnail) e agrupamento por formulário de lead.
+- `common.js` — funções e componentes compartilhados pelas três páginas
+  (formatação, filtro de período — suporta múltiplos filtros independentes
+  na mesma página —, gráfico de barras).
+- `style.css` — estilos das três páginas. Sem build step, sem dependências
   externas além da fonte Lato (Google Fonts).
 
 ## Rodar localmente
@@ -31,6 +40,7 @@ atualizados automaticamente uma vez por dia via GitHub Actions.
 ```bash
 META_ACCESS_TOKEN=seu_token node scripts/fetch_data.js
 C2S_API_TOKEN=seu_token node scripts/fetch_c2s.js
+META_ACCESS_TOKEN=seu_token node scripts/fetch_creatives.js
 python3 -m http.server 8000
 # abrir http://localhost:8000
 ```

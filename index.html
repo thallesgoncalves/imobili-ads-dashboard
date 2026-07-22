@@ -63,6 +63,7 @@
     <nav class="page-tabs" aria-label="Páginas">
       <a href="index.html" class="page-tab active">Dashboard</a>
       <a href="funil-imobili.html" class="page-tab">Funil Imobili</a>
+      <a href="canais-criativos.html" class="page-tab">Canais &amp; Criativos</a>
     </nav>
 
     <section class="greeting" id="overview">
@@ -121,6 +122,20 @@
         <h2>Funil de Vendas (CRM)</h2>
         <span class="muted" id="funnel-updated"></span>
       </div>
+      <div class="filters filters-compact" role="group" aria-label="Período do CRM">
+        <div class="filter-group" id="crm-range-filter" role="group" aria-label="Período do CRM">
+          <button type="button" data-range="7">7 dias</button>
+          <button type="button" data-range="30" class="active">30 dias</button>
+          <button type="button" data-range="90">90 dias</button>
+          <button type="button" data-range="month">Este mês</button>
+          <button type="button" data-range="custom">Personalizado</button>
+        </div>
+        <div class="custom-range" id="crm-custom-range" hidden>
+          <label>De <input type="date" id="crm-date-from" /></label>
+          <label>Até <input type="date" id="crm-date-to" /></label>
+          <button type="button" id="crm-apply-custom-range">Aplicar</button>
+        </div>
+      </div>
       <div class="kpi-secondary" id="funnel-kpis"></div>
       <div class="funnel-distribution">
         <div class="funnel-seg-bar" id="funnel-seg-bar"></div>
@@ -131,7 +146,7 @@
     <section class="roi-card" id="roi">
       <div class="chart-head">
         <h2>ROI — Anúncios × Negócios Fechados</h2>
-        <span class="muted">Comissão de 5% sobre o valor de venda</span>
+        <span class="muted">Comissão de 5% sobre o valor de venda · usa o período do CRM acima</span>
       </div>
       <div class="roi-grid" id="roi-grid"></div>
     </section>

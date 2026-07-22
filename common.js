@@ -187,21 +187,31 @@ window.Common = (function () {
     });
   }
 
-  // Wires the #range-filter pill buttons + #custom-range date inputs to a
-  // shared { rangeMode, customFrom, customTo } state object, calling
-  // onChange() whenever the selected range changes.
-  function setupRangeFilter(state, oldestDate, onChange) {
-    const customRangeBox = document.getElementById("custom-range");
-    const dateFromInput = document.getElementById("date-from");
-    const dateToInput = document.getElementById("date-to");
+  // Wires a #range-filter pill group + #custom-range date inputs to a
+  // { rangeMode, customFrom, customTo } state object, calling onChange()
+  // whenever the selected range changes. Pass `ids` to target a second
+  // (or third) independent filter widget on the same page — defaults match
+  // the original single-filter markup.
+  function setupRangeFilter(state, oldestDate, onChange, ids) {
+    const {
+      rangeFilter = "#range-filter",
+      customRange = "#custom-range",
+      dateFrom = "#date-from",
+      dateTo = "#date-to",
+      applyBtn = "#apply-custom-range",
+    } = ids || {};
+
+    const customRangeBox = document.querySelector(customRange);
+    const dateFromInput = document.querySelector(dateFrom);
+    const dateToInput = document.querySelector(dateTo);
 
     if (oldestDate) dateFromInput.min = dateToInput.min = oldestDate;
     const todayStr = today0().toISOString().slice(0, 10);
     dateFromInput.max = dateToInput.max = todayStr;
 
-    document.querySelectorAll("#range-filter button").forEach((btn) => {
+    document.querySelectorAll(`${rangeFilter} button`).forEach((btn) => {
       btn.addEventListener("click", () => {
-        document.querySelectorAll("#range-filter button").forEach((b) => b.classList.remove("active"));
+        document.querySelectorAll(`${rangeFilter} button`).forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
         state.rangeMode = btn.dataset.range;
 
@@ -219,7 +229,7 @@ window.Common = (function () {
       });
     });
 
-    document.getElementById("apply-custom-range").addEventListener("click", () => {
+    document.querySelector(applyBtn).addEventListener("click", () => {
       if (!dateFromInput.value || !dateToInput.value) return;
       const from = toDateOnly(dateFromInput.value);
       const to = toDateOnly(dateToInput.value);
