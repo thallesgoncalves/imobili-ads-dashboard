@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-07-31T05:59:24.819Z",
+  "generated_at": "2026-07-31T08:50:17.805Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "2e41fed71e630122451396108547a234",
+      "created_at": "2026-07-31T05:45:13.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - OPEN",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "880b846d99a5f5f0b0a85ce03f5428da",
       "created_at": "2026-07-31T01:07:38.000-03:00",
@@ -13158,54 +13176,6 @@
         "APARTAMENTO",
         "PLANTA",
         "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "1436998181c24ece989b4150b283f7ca",
-      "created_at": "2026-05-02T08:44:00.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe FÊNIX",
-      "seller": "Leandro Silva ",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "28d6e83236b1c0c41ed3c753ccb14bbb",
-      "created_at": "2026-05-02T07:29:53.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Carlos Esteves",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Até R$300.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
       ],
       "visit": null
     }
