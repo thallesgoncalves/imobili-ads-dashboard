@@ -2,8 +2,9 @@ name: Update campaign data
 
 on:
   schedule:
-    # 09:00 America/Maceio (UTC-3) = 12:00 UTC
-    - cron: "0 12 * * *"
+    # Every 15 minutes. Once a day, at 09:00 America/Maceio (12:00 UTC),
+    # this run also refreshes creative thumbnails (see "cadence" step below).
+    - cron: "*/15 * * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -19,6 +20,15 @@ jobs:
         with:
           node-version: "20"
 
+      - name: Determine run cadence
+        id: cadence
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ] || [ "$(date -u +%H:%M)" = "12:00" ]; then
+            echo "full=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "full=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Fetch campaign data from Meta Marketing API
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
@@ -32,6 +42,7 @@ jobs:
       - name: Fetch channels and creatives from Meta Marketing API
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          SKIP_CREATIVE_DETAILS: ${{ steps.cadence.outputs.full == 'true' && 'false' || 'true' }}
         run: node scripts/fetch_creatives.js
 
       - name: Commit updated data
@@ -40,4 +51,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/campaigns.json data/c2s.json data/creatives.json
           git diff --quiet --cached || git commit -m "chore: atualizar dados de campanhas"
+          git pull --rebase --autostash origin main
           git push

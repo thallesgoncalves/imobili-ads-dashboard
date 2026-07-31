@@ -2,7 +2,15 @@
 
 Dashboard estático de performance de Meta Ads (Facebook/Instagram) e do funil
 de vendas do CRM Contact2Sale, hospedado no GitHub Pages. Os dados são
-atualizados automaticamente uma vez por dia via GitHub Actions.
+atualizados automaticamente a cada 15 minutos via GitHub Actions.
+
+> **Sobre a "atualização a cada 15 min":** é a cadência da coleta de dados
+> (commit no repositório). Duas coisas podem atrasar o que aparece na tela:
+> o GitHub Pages usa CDN com cache de ~10 min nos arquivos estáticos
+> (incluindo os JSONs de dados), e o agendador do GitHub Actions não garante
+> o horário exato — pode atrasar alguns minutos em picos de uso da
+> plataforma. Na prática, espere dados com até ~20-25 min de defasagem, não
+> 15 min cravados.
 
 ## Como funciona
 
@@ -15,10 +23,16 @@ atualizados automaticamente uma vez por dia via GitHub Actions.
 - `scripts/fetch_creatives.js` — busca dados diários por anúncio (nível ad) e
   por canal/posicionamento (breakdowns `publisher_platform`/`platform_position`)
   na Meta Marketing API, mais thumbnail e formulário de lead dos criativos com
-  maior investimento, e grava em `data/creatives.json`.
-- `.github/workflows/update-data.yml` — roda os três scripts todo dia às 09:00
-  (America/Maceio) e comita os JSONs atualizados. Pode também ser disparado
-  manualmente na aba **Actions** do repositório.
+  maior investimento, e grava em `data/creatives.json`. Com
+  `SKIP_CREATIVE_DETAILS=true`, pula a busca de thumbnail/formulário (que não
+  muda de 15 em 15 min) e reaproveita o que já estava salvo.
+- `.github/workflows/update-data.yml` — roda os três scripts a cada 15
+  minutos e comita os JSONs atualizados. Uma vez por dia, às 09:00
+  (America/Maceio), o run também atualiza as thumbnails dos criativos —
+  nos demais runs do dia isso é pulado (`SKIP_CREATIVE_DETAILS=true`) pra
+  não gastar chamada de API à toa em algo que não muda. Pode também ser
+  disparado manualmente na aba **Actions** do repositório (sempre roda
+  completo, incluindo thumbnails).
 - `index.html` / `app.js` — página **Dashboard**: KPIs e gráficos de Meta Ads,
   resumo do funil de vendas e ROI (com filtro de período próprio), tabela de
   campanhas.

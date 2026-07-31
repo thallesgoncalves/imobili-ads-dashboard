@@ -156,30 +156,45 @@ async function main() {
     console.log(`Fetched ${channels.length} channel-day rows for ${account.name}`);
   }
 
-  // Rank ads by total spend over the whole window and fetch creative
-  // thumbnails only for the top N — keeps the daily API call volume small.
-  const spendByAd = new Map();
-  for (const r of adRows) {
-    spendByAd.set(r.ad_id, (spendByAd.get(r.ad_id) || 0) + r.spend);
-  }
-  const topAdIds = Array.from(spendByAd.entries())
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, TOP_CREATIVES_WITH_THUMB)
-    .map(([id]) => id);
-
-  const creatives = {};
-  for (const adId of topAdIds) {
-    try {
-      const detail = await fetchCreativeDetail(adId);
-      if (detail) creatives[adId] = detail;
-    } catch (err) {
-      console.log(`Skipping creative detail for ad ${adId}: ${err.message}`);
-    }
-    await sleep(150);
-  }
-  console.log(`Fetched creative detail for ${Object.keys(creatives).length}/${topAdIds.length} top ads`);
-
   const outPath = path.join(__dirname, "..", "data", "creatives.json");
+
+  // Creative thumbnails/lead-form IDs are effectively static once an ad is
+  // live — no point re-fetching them on every 15-minute refresh. Frequent
+  // runs (SKIP_CREATIVE_DETAILS=true) carry forward whatever was cached by
+  // the last full run instead of hitting the per-ad endpoint again.
+  let creatives = {};
+  if (process.env.SKIP_CREATIVE_DETAILS === "true") {
+    try {
+      const previous = JSON.parse(fs.readFileSync(outPath, "utf8"));
+      creatives = previous.creatives || {};
+      console.log(`Skipping creative detail fetch, carried forward ${Object.keys(creatives).length} cached entries`);
+    } catch (err) {
+      console.log(`No previous creatives.json to carry forward (${err.message})`);
+    }
+  } else {
+    // Rank ads by total spend over the whole window and fetch creative
+    // thumbnails only for the top N — keeps the daily API call volume small.
+    const spendByAd = new Map();
+    for (const r of adRows) {
+      spendByAd.set(r.ad_id, (spendByAd.get(r.ad_id) || 0) + r.spend);
+    }
+    const topAdIds = Array.from(spendByAd.entries())
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, TOP_CREATIVES_WITH_THUMB)
+      .map(([id]) => id);
+
+    for (const adId of topAdIds) {
+      try {
+        const detail = await fetchCreativeDetail(adId);
+        if (detail) creatives[adId] = detail;
+      } catch (err) {
+        console.log(`Skipping creative detail for ad ${adId}: ${err.message}`);
+      }
+      await sleep(150);
+    }
+    console.log(`Fetched creative detail for ${Object.keys(creatives).length}/${topAdIds.length} top ads`);
+  }
+
   const payload = {
     generated_at: new Date().toISOString(),
     source: "meta-marketing-api",
