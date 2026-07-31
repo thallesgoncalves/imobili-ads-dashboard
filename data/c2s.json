@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T18:44:32.753Z",
+  "generated_at": "2026-07-31T20:10:17.196Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -1338,9 +1338,9 @@
     {
       "id": "11975e121a75184f394aac84be9af975",
       "created_at": "2026-07-27T04:01:35.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -1349,7 +1349,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -2098,9 +2098,9 @@
     {
       "id": "52cdb65f920745edd3d8a7c3e07f7e5e",
       "created_at": "2026-07-25T14:10:45.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2109,7 +2109,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -2242,9 +2242,9 @@
     {
       "id": "ff2035011040ceaee3f11b40abdfd012",
       "created_at": "2026-07-25T08:51:13.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2253,7 +2253,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -13216,30 +13216,6 @@
         "02 quartos",
         "APARTAMENTO",
         "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "f8fcecf1df26b6c7756861f3792dc2dd",
-      "created_at": "2026-05-02T19:34:35.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe FÊNIX",
-      "seller": "Leandro Silva ",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "inactive",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
       ],
       "visit": null
     }
