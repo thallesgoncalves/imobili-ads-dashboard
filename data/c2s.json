@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-01T16:38:30.806Z",
+  "generated_at": "2026-08-01T17:42:18.965Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "9b36b5a56003a1918096134f45e41598",
+      "created_at": "2026-08-01T14:18:03.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Ipioca Beach",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "06229aee187b1bd5df9340d9e3e71ce1",
       "created_at": "2026-08-01T11:52:21.000-03:00",
@@ -13360,30 +13378,6 @@
         "APARTAMENTO",
         "PLANTA",
         "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "7d848411f96d1ab781044c47adf91f00",
-      "created_at": "2026-05-03T16:56:05.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Carlos Esteves",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
       ],
       "visit": null
     }
