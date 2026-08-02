@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-02T07:17:12.351Z",
+  "generated_at": "2026-08-02T09:31:16.523Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "6cc35143c9638e7a026f9b28ca48b1d8",
+      "created_at": "2026-08-02T04:36:06.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "da4f609c0dd488d10485467aa66542fa",
       "created_at": "2026-08-01T19:36:37.000-03:00",
@@ -13344,30 +13362,6 @@
         "02 quartos",
         "APARTAMENTO",
         "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "6d6d08d346f1687c1bcb334acd297f7c",
-      "created_at": "2026-05-04T07:56:26.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
       ],
       "visit": null
     }
