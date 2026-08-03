@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-08-02T23:40:28.754Z",
+  "generated_at": "2026-08-03T01:15:20.297Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "89a2da0eceba4fc9efa7751ee01173a5",
+      "created_at": "2026-08-02T22:11:32.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
+    {
+      "id": "87b13de194cd63647829d1c09aec0e0f",
+      "created_at": "2026-08-02T22:11:28.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "e96065c476b3451ecb7884c24f59ab22",
       "created_at": "2026-08-02T20:09:48.000-03:00",
@@ -9975,6 +10011,30 @@
       "visit": null
     },
     {
+      "id": "2d6643a5d78cfdd0c45a81d96fd0c47d",
+      "created_at": "2026-05-17T11:30:10.000-03:00",
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Diogo Oliveira Souza Vieira",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "[2025] FORMS - Stella Maris Residence",
+      "lost_reason": "return_delay",
+      "tags": [
+        "Parte BAIXA",
+        "02 quartos",
+        "APARTAMENTO",
+        "PLANTA",
+        "Até 500.000,00"
+      ],
+      "visit": null
+    },
+    {
       "id": "2c21059067f1dcdaeead844e4e05c0bb",
       "created_at": "2026-05-17T10:48:11.000-03:00",
       "status_alias": "lost",
@@ -13546,34 +13606,6 @@
         "PRONTO"
       ],
       "visit": null
-    },
-    {
-      "id": "0a852d2fcfb1704e914475f5165fdf02",
-      "created_at": "2026-05-05T00:23:28.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Adriana Batista ",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": {
-        "count": 1,
-        "latest_date": "2026-05-07T14:30:00.000-03:00",
-        "latest_status": "Não realizada"
-      }
     }
   ]
 }
