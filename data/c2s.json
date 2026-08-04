@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T01:49:08.202Z",
+  "generated_at": "2026-08-04T04:58:25.795Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3796,9 +3796,9 @@
     {
       "id": "d7e0bc75f610e20c76413c13d158d413",
       "created_at": "2026-07-18T14:20:14.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3807,7 +3807,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Ipioca Beach",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -3868,9 +3868,9 @@
     {
       "id": "e4ea84e11c7c55a941c177a4b9b7fd55",
       "created_at": "2026-07-18T09:43:51.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3879,7 +3879,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Ipioca Beach",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -3904,9 +3904,9 @@
     {
       "id": "90a8f5dc2bd6ed288707e2931e9a9d20",
       "created_at": "2026-07-18T08:44:52.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3915,7 +3915,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - Ipioca Beach",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -3946,9 +3946,9 @@
     {
       "id": "f6b0dfd82baf5c21a41ef1037bcf8850",
       "created_at": "2026-07-18T03:50:31.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3957,7 +3957,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Ipioca Beach",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
