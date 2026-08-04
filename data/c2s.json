@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T04:58:25.795Z",
+  "generated_at": "2026-08-04T07:36:19.881Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13683,30 +13683,6 @@
         "APARTAMENTO",
         "PLANTA",
         "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "695de3b0d765057338c43b7db8fd1dc3",
-      "created_at": "2026-05-06T06:55:14.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Veronica Araújo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
       ],
       "visit": null
     }
