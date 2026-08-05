@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T07:14:19.903Z",
+  "generated_at": "2026-08-05T09:50:12.141Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13564,54 +13564,6 @@
       "channel": "Rede Social",
       "product": "CV - GÊNOVA",
       "lost_reason": "not_ready_to_buy",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "43b0956224e9f2c71f74a49f07a2e5df",
-      "created_at": "2026-05-07T08:00:42.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "JACKSON GOES MAZONI SILVA",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "PHAROS - EMAIL",
-      "lost_reason": "invalid",
-      "tags": [
-        "Parte BAIXA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 700.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "105f2c8b6af7f1ee3dffaa9254299e60",
-      "created_at": "2026-05-07T07:57:05.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
       "tags": [
         "Parte ALTA",
         "03 quartos",
