@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T17:35:17.759Z",
+  "generated_at": "2026-08-07T18:30:28.281Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -30,8 +30,8 @@
       "done": false,
       "done_price": null,
       "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "Marcelo Vasconcelos ",
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Mazzarolo",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
@@ -78,8 +78,8 @@
     {
       "id": "42abacd4424b010e7fbcf3aecbbd9381",
       "created_at": "2026-08-07T09:43:08.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -3486,9 +3486,9 @@
     {
       "id": "b5de86cae541dd68cebe9026984d18ca",
       "created_at": "2026-07-27T00:26:16.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
