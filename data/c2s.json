@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T20:21:31.050Z",
+  "generated_at": "2026-08-07T21:08:14.676Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13308,30 +13308,6 @@
       "done_deal_at": null,
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Até R$300.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "9e9a900de298f8737714c43bf7957fe4",
-      "created_at": "2026-05-09T20:25:31.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Edson Soares da Silva",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
