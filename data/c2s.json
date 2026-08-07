@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-07T07:51:17.001Z",
+  "generated_at": "2026-08-07T08:49:10.398Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "995b1d21a44c85dbdb88a2938905d29b",
+      "created_at": "2026-08-07T05:20:08.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "e09be5d00508ee6c5e8a0fa6d84dc8be",
       "created_at": "2026-08-07T03:28:37.000-03:00",
@@ -13354,78 +13372,6 @@
         "02 quartos",
         "APARTAMENTO",
         "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "2792dca993ca6313d2ddfc9e41cded9b",
-      "created_at": "2026-05-09T08:13:25.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe FÊNIX",
-      "seller": "Luciana Menezes ",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "inactive",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "95f2462be2fcf7c65dea9551147f9779",
-      "created_at": "2026-05-09T08:10:57.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "JACKSON GOES MAZONI SILVA",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "8a756a71b037d71d5b2eabc0a4a835eb",
-      "created_at": "2026-05-09T08:10:14.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Tiago silva",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "z_others",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
       ],
       "visit": null
     }
