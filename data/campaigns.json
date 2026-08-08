@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T23:20:17.167Z",
+  "generated_at": "2026-08-08T23:52:29.294Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3583,13 +3583,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 32.47,
-      "impressions": 1026,
-      "clicks": 14,
-      "ctr": 1.364522,
-      "cpc": 2.319286,
+      "spend": 34.43,
+      "impressions": 1060,
+      "clicks": 15,
+      "ctr": 1.415094,
+      "cpc": 2.295333,
       "leads": 1,
-      "cost_per_lead": 32.47
+      "cost_per_lead": 34.43
     },
     {
       "date": "2026-08-08",
@@ -3609,39 +3609,39 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 22.31,
-      "impressions": 1977,
-      "clicks": 75,
-      "ctr": 3.793627,
-      "cpc": 0.297467,
+      "spend": 24.15,
+      "impressions": 2217,
+      "clicks": 79,
+      "ctr": 3.563374,
+      "cpc": 0.305696,
       "leads": 2,
-      "cost_per_lead": 11.155
+      "cost_per_lead": 12.075
     },
     {
       "date": "2026-08-08",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 26.08,
-      "impressions": 558,
-      "clicks": 10,
-      "ctr": 1.792115,
-      "cpc": 2.608,
+      "spend": 27.38,
+      "impressions": 577,
+      "clicks": 11,
+      "ctr": 1.906412,
+      "cpc": 2.489091,
       "leads": 2,
-      "cost_per_lead": 13.04
+      "cost_per_lead": 13.69
     },
     {
       "date": "2026-08-08",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 33.9,
-      "impressions": 2418,
+      "spend": 35.44,
+      "impressions": 2536,
       "clicks": 49,
-      "ctr": 2.026468,
-      "cpc": 0.691837,
+      "ctr": 1.932177,
+      "cpc": 0.723265,
       "leads": 8,
-      "cost_per_lead": 4.2375
+      "cost_per_lead": 4.43
     },
     {
       "date": "2026-06-08",
