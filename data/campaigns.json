@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T17:56:15.555Z",
+  "generated_at": "2026-08-09T18:32:24.637Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3583,52 +3583,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 28.94,
-      "impressions": 965,
+      "spend": 30.23,
+      "impressions": 1012,
       "clicks": 22,
-      "ctr": 2.279793,
-      "cpc": 1.315455,
+      "ctr": 2.173913,
+      "cpc": 1.374091,
       "leads": 2,
-      "cost_per_lead": 14.47
+      "cost_per_lead": 15.115
     },
     {
       "date": "2026-08-09",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 21.05,
-      "impressions": 2799,
-      "clicks": 211,
-      "ctr": 7.538407,
-      "cpc": 0.099763,
+      "spend": 22.65,
+      "impressions": 2990,
+      "clicks": 218,
+      "ctr": 7.29097,
+      "cpc": 0.103899,
       "leads": 2,
-      "cost_per_lead": 10.525
+      "cost_per_lead": 11.325
     },
     {
       "date": "2026-08-09",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 21.27,
-      "impressions": 478,
+      "spend": 22.47,
+      "impressions": 511,
       "clicks": 11,
-      "ctr": 2.301255,
-      "cpc": 1.933636,
+      "ctr": 2.152642,
+      "cpc": 2.042727,
       "leads": 1,
-      "cost_per_lead": 21.27
+      "cost_per_lead": 22.47
     },
     {
       "date": "2026-08-09",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 20.86,
-      "impressions": 1743,
-      "clicks": 39,
-      "ctr": 2.237522,
-      "cpc": 0.534872,
+      "spend": 22.18,
+      "impressions": 1840,
+      "clicks": 41,
+      "ctr": 2.228261,
+      "cpc": 0.540976,
       "leads": 7,
-      "cost_per_lead": 2.98
+      "cost_per_lead": 3.1685714285714286
     },
     {
       "date": "2026-06-08",
