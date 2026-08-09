@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T09:10:15.870Z",
+  "generated_at": "2026-08-09T09:55:07.344Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13446,30 +13446,6 @@
       "channel": "Internet",
       "product": "[2025] FORMS - Stella Maris Residence",
       "lost_reason": "return_delay",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "c7263aa929e0e8f40f70c879da58f974",
-      "created_at": "2026-05-11T09:23:53.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Adriana Batista ",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Stella Maris Residence",
-      "lost_reason": "ddd_far",
       "tags": [
         "Até R$600.000,00",
         "Parte BAIXA",
