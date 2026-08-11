@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T06:36:26.747Z",
+  "generated_at": "2026-08-11T07:53:13.830Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13598,54 +13598,6 @@
       "done_deal_at": null,
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "c5c0ca6c0a25600349557f2550e15d4b",
-      "created_at": "2026-05-13T07:43:37.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Carlos Esteves",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "invalid",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "178dbf996e403b101723db82e169616a",
-      "created_at": "2026-05-13T07:42:56.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Alessandro Henrique Cavalcanti Cabral",
       "source": "Facebook Leads",
       "channel": "Rede Social",
       "product": "CV - GÊNOVA",
