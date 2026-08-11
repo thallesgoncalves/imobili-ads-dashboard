@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T23:00:36.657Z",
+  "generated_at": "2026-08-11T23:57:24.128Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 21.88,
-      "impressions": 805,
+      "spend": 26.07,
+      "impressions": 961,
       "clicks": 19,
-      "ctr": 2.360248,
-      "cpc": 1.151579,
+      "ctr": 1.977107,
+      "cpc": 1.372105,
       "leads": 1,
-      "cost_per_lead": 21.88
+      "cost_per_lead": 26.07
     },
     {
       "date": "2026-08-11",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 27.9,
-      "impressions": 2029,
-      "clicks": 49,
-      "ctr": 2.414983,
-      "cpc": 0.569388,
+      "spend": 30.47,
+      "impressions": 2209,
+      "clicks": 52,
+      "ctr": 2.354006,
+      "cpc": 0.585962,
       "leads": 1,
-      "cost_per_lead": 27.9
+      "cost_per_lead": 30.47
     },
     {
       "date": "2026-08-11",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 23.06,
-      "impressions": 416,
+      "spend": 24.75,
+      "impressions": 452,
       "clicks": 11,
-      "ctr": 2.644231,
-      "cpc": 2.096364,
+      "ctr": 2.433628,
+      "cpc": 2.25,
       "leads": 1,
-      "cost_per_lead": 23.06
+      "cost_per_lead": 24.75
     },
     {
       "date": "2026-08-11",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 21.77,
-      "impressions": 2125,
-      "clicks": 27,
-      "ctr": 1.270588,
-      "cpc": 0.806296,
+      "spend": 23.58,
+      "impressions": 2291,
+      "clicks": 30,
+      "ctr": 1.309472,
+      "cpc": 0.786,
       "leads": 2,
-      "cost_per_lead": 10.885
+      "cost_per_lead": 11.79
     },
     {
       "date": "2026-06-08",
