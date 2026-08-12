@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T09:38:15.416Z",
+  "generated_at": "2026-08-12T10:42:19.932Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -42,8 +42,8 @@
     {
       "id": "a3bb8f9638d547ec8402ba8b819e9ced",
       "created_at": "2026-08-12T02:04:34.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -2220,9 +2220,9 @@
     {
       "id": "c1ffc642675802ce3446f5fea5766cc8",
       "created_at": "2026-08-03T21:12:04.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2231,7 +2231,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "just_researching",
       "tags": [],
       "visit": null
     },
@@ -5488,9 +5488,9 @@
     {
       "id": "b99c80a31e613030ebd331edf728689a",
       "created_at": "2026-07-25T12:41:46.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -5499,7 +5499,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
