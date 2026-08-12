@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T13:46:25.138Z",
+  "generated_at": "2026-08-12T14:52:17.353Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -564,9 +564,9 @@
     {
       "id": "3912012bf0b7f8b81d2212ce499dfb8c",
       "created_at": "2026-08-09T14:37:05.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -575,7 +575,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "fail_to_contact",
       "tags": [],
       "visit": null
     },
@@ -13456,98 +13456,6 @@
       "channel": "Rede Social",
       "product": "CV - GÊNOVA",
       "lost_reason": "z_others",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "d2850ac4d6539f193d102dcd412d033f",
-      "created_at": "2026-05-14T14:21:29.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "TERCEIROS - TE0231",
-      "lost_reason": "just_researching",
-      "tags": [
-        "TERRENO"
-      ],
-      "visit": null
-    },
-    {
-      "id": "301cece9e731343b66262825a9038d41",
-      "created_at": "2026-05-14T14:17:07.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "TERCEIROS - AP1576",
-      "lost_reason": "inactive",
-      "tags": [
-        "Parte ALTA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PRONTO",
-        "R$ 200.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "3d76aa652088e12ca542535331e301e9",
-      "created_at": "2026-05-14T14:09:05.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "a928a5fc3950e25b484d58641281e1cb",
-      "created_at": "2026-05-14T14:07:59.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe FÊNIX",
-      "seller": "Leandro Silva ",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "not_ready_to_buy",
       "tags": [
         "Parte ALTA",
         "03 quartos",
