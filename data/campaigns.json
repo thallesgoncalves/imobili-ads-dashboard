@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T16:49:29.663Z",
+  "generated_at": "2026-08-12T17:52:57.000Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 16.19,
-      "impressions": 588,
-      "clicks": 16,
-      "ctr": 2.721088,
-      "cpc": 1.011875,
+      "spend": 18.79,
+      "impressions": 724,
+      "clicks": 17,
+      "ctr": 2.348066,
+      "cpc": 1.105294,
       "leads": 1,
-      "cost_per_lead": 16.19
+      "cost_per_lead": 18.79
     },
     {
       "date": "2026-08-12",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 10.24,
-      "impressions": 760,
-      "clicks": 20,
-      "ctr": 2.631579,
-      "cpc": 0.512,
+      "spend": 13.27,
+      "impressions": 1010,
+      "clicks": 26,
+      "ctr": 2.574257,
+      "cpc": 0.510385,
       "leads": 1,
-      "cost_per_lead": 10.24
+      "cost_per_lead": 13.27
     },
     {
       "date": "2026-08-12",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 13.97,
-      "impressions": 209,
-      "clicks": 8,
-      "ctr": 3.827751,
-      "cpc": 1.74625,
+      "spend": 15.63,
+      "impressions": 241,
+      "clicks": 9,
+      "ctr": 3.73444,
+      "cpc": 1.736667,
       "leads": 1,
-      "cost_per_lead": 13.97
+      "cost_per_lead": 15.63
     },
     {
       "date": "2026-08-12",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 12.88,
-      "impressions": 1034,
-      "clicks": 22,
-      "ctr": 2.12766,
-      "cpc": 0.585455,
+      "spend": 14.63,
+      "impressions": 1183,
+      "clicks": 24,
+      "ctr": 2.02874,
+      "cpc": 0.609583,
       "leads": 2,
-      "cost_per_lead": 6.44
+      "cost_per_lead": 7.315
     },
     {
       "date": "2026-06-08",
