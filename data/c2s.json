@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-08-12T14:52:17.353Z",
+  "generated_at": "2026-08-12T15:54:29.424Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "16ba5ddd9428215c87cad3e1e90eec24",
+      "created_at": "2026-08-12T12:08:35.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "SAMIR PASSOS RAIMUNDO",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
+    {
+      "id": "966cdc8ef7215fcd4d5869aa3b8a0c47",
+      "created_at": "2026-08-12T12:03:38.000-03:00",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Maria Renata Da Silva Santos",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "ae72fc07d27ee4389ca50dcd81a10be2",
       "created_at": "2026-08-12T06:20:04.000-03:00",
@@ -96,8 +132,8 @@
     {
       "id": "7620ee9a0fe091d3ac361c2be470d48f",
       "created_at": "2026-08-11T21:50:11.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -456,9 +492,9 @@
     {
       "id": "cd63887518510be9c2f1289c7ccd1538",
       "created_at": "2026-08-09T18:07:56.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -467,7 +503,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "not_ready_to_buy",
       "tags": [],
       "visit": null
     },
@@ -708,9 +744,9 @@
     {
       "id": "3db2f17dfaffb1d2d7937cd1883f8887",
       "created_at": "2026-08-09T02:18:57.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -719,7 +755,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -13438,30 +13474,6 @@
         "02 quartos",
         "APARTAMENTO",
         "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "58c8f208727d8d87e4c485e0b763be34",
-      "created_at": "2026-05-14T14:58:28.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Tiago silva",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "z_others",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
       ],
       "visit": null
     }
