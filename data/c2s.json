@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T08:06:19.044Z",
+  "generated_at": "2026-08-13T09:32:24.724Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13586,58 +13586,6 @@
         "Até 500.000,00"
       ],
       "visit": null
-    },
-    {
-      "id": "20e9b8540b0c5f2b12b55ac92c31d006",
-      "created_at": "2026-05-15T09:12:18.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Suelane Magalhaes",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "TERCEIROS - CA0896",
-      "lost_reason": "inactive",
-      "tags": [
-        "Parte BAIXA",
-        "03 quartos",
-        "CASA",
-        "PRONTO",
-        "Até 700.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "d8e0e993a068cb967416e633cdfd68c8",
-      "created_at": "2026-05-15T08:42:32.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "TERCEIROS - AP1701",
-      "lost_reason": "z_others",
-      "tags": [
-        "Parte BAIXA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PRONTO",
-        "Até 500.000,00"
-      ],
-      "visit": {
-        "count": 2,
-        "latest_date": "2026-05-23T12:00:00.000-03:00",
-        "latest_status": "Realizada"
-      }
     }
   ]
 }
