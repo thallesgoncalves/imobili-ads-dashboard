@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-13T18:36:38.962Z",
+  "generated_at": "2026-08-13T19:44:14.784Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "cfdeeb8026a96d0c0b819a737a98d540",
+      "created_at": "2026-08-13T16:39:35.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "a313c615a7e83895896f6636abf0371c",
       "created_at": "2026-08-13T15:25:28.000-03:00",
@@ -312,8 +330,8 @@
     {
       "id": "a2be7d2973aade17e21ec137e4f7ca4e",
       "created_at": "2026-08-12T17:32:53.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -4530,8 +4548,8 @@
     {
       "id": "a525a89d2ab642912dec262f17a3dedb",
       "created_at": "2026-07-28T22:58:51.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
