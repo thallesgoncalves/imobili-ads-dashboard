@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T22:03:25.146Z",
+  "generated_at": "2026-08-13T23:47:17.906Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -1284,9 +1284,9 @@
     {
       "id": "2cd0b4a9a3aa9e0deab321bd013ddb53",
       "created_at": "2026-08-08T15:29:29.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -1295,7 +1295,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "z_others",
       "tags": [],
       "visit": null
     },
