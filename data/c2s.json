@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T10:32:17.369Z",
+  "generated_at": "2026-08-14T11:27:14.953Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3612,8 +3612,8 @@
     {
       "id": "061721a69837a2654d50727543d375cf",
       "created_at": "2026-08-01T01:18:40.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -13269,30 +13269,6 @@
       "channel": "Internet",
       "product": "[2025] FORMS - Nuit Blanche",
       "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "c152d2e86646d0c57acd19ea76a0e1a8",
-      "created_at": "2026-05-16T10:32:34.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "just_researching",
       "tags": [
         "Até R$600.000,00",
         "Parte BAIXA",
