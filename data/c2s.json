@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T11:27:14.953Z",
+  "generated_at": "2026-08-14T12:09:27.885Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -30,8 +30,8 @@
       "done": false,
       "done_price": null,
       "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "Marcelo Vasconcelos ",
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Adriana Batista ",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
@@ -4422,8 +4422,8 @@
     {
       "id": "50957237a777aca19d4426d544fd9381",
       "created_at": "2026-07-29T19:43:09.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -4458,8 +4458,8 @@
     {
       "id": "ee9346aac136fe53ef676f1246c550f6",
       "created_at": "2026-07-29T18:15:20.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -4476,8 +4476,8 @@
     {
       "id": "a2d1dc0c04cbff3d4ce65b864ef96e0c",
       "created_at": "2026-07-29T17:16:59.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -6550,8 +6550,8 @@
     {
       "id": "3af57f251c06dd153850e8a1f83cf0c1",
       "created_at": "2026-07-18T09:25:07.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -6568,8 +6568,8 @@
     {
       "id": "90a8f5dc2bd6ed288707e2931e9a9d20",
       "created_at": "2026-07-18T08:44:52.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
