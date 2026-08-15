@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T23:41:57.963Z",
+  "generated_at": "2026-08-15T23:56:34.935Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,11 +3570,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 26.87,
-      "impressions": 672,
+      "spend": 27.07,
+      "impressions": 680,
       "clicks": 15,
-      "ctr": 2.232143,
-      "cpc": 1.791333,
+      "ctr": 2.205882,
+      "cpc": 1.804667,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -3583,39 +3583,39 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 26.98,
-      "impressions": 1754,
-      "clicks": 36,
-      "ctr": 2.052452,
-      "cpc": 0.749444,
+      "spend": 27.71,
+      "impressions": 1816,
+      "clicks": 37,
+      "ctr": 2.037445,
+      "cpc": 0.748919,
       "leads": 2,
-      "cost_per_lead": 13.49
+      "cost_per_lead": 13.855
     },
     {
       "date": "2026-08-15",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 31.55,
-      "impressions": 532,
+      "spend": 31.65,
+      "impressions": 534,
       "clicks": 12,
-      "ctr": 2.255639,
-      "cpc": 2.629167,
+      "ctr": 2.247191,
+      "cpc": 2.6375,
       "leads": 3,
-      "cost_per_lead": 10.516666666666667
+      "cost_per_lead": 10.549999999999999
     },
     {
       "date": "2026-08-15",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 30.35,
-      "impressions": 2157,
+      "spend": 30.77,
+      "impressions": 2182,
       "clicks": 35,
-      "ctr": 1.622624,
-      "cpc": 0.867143,
+      "ctr": 1.604033,
+      "cpc": 0.879143,
       "leads": 6,
-      "cost_per_lead": 5.058333333333334
+      "cost_per_lead": 5.128333333333333
     },
     {
       "date": "2026-06-08",
