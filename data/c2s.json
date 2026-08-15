@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-15T17:26:24.263Z",
+  "generated_at": "2026-08-15T17:44:27.741Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "151c391d82cd172b4374e3a66170444d",
+      "created_at": "2026-08-15T14:25:37.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "26e10b6c183b7ee09f7a5f27cf8bac4b",
       "created_at": "2026-08-15T14:05:57.000-03:00",
@@ -8121,24 +8139,6 @@
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
       "lost_reason": "z_others",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "2e736f329fb42caff069d6a19e005025",
-      "created_at": "2026-07-09T03:12:04.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
