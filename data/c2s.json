@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-15T07:06:15.998Z",
+  "generated_at": "2026-08-15T07:43:13.609Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "0152c60a83b4974b86480f6dd4c595aa",
+      "created_at": "2026-08-15T04:22:44.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Ipioca Beach",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "68f4d1d63778b0f65bafd900a3a04b75",
       "created_at": "2026-08-14T18:56:41.000-03:00",
