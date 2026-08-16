@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-16T23:35:18.124Z",
+  "generated_at": "2026-08-16T23:55:18.868Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "44b527b7c9b58f2c570832eee3fb3767",
+      "created_at": "2026-08-16T20:51:30.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "0fcecec71be1717036afd77e5b54e2a0",
       "created_at": "2026-08-16T19:54:15.000-03:00",
@@ -11135,6 +11153,30 @@
         "APARTAMENTO",
         "PLANTA",
         "Até 500.000,00"
+      ],
+      "visit": null
+    },
+    {
+      "id": "e4b1625455b10eb4971b2e16b27115f8",
+      "created_at": "2026-05-27T07:01:43.000-03:00",
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "GNERRO JUNQUEIRA JUNIOR",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "[2025] FORMS - Nuit Blanche",
+      "lost_reason": "inactive",
+      "tags": [
+        "Até R$600.000,00",
+        "Parte BAIXA",
+        "02 quartos",
+        "APARTAMENTO",
+        "PLANTA"
       ],
       "visit": null
     },
