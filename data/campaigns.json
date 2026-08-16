@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T23:14:16.405Z",
+  "generated_at": "2026-08-16T23:34:25.694Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 39.34,
-      "impressions": 1082,
-      "clicks": 29,
-      "ctr": 2.680222,
-      "cpc": 1.356552,
+      "spend": 41.26,
+      "impressions": 1139,
+      "clicks": 30,
+      "ctr": 2.633889,
+      "cpc": 1.375333,
       "leads": 3,
-      "cost_per_lead": 13.113333333333335
+      "cost_per_lead": 13.753333333333332
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 31.82,
-      "impressions": 2408,
-      "clicks": 46,
-      "ctr": 1.910299,
-      "cpc": 0.691739,
+      "spend": 33.01,
+      "impressions": 2514,
+      "clicks": 47,
+      "ctr": 1.869531,
+      "cpc": 0.70234,
       "leads": 2,
-      "cost_per_lead": 15.91
+      "cost_per_lead": 16.505
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 38.61,
-      "impressions": 746,
-      "clicks": 30,
-      "ctr": 4.021448,
-      "cpc": 1.287,
+      "spend": 39.67,
+      "impressions": 773,
+      "clicks": 32,
+      "ctr": 4.139715,
+      "cpc": 1.239688,
       "leads": 5,
-      "cost_per_lead": 7.7219999999999995
+      "cost_per_lead": 7.934
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 33.47,
-      "impressions": 2845,
-      "clicks": 51,
-      "ctr": 1.792619,
-      "cpc": 0.656275,
+      "spend": 34.33,
+      "impressions": 2931,
+      "clicks": 53,
+      "ctr": 1.808257,
+      "cpc": 0.647736,
       "leads": 7,
-      "cost_per_lead": 4.781428571428571
+      "cost_per_lead": 4.904285714285714
     },
     {
       "date": "2026-06-08",
