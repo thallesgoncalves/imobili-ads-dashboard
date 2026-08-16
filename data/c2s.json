@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-16T13:44:17.528Z",
+  "generated_at": "2026-08-16T14:01:25.337Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "1f47334c5209bd7ef881e53830438cd7",
+      "created_at": "2026-08-16T10:49:10.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Marcelo Vasconcelos ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "1b7f296f9b30a8ae311896ea9da4b1d2",
       "created_at": "2026-08-16T10:15:42.000-03:00",
@@ -42,8 +60,8 @@
     {
       "id": "88789e9796229c67606814562fcc6b28",
       "created_at": "2026-08-16T09:54:34.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -294,8 +312,8 @@
     {
       "id": "99b063404629b3201226c2eefd08a94e",
       "created_at": "2026-08-15T12:01:27.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
