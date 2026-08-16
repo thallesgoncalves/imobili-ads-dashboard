@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-16T15:14:11.465Z",
+  "generated_at": "2026-08-16T15:36:18.798Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "b2055b2a4d71ea80423bbfc385b61e2e",
+      "created_at": "2026-08-16T12:31:03.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Ipioca Beach",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "b1c16ca7832b7e5efe86755635d43d50",
       "created_at": "2026-08-16T12:06:10.000-03:00",
@@ -12,8 +30,8 @@
       "done": false,
       "done_price": null,
       "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "Ailton Pimentel",
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Mazzarolo",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
