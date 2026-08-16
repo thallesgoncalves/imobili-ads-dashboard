@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T14:48:36.392Z",
+  "generated_at": "2026-08-16T15:13:29.120Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 18.98,
-      "impressions": 477,
-      "clicks": 10,
-      "ctr": 2.096436,
-      "cpc": 1.898,
+      "spend": 19.22,
+      "impressions": 489,
+      "clicks": 11,
+      "ctr": 2.249489,
+      "cpc": 1.747273,
       "leads": 1,
-      "cost_per_lead": 18.98
+      "cost_per_lead": 19.22
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 13.2,
-      "impressions": 924,
+      "spend": 13.43,
+      "impressions": 939,
       "clicks": 24,
-      "ctr": 2.597403,
-      "cpc": 0.55,
+      "ctr": 2.555911,
+      "cpc": 0.559583,
       "leads": 1,
-      "cost_per_lead": 13.2
+      "cost_per_lead": 13.43
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 18.85,
-      "impressions": 308,
+      "spend": 19.13,
+      "impressions": 315,
       "clicks": 14,
-      "ctr": 4.545455,
-      "cpc": 1.346429,
+      "ctr": 4.444444,
+      "cpc": 1.366429,
       "leads": 4,
-      "cost_per_lead": 4.7125
+      "cost_per_lead": 4.7825
     },
     {
       "date": "2026-08-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 13.97,
-      "impressions": 1021,
-      "clicks": 21,
-      "ctr": 2.056807,
-      "cpc": 0.665238,
+      "spend": 14.91,
+      "impressions": 1096,
+      "clicks": 25,
+      "ctr": 2.281022,
+      "cpc": 0.5964,
       "leads": 5,
-      "cost_per_lead": 2.794
+      "cost_per_lead": 2.982
     },
     {
       "date": "2026-06-08",
