@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-17T11:49:23.940Z",
+  "generated_at": "2026-08-17T12:27:25.381Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "474a288f809741089069820c18ce7f38",
+      "created_at": "2026-08-17T09:13:08.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Marcelo Vasconcelos ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "08571759e29d8a0c43659a6060ab0a2a",
       "created_at": "2026-08-17T07:27:55.000-03:00",
@@ -42,8 +60,8 @@
     {
       "id": "27a373467197360fd1a5fe09c8b78a62",
       "created_at": "2026-08-17T07:19:26.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -114,8 +132,8 @@
     {
       "id": "44b527b7c9b58f2c570832eee3fb3767",
       "created_at": "2026-08-16T20:51:30.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -528,8 +546,8 @@
     {
       "id": "151c391d82cd172b4374e3a66170444d",
       "created_at": "2026-08-15T14:25:37.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -8409,14 +8427,14 @@
     {
       "id": "3e631906609c8837b743616599ed34bb",
       "created_at": "2026-07-11T07:10:05.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
       "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Rodrigo Carneiro",
+      "seller": "Veronica Araújo",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
@@ -12840,30 +12858,6 @@
         "02 quartos",
         "APARTAMENTO",
         "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "42026c1869a195e0ce645c1e71aeefff",
-      "created_at": "2026-05-19T11:48:21.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
       ],
       "visit": null
     }
