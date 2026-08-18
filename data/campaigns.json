@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T20:46:43.693Z",
+  "generated_at": "2026-08-18T21:15:34.249Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3532,9 +3532,9 @@
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
       "spend": 34.58,
-      "impressions": 2294,
+      "impressions": 2295,
       "clicks": 53,
-      "ctr": 2.310375,
+      "ctr": 2.309368,
       "cpc": 0.652453,
       "leads": 2,
       "cost_per_lead": 17.29
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 28.58,
-      "impressions": 794,
-      "clicks": 21,
-      "ctr": 2.644836,
-      "cpc": 1.360952,
-      "leads": 2,
-      "cost_per_lead": 14.29
+      "spend": 30.05,
+      "impressions": 837,
+      "clicks": 23,
+      "ctr": 2.747909,
+      "cpc": 1.306522,
+      "leads": 3,
+      "cost_per_lead": 10.016666666666667
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 13.03,
-      "impressions": 956,
+      "spend": 14.94,
+      "impressions": 974,
       "clicks": 34,
-      "ctr": 3.556485,
-      "cpc": 0.383235,
+      "ctr": 3.49076,
+      "cpc": 0.439412,
       "leads": 4,
-      "cost_per_lead": 3.2575
+      "cost_per_lead": 3.735
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 17.28,
-      "impressions": 489,
+      "spend": 17.68,
+      "impressions": 500,
       "clicks": 10,
-      "ctr": 2.04499,
-      "cpc": 1.728,
+      "ctr": 2,
+      "cpc": 1.768,
       "leads": 1,
-      "cost_per_lead": 17.28
+      "cost_per_lead": 17.68
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 13.14,
-      "impressions": 1474,
+      "spend": 14.5,
+      "impressions": 1572,
       "clicks": 21,
-      "ctr": 1.424695,
-      "cpc": 0.625714,
+      "ctr": 1.335878,
+      "cpc": 0.690476,
       "leads": 1,
-      "cost_per_lead": 13.14
+      "cost_per_lead": 14.5
     },
     {
       "date": "2026-06-08",
