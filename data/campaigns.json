@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T21:15:34.249Z",
+  "generated_at": "2026-08-18T21:44:56.791Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 30.05,
-      "impressions": 837,
+      "spend": 30.81,
+      "impressions": 882,
       "clicks": 23,
-      "ctr": 2.747909,
-      "cpc": 1.306522,
+      "ctr": 2.60771,
+      "cpc": 1.339565,
       "leads": 3,
-      "cost_per_lead": 10.016666666666667
+      "cost_per_lead": 10.27
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 14.94,
-      "impressions": 974,
+      "spend": 15.18,
+      "impressions": 997,
       "clicks": 34,
-      "ctr": 3.49076,
-      "cpc": 0.439412,
+      "ctr": 3.410231,
+      "cpc": 0.446471,
       "leads": 4,
-      "cost_per_lead": 3.735
+      "cost_per_lead": 3.795
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 17.68,
-      "impressions": 500,
-      "clicks": 10,
-      "ctr": 2,
-      "cpc": 1.768,
+      "spend": 18.04,
+      "impressions": 514,
+      "clicks": 11,
+      "ctr": 2.140078,
+      "cpc": 1.64,
       "leads": 1,
-      "cost_per_lead": 17.68
+      "cost_per_lead": 18.04
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 14.5,
-      "impressions": 1572,
-      "clicks": 21,
-      "ctr": 1.335878,
-      "cpc": 0.690476,
+      "spend": 15.31,
+      "impressions": 1668,
+      "clicks": 25,
+      "ctr": 1.498801,
+      "cpc": 0.6124,
       "leads": 1,
-      "cost_per_lead": 14.5
+      "cost_per_lead": 15.31
     },
     {
       "date": "2026-06-08",
