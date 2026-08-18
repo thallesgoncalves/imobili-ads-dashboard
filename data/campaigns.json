@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T22:50:03.683Z",
+  "generated_at": "2026-08-18T23:14:51.186Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 32.61,
-      "impressions": 981,
-      "clicks": 27,
-      "ctr": 2.752294,
-      "cpc": 1.207778,
+      "spend": 33.48,
+      "impressions": 1029,
+      "clicks": 28,
+      "ctr": 2.721088,
+      "cpc": 1.195714,
       "leads": 3,
-      "cost_per_lead": 10.87
+      "cost_per_lead": 11.159999999999998
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 17.45,
-      "impressions": 1146,
+      "spend": 17.77,
+      "impressions": 1172,
       "clicks": 36,
-      "ctr": 3.141361,
-      "cpc": 0.484722,
+      "ctr": 3.071672,
+      "cpc": 0.493611,
       "leads": 4,
-      "cost_per_lead": 4.3625
+      "cost_per_lead": 4.4425
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 18.68,
-      "impressions": 540,
+      "spend": 18.92,
+      "impressions": 551,
       "clicks": 16,
-      "ctr": 2.962963,
-      "cpc": 1.1675,
-      "leads": 1,
-      "cost_per_lead": 18.68
+      "ctr": 2.903811,
+      "cpc": 1.1825,
+      "leads": 2,
+      "cost_per_lead": 9.46
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 17.55,
-      "impressions": 1863,
+      "spend": 18.24,
+      "impressions": 1918,
       "clicks": 32,
-      "ctr": 1.71766,
-      "cpc": 0.548438,
+      "ctr": 1.668405,
+      "cpc": 0.57,
       "leads": 2,
-      "cost_per_lead": 8.775
+      "cost_per_lead": 9.12
     },
     {
       "date": "2026-06-08",
