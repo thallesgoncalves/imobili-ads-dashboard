@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T23:38:37.629Z",
+  "generated_at": "2026-08-18T23:56:33.510Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 34.09,
-      "impressions": 1072,
+      "spend": 35.55,
+      "impressions": 1109,
       "clicks": 30,
-      "ctr": 2.798507,
-      "cpc": 1.136333,
+      "ctr": 2.70514,
+      "cpc": 1.185,
       "leads": 3,
-      "cost_per_lead": 11.363333333333335
+      "cost_per_lead": 11.85
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 18.05,
-      "impressions": 1208,
+      "spend": 18.3,
+      "impressions": 1238,
       "clicks": 37,
-      "ctr": 3.062914,
-      "cpc": 0.487838,
+      "ctr": 2.988691,
+      "cpc": 0.494595,
       "leads": 4,
-      "cost_per_lead": 4.5125
+      "cost_per_lead": 4.575
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 19.54,
-      "impressions": 572,
+      "spend": 20.11,
+      "impressions": 587,
       "clicks": 18,
-      "ctr": 3.146853,
-      "cpc": 1.085556,
+      "ctr": 3.06644,
+      "cpc": 1.117222,
       "leads": 2,
-      "cost_per_lead": 9.77
+      "cost_per_lead": 10.055
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 18.96,
-      "impressions": 1994,
+      "spend": 20.08,
+      "impressions": 2054,
       "clicks": 33,
-      "ctr": 1.654965,
-      "cpc": 0.574545,
+      "ctr": 1.606621,
+      "cpc": 0.608485,
       "leads": 2,
-      "cost_per_lead": 9.48
+      "cost_per_lead": 10.04
     },
     {
       "date": "2026-06-08",
