@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T21:44:56.791Z",
+  "generated_at": "2026-08-18T21:59:30.410Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3557,65 +3557,65 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 34.2,
-      "impressions": 3527,
+      "spend": 34.21,
+      "impressions": 3528,
       "clicks": 73,
-      "ctr": 2.069748,
-      "cpc": 0.468493,
+      "ctr": 2.069161,
+      "cpc": 0.46863,
       "leads": 11,
-      "cost_per_lead": 3.1090909090909093
+      "cost_per_lead": 3.11
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 30.81,
-      "impressions": 882,
+      "spend": 31.65,
+      "impressions": 909,
       "clicks": 23,
-      "ctr": 2.60771,
-      "cpc": 1.339565,
+      "ctr": 2.530253,
+      "cpc": 1.376087,
       "leads": 3,
-      "cost_per_lead": 10.27
+      "cost_per_lead": 10.549999999999999
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 15.18,
-      "impressions": 997,
+      "spend": 15.44,
+      "impressions": 1029,
       "clicks": 34,
-      "ctr": 3.410231,
-      "cpc": 0.446471,
+      "ctr": 3.304179,
+      "cpc": 0.454118,
       "leads": 4,
-      "cost_per_lead": 3.795
+      "cost_per_lead": 3.86
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 18.04,
-      "impressions": 514,
+      "spend": 18.35,
+      "impressions": 525,
       "clicks": 11,
-      "ctr": 2.140078,
-      "cpc": 1.64,
+      "ctr": 2.095238,
+      "cpc": 1.668182,
       "leads": 1,
-      "cost_per_lead": 18.04
+      "cost_per_lead": 18.35
     },
     {
       "date": "2026-08-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 15.31,
-      "impressions": 1668,
-      "clicks": 25,
-      "ctr": 1.498801,
-      "cpc": 0.6124,
+      "spend": 15.8,
+      "impressions": 1731,
+      "clicks": 28,
+      "ctr": 1.617562,
+      "cpc": 0.564286,
       "leads": 1,
-      "cost_per_lead": 15.31
+      "cost_per_lead": 15.8
     },
     {
       "date": "2026-06-08",
