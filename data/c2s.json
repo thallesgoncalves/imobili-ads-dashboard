@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T08:53:13.733Z",
+  "generated_at": "2026-08-19T09:26:20.936Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12862,54 +12862,6 @@
       "channel": "Rede Social",
       "product": "CV - GÊNOVA",
       "lost_reason": "inactive",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "95441e496b88ba49817e9b5745758388",
-      "created_at": "2026-05-21T09:24:52.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Marcelo Hugo Fialho da Silva",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "inactive",
-      "tags": [
-        "Parte ALTA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA",
-        "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "8179565585fd07f287a5f13043f39a35",
-      "created_at": "2026-05-21T09:22:05.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Tiago silva",
-      "source": "Facebook Leads",
-      "channel": "Rede Social",
-      "product": "CV - GÊNOVA",
-      "lost_reason": "z_others",
       "tags": [
         "Parte ALTA",
         "03 quartos",
