@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T16:54:28.491Z",
+  "generated_at": "2026-08-19T17:19:51.163Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 11.11,
-      "impressions": 302,
+      "spend": 11.33,
+      "impressions": 322,
       "clicks": 5,
-      "ctr": 1.655629,
-      "cpc": 2.222,
+      "ctr": 1.552795,
+      "cpc": 2.266,
       "leads": 1,
-      "cost_per_lead": 11.11
+      "cost_per_lead": 11.33
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 11.06,
-      "impressions": 918,
-      "clicks": 30,
-      "ctr": 3.267974,
-      "cpc": 0.368667,
+      "spend": 12.47,
+      "impressions": 1021,
+      "clicks": 32,
+      "ctr": 3.134182,
+      "cpc": 0.389688,
       "leads": 1,
-      "cost_per_lead": 11.06
+      "cost_per_lead": 12.47
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 17.91,
-      "impressions": 255,
-      "clicks": 14,
-      "ctr": 5.490196,
-      "cpc": 1.279286,
+      "spend": 18.78,
+      "impressions": 265,
+      "clicks": 15,
+      "ctr": 5.660377,
+      "cpc": 1.252,
       "leads": 3,
-      "cost_per_lead": 5.97
+      "cost_per_lead": 6.260000000000001
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 13.16,
-      "impressions": 1270,
+      "spend": 13.77,
+      "impressions": 1325,
       "clicks": 21,
-      "ctr": 1.653543,
-      "cpc": 0.626667,
+      "ctr": 1.584906,
+      "cpc": 0.655714,
       "leads": 4,
-      "cost_per_lead": 3.29
+      "cost_per_lead": 3.4425
     },
     {
       "date": "2026-06-08",
