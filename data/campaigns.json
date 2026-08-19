@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T21:17:55.589Z",
+  "generated_at": "2026-08-19T21:48:08.701Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3570,52 +3570,52 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 18.15,
-      "impressions": 516,
+      "spend": 18.31,
+      "impressions": 524,
       "clicks": 8,
-      "ctr": 1.550388,
-      "cpc": 2.26875,
+      "ctr": 1.526718,
+      "cpc": 2.28875,
       "leads": 1,
-      "cost_per_lead": 18.15
+      "cost_per_lead": 18.31
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 22.95,
-      "impressions": 1857,
-      "clicks": 49,
-      "ctr": 2.638665,
-      "cpc": 0.468367,
+      "spend": 23.86,
+      "impressions": 1925,
+      "clicks": 51,
+      "ctr": 2.649351,
+      "cpc": 0.467843,
       "leads": 1,
-      "cost_per_lead": 22.95
+      "cost_per_lead": 23.86
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 22.73,
-      "impressions": 404,
+      "spend": 23.93,
+      "impressions": 437,
       "clicks": 24,
-      "ctr": 5.940594,
-      "cpc": 0.947083,
+      "ctr": 5.491991,
+      "cpc": 0.997083,
       "leads": 5,
-      "cost_per_lead": 4.546
+      "cost_per_lead": 4.786
     },
     {
       "date": "2026-08-19",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 18.17,
-      "impressions": 1697,
+      "spend": 18.62,
+      "impressions": 1731,
       "clicks": 28,
-      "ctr": 1.649971,
-      "cpc": 0.648929,
+      "ctr": 1.617562,
+      "cpc": 0.665,
       "leads": 5,
-      "cost_per_lead": 3.6340000000000003
+      "cost_per_lead": 3.724
     },
     {
       "date": "2026-06-08",
