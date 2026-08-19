@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T20:26:18.066Z",
+  "generated_at": "2026-08-19T20:53:23.323Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12824,30 +12824,6 @@
         "Acima de R$1.000.000,01",
         "Parte BAIXA",
         "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "fa0da8450c547eb144eb7602a342b55e",
-      "created_at": "2026-05-21T20:33:07.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "03 quartos",
         "APARTAMENTO",
         "PLANTA"
       ],
