@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-08-19T22:17:20.490Z",
+  "generated_at": "2026-08-19T22:49:15.847Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "51671383b91704261b2d5ae4128e3cd6",
+      "created_at": "2026-08-19T19:21:54.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "Ailton Pimentel",
+      "source": "Facebook Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "5fb0d063d244758d17b7b49880eabb4f",
       "created_at": "2026-08-19T16:28:54.000-03:00",
@@ -12800,30 +12818,6 @@
         "Acima de R$1.000.000,01",
         "Parte BAIXA",
         "03 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "32665003479b9b739a3bb3f847fdaf08",
-      "created_at": "2026-05-21T22:21:06.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Suelane Magalhaes",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "inactive",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
         "APARTAMENTO",
         "PLANTA"
       ],
