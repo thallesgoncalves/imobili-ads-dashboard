@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T23:17:23.537Z",
+  "generated_at": "2026-08-19T23:45:16.119Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12772,54 +12772,6 @@
         "APARTAMENTO",
         "PLANTA",
         "Até 500.000,00"
-      ],
-      "visit": null
-    },
-    {
-      "id": "795c19efd01a84c2126f517cfd302c29",
-      "created_at": "2026-05-21T23:43:05.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "ROSANGELA TAVARES DA SILVA",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "inactive",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "454d5336947331b9859a4a6da9a14072",
-      "created_at": "2026-05-21T23:23:20.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Adriana Batista ",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Blend GR",
-      "lost_reason": "inactive",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "03 quartos",
-        "APARTAMENTO",
-        "PLANTA"
       ],
       "visit": null
     }
