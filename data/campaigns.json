@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T05:54:13.393Z",
+  "generated_at": "2026-08-20T06:31:28.125Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3609,8 +3609,8 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 0.36,
-      "impressions": 36,
+      "spend": 0.5,
+      "impressions": 42,
       "clicks": 0,
       "ctr": 0,
       "cpc": 0,
