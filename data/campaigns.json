@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T20:54:17.715Z",
+  "generated_at": "2026-08-20T21:19:52.220Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -3532,9 +3532,9 @@
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
       "spend": 30.91,
-      "impressions": 2530,
+      "impressions": 2531,
       "clicks": 57,
-      "ctr": 2.252964,
+      "ctr": 2.252074,
       "cpc": 0.542281,
       "leads": 2,
       "cost_per_lead": 15.455
