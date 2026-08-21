@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:03:07.749Z",
+  "generated_at": "2026-08-21T15:47:15.946Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3516,9 +3516,9 @@
     {
       "id": "3082461723c7136042d6303f87f457e6",
       "created_at": "2026-08-06T11:50:08.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3527,7 +3527,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "z_others",
       "tags": [],
       "visit": null
     },
@@ -6874,9 +6874,9 @@
     {
       "id": "0f608aa621d838d2698626f1edbc16fc",
       "created_at": "2026-07-26T16:10:12.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -6885,7 +6885,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "inactive",
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -7270,9 +7270,9 @@
     {
       "id": "8de872201791e1ec11c6d480fe7c2762",
       "created_at": "2026-07-25T19:56:50.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -8827,9 +8827,9 @@
     {
       "id": "a19a6eb7de050bafe795eb597c16af6f",
       "created_at": "2026-07-13T10:44:15.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
