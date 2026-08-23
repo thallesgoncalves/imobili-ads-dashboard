@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T15:45:14.983Z",
+  "generated_at": "2026-08-23T16:00:20.685Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12107,30 +12107,6 @@
         "Até R$600.000,00",
         "Parte BAIXA",
         "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "148e22724cf5d0bf280516059076558c",
-      "created_at": "2026-05-25T15:49:26.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Blend GR",
-      "lost_reason": "invalid",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "03 quartos",
         "APARTAMENTO",
         "PLANTA"
       ],
