@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T23:58:15.702Z",
+  "generated_at": "2026-08-24T01:08:23.732Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12031,30 +12031,6 @@
       "channel": "Internet",
       "product": "[2025] FORMS - Stella Maris Residence",
       "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "8c33752dd3e5050d0bf8e58ff27ca260",
-      "created_at": "2026-05-26T00:01:22.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "LUCIANA BARBOSA DE BARROS",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
       "tags": [
         "Até R$600.000,00",
         "Parte BAIXA",
