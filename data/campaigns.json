@@ -1,60 +1,8 @@
 {
-  "generated_at": "2026-08-24T23:58:57.336Z",
+  "generated_at": "2026-08-25T01:21:31.281Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-05-26",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Stella Maris] - Formulário",
-      "adset": "",
-      "spend": 36.28,
-      "impressions": 1453,
-      "clicks": 14,
-      "ctr": 0.963524,
-      "cpc": 2.591429,
-      "leads": 1,
-      "cost_per_lead": 36.28
-    },
-    {
-      "date": "2026-05-26",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][NuitBlanche] - Formulário",
-      "adset": "",
-      "spend": 39.46,
-      "impressions": 769,
-      "clicks": 12,
-      "ctr": 1.560468,
-      "cpc": 3.288333,
-      "leads": 1,
-      "cost_per_lead": 39.46
-    },
-    {
-      "date": "2026-05-26",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 40.04,
-      "impressions": 1385,
-      "clicks": 19,
-      "ctr": 1.371841,
-      "cpc": 2.107368,
-      "leads": 1,
-      "cost_per_lead": 40.04
-    },
-    {
-      "date": "2026-05-26",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][BlendGR] - Formulário 26",
-      "adset": "",
-      "spend": 26.09,
-      "impressions": 498,
-      "clicks": 6,
-      "ctr": 1.204819,
-      "cpc": 4.348333,
-      "leads": 0,
-      "cost_per_lead": null
-    },
     {
       "date": "2026-05-27",
       "account": "CA - LANÇAMENTOS",
