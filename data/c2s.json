@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T23:59:11.302Z",
+  "generated_at": "2026-08-26T01:18:09.976Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -7016,7 +7016,7 @@
       "visit": {
         "count": 1,
         "latest_date": "2026-08-26T10:00:00.000-03:00",
-        "latest_status": "Em aberto"
+        "latest_status": "Não realizada"
       }
     },
     {
