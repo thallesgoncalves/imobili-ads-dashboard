@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T23:54:16.141Z",
+  "generated_at": "2026-08-27T06:22:09.645Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -2166,9 +2166,9 @@
     {
       "id": "619448f8a4c792100950bb9372656b07",
       "created_at": "2026-08-11T08:02:44.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2177,7 +2177,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -2202,9 +2202,9 @@
     {
       "id": "cc3b18f13e456ce9ca140fbff0497aed",
       "created_at": "2026-08-10T21:59:34.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2213,7 +2213,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
