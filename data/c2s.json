@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T19:50:12.181Z",
+  "generated_at": "2026-08-30T22:17:21.447Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11559,30 +11559,6 @@
       "lost_reason": "inactive",
       "tags": [
         "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "f265adba31e8f1b9e421cfe6b4c5d28b",
-      "created_at": "2026-06-01T22:09:55.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Carlos Esteves",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Até R$600.000,00",
         "Parte BAIXA",
         "02 quartos",
         "APARTAMENTO",
