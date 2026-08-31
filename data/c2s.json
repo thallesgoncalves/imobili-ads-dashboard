@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T19:47:13.558Z",
+  "generated_at": "2026-08-31T23:32:16.143Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11487,30 +11487,6 @@
       "lost_reason": "return_delay",
       "tags": [
         "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "25d7d4b1338d8eadeb53b489b1b96057",
-      "created_at": "2026-06-02T21:44:39.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Maria Renata Da Silva Santos",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
         "Parte BAIXA",
         "02 quartos",
         "APARTAMENTO",
