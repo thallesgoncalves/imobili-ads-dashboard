@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-31T06:13:13.150Z",
+  "generated_at": "2026-08-31T13:48:15.181Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -312,9 +312,9 @@
     {
       "id": "500acdcc3a365be64f5b05726d14b472",
       "created_at": "2026-08-18T19:09:59.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -323,7 +323,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -4110,9 +4110,9 @@
     {
       "id": "975bfa65b65ef974caa774b51a05bf5a",
       "created_at": "2026-08-04T07:35:31.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -4121,7 +4121,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "not_ready_to_buy",
       "tags": [],
       "visit": null
     },
@@ -11511,54 +11511,6 @@
       "lost_reason": "inactive",
       "tags": [
         "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "67571a97177e072d63be980e38e9eaa2",
-      "created_at": "2026-06-02T13:25:49.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Suelane Magalhaes",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "687c85ee0d8e9b4989b4a7792a5a4f9a",
-      "created_at": "2026-06-02T11:08:26.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "inactive",
-      "tags": [
-        "Acima de R$1.000.000,01",
         "Parte BAIXA",
         "02 quartos",
         "APARTAMENTO",
