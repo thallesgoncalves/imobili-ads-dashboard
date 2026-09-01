@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T07:47:08.993Z",
+  "generated_at": "2026-09-01T12:56:05.587Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3192,9 +3192,9 @@
     {
       "id": "42abacd4424b010e7fbcf3aecbbd9381",
       "created_at": "2026-08-07T09:43:08.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3203,7 +3203,7 @@
       "source": "Facebook Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "ddd_far",
       "tags": [],
       "visit": null
     },
@@ -3318,9 +3318,9 @@
     {
       "id": "31026e175542c8ed7e99df3e1cdecd86",
       "created_at": "2026-08-07T01:03:02.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3329,7 +3329,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -4038,9 +4038,9 @@
     {
       "id": "693982f1137b74a4cc6ca02ba6ed9184",
       "created_at": "2026-08-04T12:40:59.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -11463,30 +11463,6 @@
       "lost_reason": null,
       "tags": [
         "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "4d1e4fa7e13b444b78785fe129cccad0",
-      "created_at": "2026-06-03T11:43:09.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Acima de R$1.000.000,01",
         "Parte BAIXA",
         "02 quartos",
         "APARTAMENTO",
