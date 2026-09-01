@@ -1,34 +1,8 @@
 {
-  "generated_at": "2026-08-31T23:31:21.716Z",
+  "generated_at": "2026-09-01T02:02:23.034Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-06-02",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][NuitBlanche] - Formulário",
-      "adset": "",
-      "spend": 32.67,
-      "impressions": 905,
-      "clicks": 16,
-      "ctr": 1.767956,
-      "cpc": 2.041875,
-      "leads": 2,
-      "cost_per_lead": 16.335
-    },
-    {
-      "date": "2026-06-02",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 42.35,
-      "impressions": 754,
-      "clicks": 19,
-      "ctr": 2.519894,
-      "cpc": 2.228947,
-      "leads": 1,
-      "cost_per_lead": 42.35
-    },
     {
       "date": "2026-06-03",
       "account": "CA - LANÇAMENTOS",
