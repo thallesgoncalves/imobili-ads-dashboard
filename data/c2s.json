@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T00:17:04.845Z",
+  "generated_at": "2026-09-02T04:51:14.583Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -550,9 +550,9 @@
     {
       "id": "1f403f709f73b33c62458a41ecf73e79",
       "created_at": "2026-08-17T21:32:07.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -561,7 +561,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -676,9 +676,9 @@
     {
       "id": "e564f9299c9deba9db20dc96cd873340",
       "created_at": "2026-08-17T07:25:33.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -687,7 +687,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -2080,9 +2080,9 @@
     {
       "id": "2c76304cdb6b0e6ba1d36ae42dff166d",
       "created_at": "2026-08-11T20:48:00.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2091,7 +2091,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
