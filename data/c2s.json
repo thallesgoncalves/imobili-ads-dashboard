@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T09:13:22.130Z",
+  "generated_at": "2026-09-02T13:41:09.977Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -346,7 +346,7 @@
       "visit": {
         "count": 1,
         "latest_date": "2026-09-16T09:00:00.000-03:00",
-        "latest_status": "Em aberto"
+        "latest_status": "Não realizada"
       }
     },
     {
@@ -8224,9 +8224,9 @@
     {
       "id": "d831ec1031b8a0b68eceda2e431080fa",
       "created_at": "2026-07-17T14:34:21.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -8235,7 +8235,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "return_delay",
+      "lost_reason": "invalid",
       "tags": [],
       "visit": null
     },
@@ -11390,54 +11390,6 @@
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Veronica Araújo",
       "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "return_delay",
-      "tags": [
-        "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "5477a2bcdc8580a1683e2ad49d7c14e9",
-      "created_at": "2026-06-04T12:14:58.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Leandro Silva ",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "inactive",
-      "tags": [
-        "Até R$600.000,00",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "4e05c469c624965fd6b9a0b10c7fca85",
-      "created_at": "2026-06-04T10:24:01.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Carlos Esteves",
-      "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - OPEN",
       "lost_reason": "return_delay",
