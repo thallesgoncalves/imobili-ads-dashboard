@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:44:14.963Z",
+  "generated_at": "2026-09-05T17:41:13.628Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11227,30 +11227,6 @@
       "lost_reason": "return_delay",
       "tags": [
         "Acima de R$1.000.000,01",
-        "Parte BAIXA",
-        "02 quartos",
-        "APARTAMENTO",
-        "PLANTA"
-      ],
-      "visit": null
-    },
-    {
-      "id": "a9678fd90c814833087d69306f5a96b3",
-      "created_at": "2026-06-07T16:16:31.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "just_researching",
-      "tags": [
-        "Até R$600.000,00",
         "Parte BAIXA",
         "02 quartos",
         "APARTAMENTO",
