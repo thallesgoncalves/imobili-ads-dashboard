@@ -1,34 +1,8 @@
 {
-  "generated_at": "2026-09-07T22:09:32.506Z",
+  "generated_at": "2026-09-08T00:22:48.622Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-06-09",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][NuitBlanche] - Formulário",
-      "adset": "",
-      "spend": 39.27,
-      "impressions": 850,
-      "clicks": 13,
-      "ctr": 1.529412,
-      "cpc": 3.020769,
-      "leads": 1,
-      "cost_per_lead": 39.27
-    },
-    {
-      "date": "2026-06-09",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 18.72,
-      "impressions": 444,
-      "clicks": 6,
-      "ctr": 1.351351,
-      "cpc": 3.12,
-      "leads": 0,
-      "cost_per_lead": null
-    },
     {
       "date": "2026-06-10",
       "account": "CA - LANÇAMENTOS",
@@ -3018,19 +2992,6 @@
       "cpc": 0.685,
       "leads": 0,
       "cost_per_lead": null
-    },
-    {
-      "date": "2026-06-09",
-      "account": "CA - INSTITUCIONAL",
-      "campaign": "[WP] Open Residence - Vinícius Vasconcelos",
-      "adset": "",
-      "spend": 18.85,
-      "impressions": 603,
-      "clicks": 10,
-      "ctr": 1.658375,
-      "cpc": 1.885,
-      "leads": 3,
-      "cost_per_lead": 6.283333333333334
     },
     {
       "date": "2026-06-10",
