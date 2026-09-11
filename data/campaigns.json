@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T22:33:25.987Z",
+  "generated_at": "2026-09-11T00:32:36.727Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2938,19 +2938,6 @@
       "clicks": 2,
       "ctr": 1.666667,
       "cpc": 0.685,
-      "leads": 0,
-      "cost_per_lead": null
-    },
-    {
-      "date": "2026-06-12",
-      "account": "CA - INSTITUCIONAL",
-      "campaign": "[WP] Open Residence - Vinícius Vasconcelos",
-      "adset": "",
-      "spend": 14.41,
-      "impressions": 472,
-      "clicks": 4,
-      "ctr": 0.847458,
-      "cpc": 3.6025,
       "leads": 0,
       "cost_per_lead": null
     },
