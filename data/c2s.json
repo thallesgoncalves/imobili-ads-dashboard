@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T13:23:10.234Z",
+  "generated_at": "2026-09-14T18:47:13.804Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -406,9 +406,9 @@
     {
       "id": "8be1e8b44b9b7d5a0cd42a7762c8739f",
       "created_at": "2026-08-18T11:25:46.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -417,7 +417,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
