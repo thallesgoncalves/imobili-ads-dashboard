@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-09-17T11:56:14.242Z",
+  "generated_at": "2026-09-17T15:59:09.853Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "ca4dcf0ecbdf01d9ac11a65a06a64884",
+      "created_at": "2026-09-17T10:16:29.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "CLAUDEMARIO FERNANDES LINS",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
+    {
+      "id": "c04a50193f33d867b755e95d6bfb45ed",
+      "created_at": "2026-09-17T09:46:09.000-03:00",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Mazzarolo",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - OPEN",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "a0c10407c29efcc54d8bd644fc7fd1fe",
       "created_at": "2026-09-16T17:35:01.000-03:00",
@@ -11089,24 +11125,6 @@
         "latest_date": "2026-07-24T10:00:00.000-03:00",
         "latest_status": "Fechada automaticamente pelo sistema"
       }
-    },
-    {
-      "id": "e301ebbc153fde9c964d1d20d0bb5494",
-      "created_at": "2026-06-19T15:19:26.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
     }
   ]
 }
