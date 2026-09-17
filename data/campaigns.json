@@ -1,21 +1,8 @@
 {
-  "generated_at": "2026-09-16T23:05:13.884Z",
+  "generated_at": "2026-09-17T01:22:31.418Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-06-18",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 47.28,
-      "impressions": 1014,
-      "clicks": 24,
-      "ctr": 2.366864,
-      "cpc": 1.97,
-      "leads": 0,
-      "cost_per_lead": null
-    },
     {
       "date": "2026-06-19",
       "account": "CA - LANÇAMENTOS",
@@ -2985,52 +2972,39 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 48.19,
-      "impressions": 906,
-      "clicks": 20,
-      "ctr": 2.207506,
-      "cpc": 2.4095,
+      "spend": 53.75,
+      "impressions": 994,
+      "clicks": 24,
+      "ctr": 2.414487,
+      "cpc": 2.239583,
       "leads": 2,
-      "cost_per_lead": 24.095
+      "cost_per_lead": 26.875
     },
     {
       "date": "2026-09-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 35.74,
-      "impressions": 688,
-      "clicks": 15,
-      "ctr": 2.180233,
-      "cpc": 2.382667,
+      "spend": 38.4,
+      "impressions": 746,
+      "clicks": 17,
+      "ctr": 2.27882,
+      "cpc": 2.258824,
       "leads": 1,
-      "cost_per_lead": 35.74
+      "cost_per_lead": 38.4
     },
     {
       "date": "2026-09-16",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 42.14,
-      "impressions": 3784,
-      "clicks": 71,
-      "ctr": 1.876321,
-      "cpc": 0.593521,
+      "spend": 48.73,
+      "impressions": 4283,
+      "clicks": 84,
+      "ctr": 1.961242,
+      "cpc": 0.580119,
       "leads": 11,
-      "cost_per_lead": 3.830909090909091
-    },
-    {
-      "date": "2026-06-18",
-      "account": "CA - INSTITUCIONAL",
-      "campaign": "[WP] Open Residence - Vinícius Vasconcelos",
-      "adset": "",
-      "spend": 14.55,
-      "impressions": 601,
-      "clicks": 11,
-      "ctr": 1.830283,
-      "cpc": 1.322727,
-      "leads": 3,
-      "cost_per_lead": 4.8500000000000005
+      "cost_per_lead": 4.43
     },
     {
       "date": "2026-06-19",
