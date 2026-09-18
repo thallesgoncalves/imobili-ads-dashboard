@@ -1,8 +1,44 @@
 {
-  "generated_at": "2026-09-17T22:26:07.238Z",
+  "generated_at": "2026-09-18T00:33:23.166Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "6867d3eefaaf927e491dd05e509af066",
+      "created_at": "2026-09-17T19:55:25.000-03:00",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "GNERRO JUNQUEIRA JUNIOR",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
+    {
+      "id": "98c7452bcc6fa93bf9014779871b6211",
+      "created_at": "2026-09-17T19:37:38.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Suelane Magalhaes",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - PRE LANÇAMENTO LUME",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "499c823dc0b2af29c1ef8a8a72d1b459",
       "created_at": "2026-09-17T16:55:26.000-03:00",
@@ -11211,46 +11247,6 @@
       "lost_reason": "return_delay",
       "tags": [],
       "visit": null
-    },
-    {
-      "id": "64413a93044645ffa51f67bc53bba6bc",
-      "created_at": "2026-06-19T22:51:56.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "ea0018bcd3b65086f8a14f13835fe65c",
-      "created_at": "2026-06-19T22:40:03.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Vinicius Vasconcelos",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN - VINI",
-      "lost_reason": "inactive",
-      "tags": [],
-      "visit": {
-        "count": 1,
-        "latest_date": "2026-07-24T10:00:00.000-03:00",
-        "latest_status": "Fechada automaticamente pelo sistema"
-      }
     }
   ]
 }
