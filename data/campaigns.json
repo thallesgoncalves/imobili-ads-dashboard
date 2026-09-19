@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T09:05:48.742Z",
+  "generated_at": "2026-09-19T13:07:42.686Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2960,9 +2960,9 @@
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
       "spend": 61.6,
-      "impressions": 1531,
+      "impressions": 1532,
       "clicks": 33,
-      "ctr": 2.155454,
+      "ctr": 2.154047,
       "cpc": 1.866667,
       "leads": 4,
       "cost_per_lead": 15.4
