@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T13:08:18.566Z",
+  "generated_at": "2026-09-19T16:28:09.294Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11244,24 +11244,6 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "aec92ebb043792c015a01c315cb5c339",
-      "created_at": "2026-06-21T14:34:08.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Leandro Silva ",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
       "lost_reason": "return_delay",
       "tags": [],
       "visit": null
