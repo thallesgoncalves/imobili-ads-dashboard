@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T21:02:23.922Z",
+  "generated_at": "2026-09-19T23:00:21.172Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11224,24 +11224,6 @@
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Diogo Oliveira Souza Vieira",
       "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "[2025] FORMS - Nuit Blanche",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "dd0f242f372841d0b8e1b16353dfbc72",
-      "created_at": "2026-06-21T22:53:38.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Alessandro Henrique Cavalcanti Cabral",
-      "source": "Instagram Leads",
       "channel": "Internet",
       "product": "[2025] FORMS - Nuit Blanche",
       "lost_reason": "return_delay",
