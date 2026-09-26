@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T05:32:26.269Z",
+  "generated_at": "2026-09-26T10:16:13.658Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11379,24 +11379,6 @@
       "done_deal_at": null,
       "company": "IMOBILI - Equipe LEGENDS",
       "seller": "Suelane Magalhaes",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "inactive",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "faaecc233c6f4e3ccb8795eba80811ab",
-      "created_at": "2026-06-28T09:52:44.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Maria Renata Da Silva Santos",
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - OPEN",
