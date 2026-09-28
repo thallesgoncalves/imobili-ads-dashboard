@@ -1,21 +1,8 @@
 {
-  "generated_at": "2026-09-27T23:11:35.746Z",
+  "generated_at": "2026-09-28T01:38:30.220Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-06-29",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 2.54,
-      "impressions": 49,
-      "clicks": 3,
-      "ctr": 6.122449,
-      "cpc": 0.846667,
-      "leads": 0,
-      "cost_per_lead": null
-    },
     {
       "date": "2026-06-30",
       "account": "CA - LANÇAMENTOS",
