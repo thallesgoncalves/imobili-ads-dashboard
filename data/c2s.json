@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T19:25:05.402Z",
+  "generated_at": "2026-09-29T23:05:12.523Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -11510,42 +11510,6 @@
         "APARTAMENTO",
         "PLANTA"
       ],
-      "visit": null
-    },
-    {
-      "id": "ad01fa59c039850870aa00cb743c1020",
-      "created_at": "2026-07-01T22:14:41.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Edson Soares da Silva",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - Salvador Veríssimo",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "af10e3ebca0cbd8260bff26473de92cd",
-      "created_at": "2026-07-01T19:45:20.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "ANA PAULA LESSA LIMA",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "inactive",
-      "tags": [],
       "visit": null
     }
   ]
