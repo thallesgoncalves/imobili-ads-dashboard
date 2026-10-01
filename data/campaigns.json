@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T09:11:35.462Z",
+  "generated_at": "2026-10-01T16:25:50.545Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2732,6 +2732,19 @@
       "cpc": 0.468,
       "leads": 3,
       "cost_per_lead": 3.1199999999999997
+    },
+    {
+      "date": "2026-10-01",
+      "account": "CA - LANÇAMENTOS",
+      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
+      "adset": "",
+      "spend": 0,
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "cpc": 0,
+      "leads": 0,
+      "cost_per_lead": null
     }
   ]
 }
