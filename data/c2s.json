@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T00:46:17.154Z",
+  "generated_at": "2026-10-02T06:17:12.200Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -2544,9 +2544,9 @@
     {
       "id": "322e5a901bbb3d6767d705ef8cb55b32",
       "created_at": "2026-09-16T15:25:57.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2555,7 +2555,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - OPEN",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -12727,42 +12727,6 @@
       "channel": "Internet",
       "product": "[2026] FORMS SPLENDINDO ",
       "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "3914de1c5a6f2705fd588936c5680fb5",
-      "created_at": "2026-07-04T03:21:10.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Marcelo Hugo Fialho da Silva",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "[2026] FORMS SPLENDINDO ",
-      "lost_reason": "inactive",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "13c82f90b918d425ab6ca5c69467b93b",
-      "created_at": "2026-07-04T01:37:22.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Veronica Araújo",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - OPEN",
-      "lost_reason": "other_seller",
       "tags": [],
       "visit": null
     }
