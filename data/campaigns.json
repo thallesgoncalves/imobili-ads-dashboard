@@ -1,47 +1,8 @@
 {
-  "generated_at": "2026-10-02T22:11:28.010Z",
+  "generated_at": "2026-10-03T01:11:04.381Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-07-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 49.56,
-      "impressions": 1161,
-      "clicks": 25,
-      "ctr": 2.153316,
-      "cpc": 1.9824,
-      "leads": 2,
-      "cost_per_lead": 24.78
-    },
-    {
-      "date": "2026-07-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Splendido] - Formulário",
-      "adset": "",
-      "spend": 50.96,
-      "impressions": 1647,
-      "clicks": 27,
-      "ctr": 1.639344,
-      "cpc": 1.887407,
-      "leads": 4,
-      "cost_per_lead": 12.74
-    },
-    {
-      "date": "2026-07-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Salvador Verissimo]",
-      "adset": "",
-      "spend": 23.07,
-      "impressions": 1201,
-      "clicks": 14,
-      "ctr": 1.165695,
-      "cpc": 1.647857,
-      "leads": 1,
-      "cost_per_lead": 23.07
-    },
     {
       "date": "2026-07-05",
       "account": "CA - LANÇAMENTOS",
