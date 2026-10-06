@@ -1,47 +1,8 @@
 {
-  "generated_at": "2026-10-05T23:14:20.790Z",
+  "generated_at": "2026-10-06T02:59:44.910Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-07-07",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 45.08,
-      "impressions": 1287,
-      "clicks": 21,
-      "ctr": 1.631702,
-      "cpc": 2.146667,
-      "leads": 4,
-      "cost_per_lead": 11.27
-    },
-    {
-      "date": "2026-07-07",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Splendido] - Formulário",
-      "adset": "",
-      "spend": 29.96,
-      "impressions": 2087,
-      "clicks": 15,
-      "ctr": 0.718735,
-      "cpc": 1.997333,
-      "leads": 2,
-      "cost_per_lead": 14.98
-    },
-    {
-      "date": "2026-07-07",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Salvador Verissimo]",
-      "adset": "",
-      "spend": 28.29,
-      "impressions": 1424,
-      "clicks": 21,
-      "ctr": 1.474719,
-      "cpc": 1.347143,
-      "leads": 1,
-      "cost_per_lead": 28.29
-    },
     {
       "date": "2026-07-08",
       "account": "CA - LANÇAMENTOS",
@@ -2621,11 +2582,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 10.98,
-      "impressions": 293,
-      "clicks": 10,
-      "ctr": 3.412969,
-      "cpc": 1.098,
+      "spend": 13.88,
+      "impressions": 384,
+      "clicks": 12,
+      "ctr": 3.125,
+      "cpc": 1.156667,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -2634,13 +2595,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 31.44,
-      "impressions": 3175,
-      "clicks": 44,
-      "ctr": 1.385827,
-      "cpc": 0.714545,
-      "leads": 6,
-      "cost_per_lead": 5.24
+      "spend": 41.74,
+      "impressions": 4047,
+      "clicks": 63,
+      "ctr": 1.556709,
+      "cpc": 0.66254,
+      "leads": 11,
+      "cost_per_lead": 3.794545454545455
     }
   ]
 }
