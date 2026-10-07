@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T06:27:33.051Z",
+  "generated_at": "2026-10-07T13:42:43.767Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2595,8 +2595,8 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Ipioca Beach] - Formulário",
       "adset": "",
-      "spend": 0.56,
-      "impressions": 22,
+      "spend": 5.06,
+      "impressions": 138,
       "clicks": 0,
       "ctr": 0,
       "cpc": 0,
@@ -2608,13 +2608,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 1.58,
-      "impressions": 114,
-      "clicks": 2,
-      "ctr": 1.754386,
-      "cpc": 0.79,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 5.18,
+      "impressions": 484,
+      "clicks": 11,
+      "ctr": 2.272727,
+      "cpc": 0.470909,
+      "leads": 1,
+      "cost_per_lead": 5.18
     }
   ]
 }
