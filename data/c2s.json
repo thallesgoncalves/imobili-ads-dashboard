@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-10-18T16:56:25.457Z",
+  "generated_at": "2026-10-18T19:10:25.018Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "b1706f9974df0ca5bf4806601886a4d2",
+      "created_at": "2026-10-18T15:31:38.000-03:00",
+      "status_alias": "new",
+      "status_name": "Novo",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
+      "seller": "ADELMA IMOBILI ",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "FORMS - Sitges [Investidor] V2",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "eb584eee545d25334a519abc2e20e6cd",
       "created_at": "2026-10-18T13:23:48.000-03:00",
