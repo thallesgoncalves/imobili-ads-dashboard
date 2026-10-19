@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T19:55:46.309Z",
+  "generated_at": "2026-10-19T23:15:04.650Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2283,11 +2283,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 8.68,
-      "impressions": 2853,
-      "clicks": 113,
-      "ctr": 3.960743,
-      "cpc": 0.076814,
+      "spend": 9.66,
+      "impressions": 3279,
+      "clicks": 126,
+      "ctr": 3.842635,
+      "cpc": 0.076667,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -2296,13 +2296,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 17.2,
-      "impressions": 2114,
-      "clicks": 28,
-      "ctr": 1.324503,
-      "cpc": 0.614286,
+      "spend": 24.68,
+      "impressions": 3117,
+      "clicks": 37,
+      "ctr": 1.187039,
+      "cpc": 0.667027,
       "leads": 1,
-      "cost_per_lead": 17.2
+      "cost_per_lead": 24.68
     }
   ]
 }
