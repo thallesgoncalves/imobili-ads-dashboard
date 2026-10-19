@@ -1,21 +1,8 @@
 {
-  "generated_at": "2026-10-18T23:32:28.742Z",
+  "generated_at": "2026-10-19T01:40:46.776Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-07-20",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 0,
-      "impressions": 0,
-      "clicks": 0,
-      "ctr": 0,
-      "cpc": 0,
-      "leads": 0,
-      "cost_per_lead": null
-    },
     {
       "date": "2026-07-24",
       "account": "CA - LANÇAMENTOS",
@@ -2270,26 +2257,26 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 10.22,
-      "impressions": 2636,
-      "clicks": 80,
-      "ctr": 3.034901,
-      "cpc": 0.12775,
+      "spend": 14.09,
+      "impressions": 3661,
+      "clicks": 115,
+      "ctr": 3.141218,
+      "cpc": 0.122522,
       "leads": 2,
-      "cost_per_lead": 5.11
+      "cost_per_lead": 7.045
     },
     {
       "date": "2026-10-18",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
-      "spend": 36.14,
-      "impressions": 3476,
-      "clicks": 79,
-      "ctr": 2.272727,
-      "cpc": 0.457468,
-      "leads": 11,
-      "cost_per_lead": 3.2854545454545456
+      "spend": 40.02,
+      "impressions": 3898,
+      "clicks": 90,
+      "ctr": 2.308876,
+      "cpc": 0.444667,
+      "leads": 14,
+      "cost_per_lead": 2.858571428571429
     }
   ]
 }
