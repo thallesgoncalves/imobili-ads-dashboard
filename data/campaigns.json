@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T06:55:39.920Z",
+  "generated_at": "2026-10-20T12:28:05.462Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -2297,9 +2297,9 @@
       "campaign": "[Cadastro][PréLume]",
       "adset": "",
       "spend": 27.02,
-      "impressions": 3453,
+      "impressions": 3454,
       "clicks": 44,
-      "ctr": 1.274254,
+      "ctr": 1.273885,
       "cpc": 0.614091,
       "leads": 1,
       "cost_per_lead": 27.02
