@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:26:28.206Z",
+  "generated_at": "2026-10-20T20:47:19.683Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -766,8 +766,8 @@
     {
       "id": "bf9a6d1dd7f102253483580c8b0e7da8",
       "created_at": "2026-10-16T13:19:41.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
       "archived": false,
       "done": false,
       "done_price": null,
@@ -6750,9 +6750,9 @@
     {
       "id": "66e946358274532c7ad57db9fbfa2b98",
       "created_at": "2026-09-16T01:17:49.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
