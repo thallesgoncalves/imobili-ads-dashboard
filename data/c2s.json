@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T18:04:15.250Z",
+  "generated_at": "2026-10-21T21:39:18.820Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -2962,9 +2962,9 @@
     {
       "id": "4d9fa7a38ae75c40330a0449c133f9dd",
       "created_at": "2026-10-10T22:55:38.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
