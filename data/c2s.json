@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T02:01:18.371Z",
+  "generated_at": "2026-10-21T07:34:18.372Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3938,9 +3938,9 @@
     {
       "id": "8a8c9877ade08590619f54b25fbcf240",
       "created_at": "2026-10-05T18:34:51.000-03:00",
-      "status_alias": "new",
-      "status_name": "Novo",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3949,7 +3949,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
