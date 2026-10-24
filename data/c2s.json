@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:15:07.328Z",
+  "generated_at": "2026-10-24T21:38:26.951Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -13737,24 +13737,6 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": "inactive",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "2f4771c052d603f661bc80177c8f2542",
-      "created_at": "2026-07-26T19:37:24.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Mazzarolo",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - Sitges [Investidor] V2",
       "lost_reason": "inactive",
       "tags": [],
       "visit": null
