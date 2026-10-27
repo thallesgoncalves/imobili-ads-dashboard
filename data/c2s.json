@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T02:21:01.488Z",
+  "generated_at": "2026-10-27T08:08:05.201Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -3340,9 +3340,9 @@
     {
       "id": "47a5ce0a2d462f7bbe906610444c656d",
       "created_at": "2026-10-09T10:53:53.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3351,7 +3351,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -5072,9 +5072,9 @@
     {
       "id": "a94e9958b9636acde0f26d651f726a7c",
       "created_at": "2026-09-30T16:46:42.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -5083,7 +5083,7 @@
       "source": "Instagram Leads",
       "channel": "Rede Social",
       "product": "MILAGRES BEACH",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -13000,42 +13000,6 @@
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
       "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "bef50fd020a4baf165b480e51f87725d",
-      "created_at": "2026-07-29T08:04:15.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "Diogo Oliveira Souza Vieira",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "1f8fd71833e987248ae6f44d446f58a0",
-      "created_at": "2026-07-29T05:09:30.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "Ailton Pimentel",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - Ipioca Beach",
-      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     }
