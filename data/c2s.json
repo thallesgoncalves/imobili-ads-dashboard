@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T18:58:26.067Z",
+  "generated_at": "2026-10-31T22:11:10.978Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -12352,42 +12352,6 @@
       "channel": "Internet",
       "product": "FORMS - Sitges [Investidor] V2",
       "lost_reason": "invalid",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "e96065c476b3451ecb7884c24f59ab22",
-      "created_at": "2026-08-02T20:09:48.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": "z_others",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "1451e42ec891c45128e2eeddd37e5f77",
-      "created_at": "2026-08-02T19:00:00.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMÓBILI (RODRIGUES E VASCONCELOS)",
-      "seller": "Ailton Pimentel",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - Ipioca Beach",
-      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     }
