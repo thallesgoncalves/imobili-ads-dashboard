@@ -1,73 +1,8 @@
 {
-  "generated_at": "2026-11-02T19:26:49.037Z",
+  "generated_at": "2026-11-03T01:42:48.942Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-08-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 39.68,
-      "impressions": 1456,
-      "clicks": 25,
-      "ctr": 1.717033,
-      "cpc": 1.5872,
-      "leads": 2,
-      "cost_per_lead": 19.84
-    },
-    {
-      "date": "2026-08-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Salvador Verissimo]",
-      "adset": "",
-      "spend": 28.22,
-      "impressions": 2115,
-      "clicks": 41,
-      "ctr": 1.938534,
-      "cpc": 0.688293,
-      "leads": 0,
-      "cost_per_lead": null
-    },
-    {
-      "date": "2026-08-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
-      "adset": "",
-      "spend": 27.67,
-      "impressions": 2076,
-      "clicks": 41,
-      "ctr": 1.974952,
-      "cpc": 0.674878,
-      "leads": 1,
-      "cost_per_lead": 27.67
-    },
-    {
-      "date": "2026-08-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Ipioca Beach] - Formulário",
-      "adset": "",
-      "spend": 29.68,
-      "impressions": 621,
-      "clicks": 12,
-      "ctr": 1.932367,
-      "cpc": 2.473333,
-      "leads": 1,
-      "cost_per_lead": 29.68
-    },
-    {
-      "date": "2026-08-04",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][PréLume]",
-      "adset": "",
-      "spend": 31.38,
-      "impressions": 3672,
-      "clicks": 47,
-      "ctr": 1.279956,
-      "cpc": 0.66766,
-      "leads": 7,
-      "cost_per_lead": 4.482857142857143
-    },
     {
       "date": "2026-08-05",
       "account": "CA - LANÇAMENTOS",
@@ -1556,9 +1491,9 @@
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
       "spend": 8.27,
-      "impressions": 514,
+      "impressions": 515,
       "clicks": 13,
-      "ctr": 2.529183,
+      "ctr": 2.524272,
       "cpc": 0.636154,
       "leads": 0,
       "cost_per_lead": null
@@ -1581,12 +1516,12 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 13.54,
-      "impressions": 758,
-      "clicks": 22,
-      "ctr": 2.902375,
-      "cpc": 0.615455,
-      "leads": 2,
+      "spend": 20.31,
+      "impressions": 1141,
+      "clicks": 31,
+      "ctr": 2.716915,
+      "cpc": 0.655161,
+      "leads": 3,
       "cost_per_lead": 6.77
     },
     {
@@ -1594,13 +1529,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Casa Aldebaran",
       "adset": "",
-      "spend": 20.11,
-      "impressions": 1013,
-      "clicks": 85,
-      "ctr": 8.390918,
-      "cpc": 0.236588,
-      "leads": 6,
-      "cost_per_lead": 3.3516666666666666
+      "spend": 24.98,
+      "impressions": 1261,
+      "clicks": 105,
+      "ctr": 8.326725,
+      "cpc": 0.237905,
+      "leads": 7,
+      "cost_per_lead": 3.5685714285714285
     }
   ]
 }
