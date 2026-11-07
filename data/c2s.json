@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T02:08:10.760Z",
+  "generated_at": "2026-11-07T08:44:08.495Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -10978,42 +10978,6 @@
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
       "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "7e30eeb6e55a93d4b04cf590851ef442",
-      "created_at": "2026-08-09T08:36:08.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Facebook Leads",
-      "channel": "Internet",
-      "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": "return_delay",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "3db2f17dfaffb1d2d7937cd1883f8887",
-      "created_at": "2026-08-09T02:18:57.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - Sitges [Investidor] V2",
-      "lost_reason": "just_researching",
       "tags": [],
       "visit": null
     }
