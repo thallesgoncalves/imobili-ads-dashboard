@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T15:35:01.840Z",
+  "generated_at": "2026-11-08T19:57:19.611Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1360,11 +1360,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 12.25,
-      "impressions": 210,
-      "clicks": 5,
-      "ctr": 2.380952,
-      "cpc": 2.45,
+      "spend": 18.12,
+      "impressions": 389,
+      "clicks": 11,
+      "ctr": 2.827764,
+      "cpc": 1.647273,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1373,13 +1373,13 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Casa Aldebaran",
       "adset": "",
-      "spend": 9.38,
-      "impressions": 313,
-      "clicks": 22,
-      "ctr": 7.028754,
-      "cpc": 0.426364,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 14.59,
+      "impressions": 511,
+      "clicks": 38,
+      "ctr": 7.436399,
+      "cpc": 0.383947,
+      "leads": 1,
+      "cost_per_lead": 14.59
     }
   ]
 }
