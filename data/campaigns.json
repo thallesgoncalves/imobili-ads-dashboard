@@ -1,60 +1,8 @@
 {
-  "generated_at": "2026-11-10T19:07:39.255Z",
+  "generated_at": "2026-11-11T00:01:29.507Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-08-12",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 46.12,
-      "impressions": 1711,
-      "clicks": 40,
-      "ctr": 2.337814,
-      "cpc": 1.153,
-      "leads": 2,
-      "cost_per_lead": 23.06
-    },
-    {
-      "date": "2026-08-12",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
-      "adset": "",
-      "spend": 33.46,
-      "impressions": 2886,
-      "clicks": 55,
-      "ctr": 1.905752,
-      "cpc": 0.608364,
-      "leads": 4,
-      "cost_per_lead": 8.365
-    },
-    {
-      "date": "2026-08-12",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Ipioca Beach] - Formulário",
-      "adset": "",
-      "spend": 37.63,
-      "impressions": 550,
-      "clicks": 17,
-      "ctr": 3.090909,
-      "cpc": 2.213529,
-      "leads": 1,
-      "cost_per_lead": 37.63
-    },
-    {
-      "date": "2026-08-12",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][PréLume]",
-      "adset": "",
-      "spend": 32.81,
-      "impressions": 2811,
-      "clicks": 56,
-      "ctr": 1.992174,
-      "cpc": 0.585893,
-      "leads": 10,
-      "cost_per_lead": 3.281
-    },
     {
       "date": "2026-08-13",
       "account": "CA - LANÇAMENTOS",
@@ -1308,26 +1256,26 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 13.22,
-      "impressions": 211,
-      "clicks": 5,
-      "ctr": 2.369668,
-      "cpc": 2.644,
+      "spend": 14.82,
+      "impressions": 285,
+      "clicks": 6,
+      "ctr": 2.105263,
+      "cpc": 2.47,
       "leads": 1,
-      "cost_per_lead": 13.22
+      "cost_per_lead": 14.82
     },
     {
       "date": "2026-11-10",
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Casa Aldebaran",
       "adset": "",
-      "spend": 10.34,
-      "impressions": 294,
-      "clicks": 17,
-      "ctr": 5.782313,
-      "cpc": 0.608235,
+      "spend": 14.77,
+      "impressions": 414,
+      "clicks": 25,
+      "ctr": 6.038647,
+      "cpc": 0.5908,
       "leads": 1,
-      "cost_per_lead": 10.34
+      "cost_per_lead": 14.77
     }
   ]
 }
