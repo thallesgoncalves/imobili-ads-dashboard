@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T00:04:08.755Z",
+  "generated_at": "2026-11-14T06:14:02.247Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
@@ -1574,9 +1574,9 @@
     {
       "id": "96fd673fe083ccea317ffbddf0526f73",
       "created_at": "2026-10-30T14:12:34.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -1585,7 +1585,7 @@
       "source": "Facebook Leads",
       "channel": "Telefone",
       "product": "LEAD TELESIL",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -3072,9 +3072,9 @@
     {
       "id": "781ce8ebf5c1e348b099a9aa9f04551e",
       "created_at": "2026-10-15T10:15:39.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3083,7 +3083,7 @@
       "source": "Instagram Leads",
       "channel": "Rede Social",
       "product": "STELLA MARES",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -3126,9 +3126,9 @@
     {
       "id": "18af9e188a36ef5b53ea8a82824e5c24",
       "created_at": "2026-10-15T07:03:27.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -3137,7 +3137,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "inactive",
       "tags": [],
       "visit": null
     },
@@ -5250,9 +5250,9 @@
     {
       "id": "153e818a6cc3cb15c979488148f1312b",
       "created_at": "2026-10-07T19:20:01.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -9702,24 +9702,6 @@
       "channel": "Internet",
       "product": "FORMS - Ipioca Beach",
       "lost_reason": "inactive",
-      "tags": [],
-      "visit": null
-    },
-    {
-      "id": "74c04b2cb9fa8af35db759b36ff3087c",
-      "created_at": "2026-08-16T01:48:04.000-03:00",
-      "status_alias": "lost",
-      "status_name": "Arquivado",
-      "archived": true,
-      "done": false,
-      "done_price": null,
-      "done_deal_at": null,
-      "company": "IMOBILI - Equipe LEGENDS",
-      "seller": "GNERRO JUNQUEIRA JUNIOR",
-      "source": "Instagram Leads",
-      "channel": "Internet",
-      "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     }
