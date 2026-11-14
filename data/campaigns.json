@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T18:50:46.806Z",
+  "generated_at": "2026-11-14T22:49:31.254Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1204,11 +1204,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 7.47,
-      "impressions": 167,
-      "clicks": 4,
-      "ctr": 2.39521,
-      "cpc": 1.8675,
+      "spend": 7.86,
+      "impressions": 190,
+      "clicks": 5,
+      "ctr": 2.631579,
+      "cpc": 1.572,
       "leads": 0,
       "cost_per_lead": null
     }
