@@ -1,60 +1,8 @@
 {
-  "generated_at": "2026-11-14T22:49:31.254Z",
+  "generated_at": "2026-11-15T02:17:49.192Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-08-16",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 51.59,
-      "impressions": 1451,
-      "clicks": 34,
-      "ctr": 2.343212,
-      "cpc": 1.517353,
-      "leads": 3,
-      "cost_per_lead": 17.19666666666667
-    },
-    {
-      "date": "2026-08-16",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
-      "adset": "",
-      "spend": 42.13,
-      "impressions": 3155,
-      "clicks": 67,
-      "ctr": 2.123613,
-      "cpc": 0.628806,
-      "leads": 3,
-      "cost_per_lead": 14.043333333333335
-    },
-    {
-      "date": "2026-08-16",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][Ipioca Beach] - Formulário",
-      "adset": "",
-      "spend": 48.95,
-      "impressions": 953,
-      "clicks": 39,
-      "ctr": 4.09234,
-      "cpc": 1.255128,
-      "leads": 6,
-      "cost_per_lead": 8.158333333333333
-    },
-    {
-      "date": "2026-08-16",
-      "account": "CA - LANÇAMENTOS",
-      "campaign": "[Cadastro][PréLume]",
-      "adset": "",
-      "spend": 41.2,
-      "impressions": 3537,
-      "clicks": 64,
-      "ctr": 1.809443,
-      "cpc": 0.64375,
-      "leads": 7,
-      "cost_per_lead": 5.885714285714286
-    },
     {
       "date": "2026-08-17",
       "account": "CA - LANÇAMENTOS",
@@ -1204,11 +1152,11 @@
       "account": "CA - LANÇAMENTOS",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 7.86,
-      "impressions": 190,
+      "spend": 8.05,
+      "impressions": 217,
       "clicks": 5,
-      "ctr": 2.631579,
-      "cpc": 1.572,
+      "ctr": 2.304147,
+      "cpc": 1.61,
       "leads": 0,
       "cost_per_lead": null
     }
