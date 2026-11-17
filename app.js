@@ -5,6 +5,8 @@
     window.Common;
 
   let allRows = [];
+  let budgets = { accounts: [], campaigns: [] };
+  const budgetById = new Map();
   let oldestDate = null;
   let c2sLeads = [];
   let c2sOldestDate = null;
@@ -116,9 +118,10 @@
     for (const r of rows) {
       const k = key(r);
       if (!map.has(k)) {
-        map.set(k, { account: r.account, campaign: r.campaign, spend: 0, impressions: 0, clicks: 0, leads: 0 });
+        map.set(k, { account: r.account, campaign: r.campaign, spend: 0, impressions: 0, clicks: 0, leads: 0, ids: new Set() });
       }
       const agg = map.get(k);
+      if (r.campaign_id) agg.ids.add(r.campaign_id);
       agg.spend += r.spend;
       agg.impressions += r.impressions;
       agg.clicks += r.clicks;
@@ -126,9 +129,96 @@
     }
     return Array.from(map.values()).map((agg) => ({
       ...agg,
+      ...budgetInfo(agg.ids),
       ctr: agg.impressions > 0 ? (agg.clicks / agg.impressions) * 100 : 0,
       cost_per_lead: agg.leads > 0 ? agg.spend / agg.leads : null,
     }));
+  }
+
+  // Status + daily budget for a table row. A row can span several campaigns
+  // that share a name; active ones are summed, otherwise show the largest.
+  function budgetInfo(ids) {
+    const items = Array.from(ids).map((id) => budgetById.get(id)).filter(Boolean);
+    if (items.length === 0) return { status: null, daily_budget: null };
+    const active = items.filter((c) => c.status === "ACTIVE");
+    const pool = active.length ? active : items;
+    const vals = pool.map((c) => c.daily_budget).filter((v) => v != null);
+    const daily = vals.length ? (active.length ? vals.reduce((s, v) => s + v, 0) : Math.max(...vals)) : null;
+    return { status: active.length ? "ACTIVE" : items[0].status, daily_budget: daily };
+  }
+
+  function statusPill(status) {
+    if (!status) return "—";
+    if (status === "ACTIVE") return '<span class="status-pill status-active">Ativa</span>';
+    if (/PAUSED/.test(status)) return '<span class="status-pill">Pausada</span>';
+    if (/DISAPPROVED|WITH_ISSUES|PENDING_BILLING_INFO/.test(status)) return `<span class="status-pill status-issue">${status}</span>`;
+    return `<span class="status-pill">${status}</span>`;
+  }
+
+  function renderBudget() {
+    const el = document.getElementById("budget-grid");
+    if (!el) return;
+    const inScope = (x) => state.account === "all" || x.account === state.account;
+    const activeCamps = budgets.campaigns.filter((c) => inScope(c) && c.status === "ACTIVE");
+    const withDaily = activeCamps.filter((c) => c.daily_budget != null);
+    const dailyActive = withDaily.reduce((s, c) => s + c.daily_budget, 0);
+    const accts = budgets.accounts.filter(inScope);
+    const hasBalance = accts.some((a) => a.balance_available != null);
+    const balance = accts.reduce((s, a) => s + (a.balance_available || 0), 0);
+    const noBalance = accts
+      .filter((a) => a.balance_available === 0 && activeCamps.some((c) => c.account === a.account))
+      .map((a) => a.account);
+    // Autonomy per account (balance ÷ that account's active daily budgets);
+    // the headline is the shortest one — whichever account runs dry first.
+    const perAccount = accts
+      .map((a) => {
+        const daily = withDaily.filter((c) => c.account === a.account).reduce((s, c) => s + c.daily_budget, 0);
+        const d = a.balance_available != null && daily > 0 ? Math.floor(a.balance_available / daily) : null;
+        return { name: a.account, days: d };
+      })
+      .filter((x) => x.days != null);
+    const days = perAccount.length ? Math.min(...perAccount.map((x) => x.days)) : null;
+    const missing = activeCamps.length - withDaily.length;
+
+    const tiles = [
+      {
+        label: "Verba diária ativa",
+        value: fmtCurrency2(dailyActive),
+        sub: `${fmtNumber(activeCamps.length)} campanha(s) ativa(s)${missing > 0 ? ` · ${missing} sem verba diária` : ""}`,
+      },
+      {
+        label: "Saldo disponível",
+        value: hasBalance ? fmtCurrency2(balance) : "—",
+        sub:
+          noBalance.length > 0
+            ? `Sem saldo: ${noBalance.join(", ")}`
+            : accts.length > 1
+            ? accts.map((a) => `${a.account.replace("CA - ", "")} ${a.balance_available == null ? "—" : fmtCurrency2(a.balance_available)}`).join(" · ")
+            : accts[0] && accts[0].balance_available == null && accts[0].funding_label
+            ? accts[0].funding_label
+            : "",
+        warn: noBalance.length > 0,
+      },
+      {
+        label: "Autonomia estimada",
+        value: days == null ? "—" : `${fmtNumber(days)} dias`,
+        sub:
+          perAccount.length > 1
+            ? perAccount.map((x) => `${x.name.replace("CA - ", "")} ${fmtNumber(x.days)} dias`).join(" · ")
+            : "Saldo ÷ verba diária ativa, se gastar 100% do orçamento",
+        highlight: true,
+      },
+    ];
+
+    el.innerHTML = tiles
+      .map(
+        (t) => `<div class="roi-tile ${t.highlight ? "roi-highlight" : ""}">
+          <div class="label">${t.label}</div>
+          <div class="value">${t.value}</div>
+          ${t.sub ? `<div class="roi-sub ${t.warn ? "warn" : ""}">${t.sub}</div>` : ""}
+        </div>`
+      )
+      .join("");
   }
 
   function sortRows(rows) {
@@ -158,6 +248,8 @@
       <tr>
         <td><span class="account-badge">${c.account}</span></td>
         <td>${c.campaign}</td>
+        <td>${statusPill(c.status)}</td>
+        <td class="num">${c.daily_budget == null ? "—" : fmtCurrency2(c.daily_budget)}</td>
         <td class="num">${fmtCurrency(c.spend)}</td>
         <td class="num">${fmtNumber(c.impressions)}</td>
         <td class="num">${fmtNumber(c.clicks)}</td>
@@ -278,6 +370,7 @@
     renderBarChart("chart-spend", dailySeries(rows, "spend"), "var(--series-spend)", fmtCurrency);
     renderBarChart("chart-leads", dailySeries(rows, "leads"), "var(--series-leads)", fmtNumber);
     renderTable(rows);
+    renderBudget();
   }
 
   function renderCrmSection() {
@@ -338,8 +431,10 @@
     try {
       const payload = await loadData();
       allRows = payload.rows || [];
+      budgets = payload.budgets || budgets;
+      for (const c of budgets.campaigns) budgetById.set(c.campaign_id, c);
       oldestDate = allRows.reduce((min, r) => (!min || r.date < min ? r.date : min), null);
-      const accounts = Array.from(new Set(allRows.map((r) => r.account))).sort();
+      const accounts = Array.from(new Set([...allRows.map((r) => r.account), ...budgets.accounts.map((a) => a.account)])).sort();
 
       const updatedAt = payload.generated_at ? new Date(payload.generated_at) : null;
       document.getElementById("updated-at").textContent = updatedAt

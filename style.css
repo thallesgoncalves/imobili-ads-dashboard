@@ -575,6 +575,27 @@ body {
   font-weight: 800;
   letter-spacing: -0.01em;
 }
+.roi-tile .roi-sub.warn {
+  color: var(--status-critical);
+  opacity: 1;
+  font-weight: 700;
+}
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.status-pill::before {
+  content: "";
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+.status-pill.status-active::before { background: var(--status-good); }
+.status-pill.status-issue::before { background: var(--status-critical); }
 .roi-tile .roi-sub {
   margin-top: 6px;
   font-size: 11.5px;

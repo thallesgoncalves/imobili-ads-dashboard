@@ -22,7 +22,7 @@ const AD_ACCOUNTS = [
   { id: "711764884898637", name: "CA - INSTITUCIONAL" },
 ];
 
-const FIELDS = "campaign_name,spend,impressions,clicks,ctr,cpc,actions,date_start";
+const FIELDS = "campaign_id,campaign_name,spend,impressions,clicks,ctr,cpc,actions,date_start";
 
 // Meta reports the same on-Facebook lead form submission under both
 // "onsite_conversion.lead_grouped" and the generic "lead" action type —
@@ -78,6 +78,7 @@ async function fetchAccount(account, since, until) {
     return {
       date: r.date_start,
       account: account.name,
+      campaign_id: r.campaign_id || "",
       campaign: r.campaign_name || "",
       adset: "",
       spend,
@@ -91,13 +92,86 @@ async function fetchAccount(account, since, until) {
   });
 }
 
+
+// Budgets come back in the currency's minor unit (BRL: centavos).
+const centsToReais = (v) => (v == null || v === "" ? null : Number(v) / 100);
+
+// "Saldo disponível (R$1.162,00 BRL)" -> 1162. Returns null for non-prepaid
+// funding sources (e.g. a credit card), which have no available balance.
+function parseBalanceFromDisplay(display) {
+  const m = /R\$\s*([\d.]+,\d{2})/.exec(display || "");
+  if (!m || !/saldo/i.test(display)) return null;
+  return Number(m[1].replace(/\./g, "").replace(",", "."));
+}
+
+async function fetchBudgets(account) {
+  const base = `https://graph.facebook.com/${API_VERSION}/act_${account.id}`;
+  const q = (params) => new URLSearchParams({ ...params, access_token: TOKEN }).toString();
+
+  const accRes = await fetch(`${base}?${q({ fields: "currency,balance,funding_source_details" })}`);
+  if (!accRes.ok) throw new Error(`Meta API (account) failed: ${accRes.status}`);
+  const acc = await accRes.json();
+  const funding = (acc.funding_source_details && acc.funding_source_details.display_string) || null;
+
+  const campaigns = await fetchAllPages(
+    `${base}/campaigns?${q({
+      fields: "id,name,effective_status,daily_budget,lifetime_budget,budget_remaining",
+      limit: "200",
+    })}`
+  );
+
+  // Some campaigns set the budget per ad set instead of at campaign level
+  // (daily_budget is null on the campaign). Sum the active ad sets' budgets.
+  const adsets = await fetchAllPages(
+    `${base}/adsets?${q({
+      fields: "campaign_id,daily_budget,lifetime_budget,effective_status",
+      filtering: JSON.stringify([{ field: "effective_status", operator: "IN", value: ["ACTIVE"] }]),
+      limit: "200",
+    })}`
+  );
+  const adsetDaily = new Map();
+  for (const a of adsets) {
+    if (a.daily_budget == null) continue;
+    adsetDaily.set(a.campaign_id, (adsetDaily.get(a.campaign_id) || 0) + Number(a.daily_budget));
+  }
+
+  return {
+    account: {
+      account: account.name,
+      currency: acc.currency || "BRL",
+      balance_available: parseBalanceFromDisplay(funding),
+      funding_label: funding,
+    },
+    campaigns: campaigns.map((c) => {
+      const campaignLevel = c.daily_budget != null ? Number(c.daily_budget) : null;
+      const adsetLevel = adsetDaily.has(c.id) ? adsetDaily.get(c.id) : null;
+      return {
+        account: account.name,
+        campaign_id: c.id,
+        name: c.name,
+        status: c.effective_status,
+        daily_budget: centsToReais(campaignLevel != null ? campaignLevel : adsetLevel),
+        budget_level: campaignLevel != null ? "campaign" : adsetLevel != null ? "adset" : null,
+        lifetime_budget: centsToReais(c.lifetime_budget),
+        budget_remaining: centsToReais(c.budget_remaining),
+      };
+    }),
+  };
+}
+
 async function main() {
   const { since, until } = dateRange(DAYS_BACK);
   const rows = [];
+  const budgets = { accounts: [], campaigns: [] };
   for (const account of AD_ACCOUNTS) {
     const accountRows = await fetchAccount(account, since, until);
     rows.push(...accountRows);
     console.log(`Fetched ${accountRows.length} rows for ${account.name}`);
+
+    const b = await fetchBudgets(account);
+    budgets.accounts.push(b.account);
+    budgets.campaigns.push(...b.campaigns);
+    console.log(`Fetched ${b.campaigns.length} campaign budgets for ${account.name}`);
   }
 
   const outPath = path.join(__dirname, "..", "data", "campaigns.json");
@@ -106,6 +180,7 @@ async function main() {
     source: "meta-marketing-api",
     days_back: DAYS_BACK,
     rows,
+    budgets,
   };
 
   fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
