@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:41:32.968Z",
+  "generated_at": "2026-11-18T23:35:21.945Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1157,13 +1157,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 24.15,
-      "impressions": 1371,
-      "clicks": 25,
-      "ctr": 1.823487,
-      "cpc": 0.966,
-      "leads": 4,
-      "cost_per_lead": 6.0375
+      "spend": 35.38,
+      "impressions": 1943,
+      "clicks": 41,
+      "ctr": 2.110139,
+      "cpc": 0.862927,
+      "leads": 5,
+      "cost_per_lead": 7.0760000000000005
     },
     {
       "date": "2026-11-18",
@@ -1185,13 +1185,13 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 10.28,
-      "impressions": 171,
-      "clicks": 6,
-      "ctr": 3.508772,
-      "cpc": 1.713333,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 15.43,
+      "impressions": 292,
+      "clicks": 19,
+      "ctr": 6.506849,
+      "cpc": 0.812105,
+      "leads": 2,
+      "cost_per_lead": 7.715
     }
   ],
   "budgets": {
@@ -1199,8 +1199,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 1015.87,
-        "funding_label": "Saldo disponível (R$1.015,87 BRL)"
+        "balance_available": 997.96,
+        "funding_label": "Saldo disponível (R$997,96 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1228,7 +1228,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 9.72
+        "budget_remaining": 4.57
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1438,7 +1438,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 10.85
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
