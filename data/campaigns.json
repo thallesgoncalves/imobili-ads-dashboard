@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T08:51:10.375Z",
+  "generated_at": "2026-11-18T17:41:32.968Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1115,13 +1115,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 46.79,
-      "impressions": 2200,
+      "spend": 46.8,
+      "impressions": 2201,
       "clicks": 48,
-      "ctr": 2.181818,
-      "cpc": 0.974792,
+      "ctr": 2.180827,
+      "cpc": 0.975,
       "leads": 6,
-      "cost_per_lead": 7.798333333333333
+      "cost_per_lead": 7.8
     },
     {
       "date": "2026-11-17",
@@ -1129,13 +1129,13 @@
       "campaign_id": "120235840290420186",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 18.96,
-      "impressions": 457,
+      "spend": 19.04,
+      "impressions": 458,
       "clicks": 16,
-      "ctr": 3.501094,
-      "cpc": 1.185,
+      "ctr": 3.49345,
+      "cpc": 1.19,
       "leads": 1,
-      "cost_per_lead": 18.96
+      "cost_per_lead": 19.04
     },
     {
       "date": "2026-11-17",
@@ -1157,13 +1157,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 4.52,
-      "impressions": 235,
-      "clicks": 4,
-      "ctr": 1.702128,
-      "cpc": 1.13,
-      "leads": 1,
-      "cost_per_lead": 4.52
+      "spend": 24.15,
+      "impressions": 1371,
+      "clicks": 25,
+      "ctr": 1.823487,
+      "cpc": 0.966,
+      "leads": 4,
+      "cost_per_lead": 6.0375
     },
     {
       "date": "2026-11-18",
@@ -1171,11 +1171,11 @@
       "campaign_id": "120235840290420186",
       "campaign": "[Cadastro][Open] - Formulário",
       "adset": "",
-      "spend": 3.91,
-      "impressions": 66,
-      "clicks": 1,
-      "ctr": 1.515152,
-      "cpc": 3.91,
+      "spend": 9.28,
+      "impressions": 179,
+      "clicks": 4,
+      "ctr": 2.234637,
+      "cpc": 2.32,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1185,11 +1185,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 1.3,
-      "impressions": 41,
-      "clicks": 0,
-      "ctr": 0,
-      "cpc": 0,
+      "spend": 10.28,
+      "impressions": 171,
+      "clicks": 6,
+      "ctr": 3.508772,
+      "cpc": 1.713333,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1199,8 +1199,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 1055.22,
-        "funding_label": "Saldo disponível (R$1.055,22 BRL)"
+        "balance_available": 1015.87,
+        "funding_label": "Saldo disponível (R$1.015,87 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1228,7 +1228,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 18.7
+        "budget_remaining": 9.72
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1374,11 +1374,11 @@
         "account": "CA - LANÇAMENTOS",
         "campaign_id": "120235840290420186",
         "name": "[Cadastro][Open] - Formulário",
-        "status": "ACTIVE",
+        "status": "PAUSED",
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 16.09
+        "budget_remaining": 10.72
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1438,7 +1438,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 30.48
+        "budget_remaining": 10.85
       },
       {
         "account": "CA - LANÇAMENTOS",
