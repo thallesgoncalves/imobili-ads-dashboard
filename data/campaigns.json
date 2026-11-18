@@ -1,64 +1,8 @@
 {
-  "generated_at": "2026-11-17T18:54:44.873Z",
+  "generated_at": "2026-11-18T01:27:02.850Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
-    {
-      "date": "2026-08-19",
-      "account": "CA - LANÇAMENTOS",
-      "campaign_id": "120235840290420186",
-      "campaign": "[Cadastro][Open] - Formulário",
-      "adset": "",
-      "spend": 21.3,
-      "impressions": 660,
-      "clicks": 8,
-      "ctr": 1.212121,
-      "cpc": 2.6625,
-      "leads": 1,
-      "cost_per_lead": 21.3
-    },
-    {
-      "date": "2026-08-19",
-      "account": "CA - LANÇAMENTOS",
-      "campaign_id": "120246911899740186",
-      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
-      "adset": "",
-      "spend": 30.91,
-      "impressions": 2531,
-      "clicks": 57,
-      "ctr": 2.252074,
-      "cpc": 0.542281,
-      "leads": 2,
-      "cost_per_lead": 15.455
-    },
-    {
-      "date": "2026-08-19",
-      "account": "CA - LANÇAMENTOS",
-      "campaign_id": "120247042568110186",
-      "campaign": "[Cadastro][Ipioca Beach] - Formulário",
-      "adset": "",
-      "spend": 29.26,
-      "impressions": 585,
-      "clicks": 29,
-      "ctr": 4.957265,
-      "cpc": 1.008966,
-      "leads": 5,
-      "cost_per_lead": 5.852
-    },
-    {
-      "date": "2026-08-19",
-      "account": "CA - LANÇAMENTOS",
-      "campaign_id": "120247246561760186",
-      "campaign": "[Cadastro][PréLume]",
-      "adset": "",
-      "spend": 22.01,
-      "impressions": 2036,
-      "clicks": 30,
-      "ctr": 1.473477,
-      "cpc": 0.733667,
-      "leads": 5,
-      "cost_per_lead": 4.402
-    },
     {
       "date": "2026-08-20",
       "account": "CA - LANÇAMENTOS",
@@ -1171,13 +1115,27 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 17.36,
-      "impressions": 705,
-      "clicks": 15,
-      "ctr": 2.12766,
-      "cpc": 1.157333,
-      "leads": 3,
-      "cost_per_lead": 5.786666666666666
+      "spend": 42.63,
+      "impressions": 1979,
+      "clicks": 39,
+      "ctr": 1.970692,
+      "cpc": 1.093077,
+      "leads": 6,
+      "cost_per_lead": 7.105
+    },
+    {
+      "date": "2026-11-17",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120235840290420186",
+      "campaign": "[Cadastro][Open] - Formulário",
+      "adset": "",
+      "spend": 17.27,
+      "impressions": 400,
+      "clicks": 14,
+      "ctr": 3.5,
+      "cpc": 1.233571,
+      "leads": 1,
+      "cost_per_lead": 17.27
     },
     {
       "date": "2026-11-17",
@@ -1185,11 +1143,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 14.88,
-      "impressions": 283,
-      "clicks": 3,
-      "ctr": 1.060071,
-      "cpc": 4.96,
+      "spend": 22.71,
+      "impressions": 480,
+      "clicks": 8,
+      "ctr": 1.666667,
+      "cpc": 2.83875,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1199,8 +1157,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 1132.89,
-        "funding_label": "Saldo disponível (R$1.132,89 BRL)"
+        "balance_available": 1074.89,
+        "funding_label": "Saldo disponível (R$1.074,89 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1228,7 +1186,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 5.12
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1374,11 +1332,11 @@
         "account": "CA - LANÇAMENTOS",
         "campaign_id": "120235840290420186",
         "name": "[Cadastro][Open] - Formulário",
-        "status": "PAUSED",
+        "status": "ACTIVE",
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 20
+        "budget_remaining": 2.73
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1438,7 +1396,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 17.64
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
