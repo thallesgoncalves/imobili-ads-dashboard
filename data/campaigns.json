@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T04:30:10.240Z",
+  "generated_at": "2026-11-19T13:45:33.742Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1101,13 +1101,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 45.85,
-      "impressions": 2502,
+      "spend": 45.87,
+      "impressions": 2503,
       "clicks": 55,
-      "ctr": 2.198241,
-      "cpc": 0.833636,
+      "ctr": 2.197363,
+      "cpc": 0.834,
       "leads": 5,
-      "cost_per_lead": 9.17
+      "cost_per_lead": 9.174
     },
     {
       "date": "2026-11-18",
@@ -1143,13 +1143,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 0.81,
-      "impressions": 53,
-      "clicks": 0,
-      "ctr": 0,
-      "cpc": 0,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 10.43,
+      "impressions": 665,
+      "clicks": 12,
+      "ctr": 1.804511,
+      "cpc": 0.869167,
+      "leads": 1,
+      "cost_per_lead": 10.43
     },
     {
       "date": "2026-11-19",
@@ -1157,11 +1157,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 0.46,
-      "impressions": 13,
-      "clicks": 0,
-      "ctr": 0,
-      "cpc": 0,
+      "spend": 7.19,
+      "impressions": 138,
+      "clicks": 5,
+      "ctr": 3.623188,
+      "cpc": 1.438,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1171,8 +1171,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 978.82,
-        "funding_label": "Saldo disponível (R$978,82 BRL)"
+        "balance_available": 5960.55,
+        "funding_label": "Saldo disponível (R$5.960,55 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1200,7 +1200,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 19.54
+        "budget_remaining": 12.81
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1410,7 +1410,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 34.19
+        "budget_remaining": 24.57
       },
       {
         "account": "CA - LANÇAMENTOS",

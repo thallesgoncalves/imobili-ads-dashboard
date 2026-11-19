@@ -1,8 +1,26 @@
 {
-  "generated_at": "2026-11-19T04:31:05.923Z",
+  "generated_at": "2026-11-19T13:46:09.246Z",
   "source": "contact2sale",
   "days_back": 90,
   "leads": [
+    {
+      "id": "c54bf7117606da60a6910287a9158b4a",
+      "created_at": "2026-11-19T08:26:41.000-03:00",
+      "status_alias": "under_negotiation",
+      "status_name": "Em negociação",
+      "archived": false,
+      "done": false,
+      "done_price": null,
+      "done_deal_at": null,
+      "company": "IMOBILI - Equipe LEGENDS",
+      "seller": "Veronica Araújo",
+      "source": "Instagram Leads",
+      "channel": "Internet",
+      "product": "[2025] FORMS - Stella Maris Residence",
+      "lost_reason": null,
+      "tags": [],
+      "visit": null
+    },
     {
       "id": "28746ea29743bf1b7d155bc86ab89a53",
       "created_at": "2026-11-18T18:48:04.000-03:00",
@@ -2064,9 +2082,9 @@
     {
       "id": "4c143dedca8ce42a7bbf5e301bd08fc0",
       "created_at": "2026-10-18T20:31:35.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -2075,7 +2093,7 @@
       "source": "Instagram Leads",
       "channel": "Internet",
       "product": "FORMS - PRE LANÇAMENTO LUME",
-      "lost_reason": null,
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
@@ -6640,9 +6658,9 @@
     {
       "id": "cd1973d9a5e71e0f0200338b483af037",
       "created_at": "2026-09-30T17:23:17.000-03:00",
-      "status_alias": "under_negotiation",
-      "status_name": "Em negociação",
-      "archived": false,
+      "status_alias": "lost",
+      "status_name": "Arquivado",
+      "archived": true,
       "done": false,
       "done_price": null,
       "done_deal_at": null,
@@ -6651,7 +6669,7 @@
       "source": "Instagram Leads",
       "channel": "Rede Social",
       "product": "MILAGRES BEACH",
-      "lost_reason": "inactive",
+      "lost_reason": "return_delay",
       "tags": [],
       "visit": null
     },
