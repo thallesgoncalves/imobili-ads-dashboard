@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T13:45:33.742Z",
+  "generated_at": "2026-11-19T21:55:57.224Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1143,13 +1143,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 10.43,
-      "impressions": 665,
-      "clicks": 12,
-      "ctr": 1.804511,
-      "cpc": 0.869167,
+      "spend": 28.39,
+      "impressions": 1728,
+      "clicks": 24,
+      "ctr": 1.388889,
+      "cpc": 1.182917,
       "leads": 1,
-      "cost_per_lead": 10.43
+      "cost_per_lead": 28.39
     },
     {
       "date": "2026-11-19",
@@ -1157,13 +1157,13 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 7.19,
-      "impressions": 138,
-      "clicks": 5,
-      "ctr": 3.623188,
-      "cpc": 1.438,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 14.24,
+      "impressions": 321,
+      "clicks": 15,
+      "ctr": 4.672897,
+      "cpc": 0.949333,
+      "leads": 2,
+      "cost_per_lead": 7.12
     }
   ],
   "budgets": {
@@ -1171,8 +1171,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5960.55,
-        "funding_label": "Saldo disponível (R$5.960,55 BRL)"
+        "balance_available": 5932.1,
+        "funding_label": "Saldo disponível (R$5.932,10 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1200,7 +1200,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 12.81
+        "budget_remaining": 5.76
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1410,7 +1410,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 24.57
+        "budget_remaining": 6.61
       },
       {
         "account": "CA - LANÇAMENTOS",
