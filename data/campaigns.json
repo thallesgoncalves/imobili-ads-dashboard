@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T21:55:57.224Z",
+  "generated_at": "2026-11-20T02:47:24.235Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1143,13 +1143,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 28.39,
-      "impressions": 1728,
-      "clicks": 24,
-      "ctr": 1.388889,
-      "cpc": 1.182917,
-      "leads": 1,
-      "cost_per_lead": 28.39
+      "spend": 37.89,
+      "impressions": 2223,
+      "clicks": 30,
+      "ctr": 1.349528,
+      "cpc": 1.263,
+      "leads": 2,
+      "cost_per_lead": 18.945
     },
     {
       "date": "2026-11-19",
@@ -1157,13 +1157,13 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 14.24,
-      "impressions": 321,
-      "clicks": 15,
-      "ctr": 4.672897,
-      "cpc": 0.949333,
+      "spend": 21.14,
+      "impressions": 441,
+      "clicks": 19,
+      "ctr": 4.30839,
+      "cpc": 1.112632,
       "leads": 2,
-      "cost_per_lead": 7.12
+      "cost_per_lead": 10.57
     }
   ],
   "budgets": {
@@ -1171,8 +1171,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5932.1,
-        "funding_label": "Saldo disponível (R$5.932,10 BRL)"
+        "balance_available": 5913,
+        "funding_label": "Saldo disponível (R$5.913,00 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1200,7 +1200,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 5.76
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1410,7 +1410,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 6.61
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
