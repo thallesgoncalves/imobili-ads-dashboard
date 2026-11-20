@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:46:03.511Z",
+  "generated_at": "2026-11-20T18:55:33.727Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1171,13 +1171,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 5.29,
-      "impressions": 226,
-      "clicks": 3,
-      "ctr": 1.327434,
-      "cpc": 1.763333,
-      "leads": 1,
-      "cost_per_lead": 5.29
+      "spend": 34.16,
+      "impressions": 1610,
+      "clicks": 31,
+      "ctr": 1.925466,
+      "cpc": 1.101935,
+      "leads": 4,
+      "cost_per_lead": 8.54
     },
     {
       "date": "2026-11-20",
@@ -1185,11 +1185,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 2.39,
-      "impressions": 66,
-      "clicks": 2,
-      "ctr": 3.030303,
-      "cpc": 1.195,
+      "spend": 10.59,
+      "impressions": 257,
+      "clicks": 8,
+      "ctr": 3.11284,
+      "cpc": 1.32375,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1199,8 +1199,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5902.65,
-        "funding_label": "Saldo disponível (R$5.902,65 BRL)"
+        "balance_available": 5861.02,
+        "funding_label": "Saldo disponível (R$5.861,02 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1228,7 +1228,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 17.61
+        "budget_remaining": 9.41
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1438,7 +1438,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 29.71
+        "budget_remaining": 0.84
       },
       {
         "account": "CA - LANÇAMENTOS",
