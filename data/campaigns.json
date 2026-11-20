@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T02:47:24.235Z",
+  "generated_at": "2026-11-20T10:46:03.511Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1143,13 +1143,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 37.89,
-      "impressions": 2223,
-      "clicks": 30,
-      "ctr": 1.349528,
-      "cpc": 1.263,
+      "spend": 38.97,
+      "impressions": 2282,
+      "clicks": 31,
+      "ctr": 1.358457,
+      "cpc": 1.257097,
       "leads": 2,
-      "cost_per_lead": 18.945
+      "cost_per_lead": 19.485
     },
     {
       "date": "2026-11-19",
@@ -1157,13 +1157,41 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 21.14,
-      "impressions": 441,
-      "clicks": 19,
-      "ctr": 4.30839,
-      "cpc": 1.112632,
+      "spend": 21.46,
+      "impressions": 448,
+      "clicks": 21,
+      "ctr": 4.6875,
+      "cpc": 1.021905,
       "leads": 2,
-      "cost_per_lead": 10.57
+      "cost_per_lead": 10.73
+    },
+    {
+      "date": "2026-11-20",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120230292508270186",
+      "campaign": "[Cadastro][Stella Maris] - Formulário",
+      "adset": "",
+      "spend": 5.29,
+      "impressions": 226,
+      "clicks": 3,
+      "ctr": 1.327434,
+      "cpc": 1.763333,
+      "leads": 1,
+      "cost_per_lead": 5.29
+    },
+    {
+      "date": "2026-11-20",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120248990091270186",
+      "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
+      "adset": "",
+      "spend": 2.39,
+      "impressions": 66,
+      "clicks": 2,
+      "ctr": 3.030303,
+      "cpc": 1.195,
+      "leads": 0,
+      "cost_per_lead": null
     }
   ],
   "budgets": {
@@ -1171,8 +1199,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5913,
-        "funding_label": "Saldo disponível (R$5.913,00 BRL)"
+        "balance_available": 5902.65,
+        "funding_label": "Saldo disponível (R$5.902,65 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1200,7 +1228,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 0
+        "budget_remaining": 17.61
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1410,7 +1438,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 0
+        "budget_remaining": 29.71
       },
       {
         "account": "CA - LANÇAMENTOS",
