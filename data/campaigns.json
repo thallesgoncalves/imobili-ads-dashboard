@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:37:18.097Z",
+  "generated_at": "2026-11-21T21:08:01.821Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1241,13 +1241,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 21.86,
-      "impressions": 941,
-      "clicks": 6,
-      "ctr": 0.63762,
-      "cpc": 3.643333,
-      "leads": 1,
-      "cost_per_lead": 21.86
+      "spend": 37.78,
+      "impressions": 1752,
+      "clicks": 18,
+      "ctr": 1.027397,
+      "cpc": 2.098889,
+      "leads": 2,
+      "cost_per_lead": 18.89
     },
     {
       "date": "2026-11-21",
@@ -1255,13 +1255,13 @@
       "campaign_id": "120246911899740186",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 13,
-      "impressions": 3451,
-      "clicks": 224,
-      "ctr": 6.490872,
-      "cpc": 0.058036,
+      "spend": 22.56,
+      "impressions": 5052,
+      "clicks": 325,
+      "ctr": 6.433096,
+      "cpc": 0.069415,
       "leads": 1,
-      "cost_per_lead": 13
+      "cost_per_lead": 22.56
     },
     {
       "date": "2026-11-21",
@@ -1269,11 +1269,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 4.79,
-      "impressions": 165,
-      "clicks": 5,
-      "ctr": 3.030303,
-      "cpc": 0.958,
+      "spend": 8.02,
+      "impressions": 292,
+      "clicks": 10,
+      "ctr": 3.424658,
+      "cpc": 0.802,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1283,11 +1283,11 @@
       "campaign_id": "120249316656350186",
       "campaign": "[Cadastro][Horizon Trade Center] - Formulário",
       "adset": "",
-      "spend": 10.24,
-      "impressions": 378,
-      "clicks": 5,
-      "ctr": 1.322751,
-      "cpc": 2.048,
+      "spend": 22.5,
+      "impressions": 724,
+      "clicks": 11,
+      "ctr": 1.519337,
+      "cpc": 2.045455,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1297,13 +1297,13 @@
       "campaign_id": "120249317522920186",
       "campaign": "[Cadastro][Sun Beach Home] - Formulário",
       "adset": "",
-      "spend": 11.11,
-      "impressions": 341,
-      "clicks": 7,
-      "ctr": 2.052786,
-      "cpc": 1.587143,
-      "leads": 1,
-      "cost_per_lead": 11.11
+      "spend": 23.65,
+      "impressions": 733,
+      "clicks": 14,
+      "ctr": 1.909959,
+      "cpc": 1.689286,
+      "leads": 2,
+      "cost_per_lead": 11.825
     }
   ],
   "budgets": {
@@ -1311,8 +1311,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5700.76,
-        "funding_label": "Saldo disponível (R$5.700,76 BRL)"
+        "balance_available": 5639.07,
+        "funding_label": "Saldo disponível (R$5.639,07 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1330,7 +1330,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 28.89
+        "budget_remaining": 16.35
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1340,7 +1340,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 29.76
+        "budget_remaining": 17.5
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1360,7 +1360,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 15.21
+        "budget_remaining": 11.98
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1390,7 +1390,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 7
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1570,7 +1570,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 13.14
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
