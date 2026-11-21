@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:31:50.792Z",
+  "generated_at": "2026-11-21T07:41:33.027Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1171,13 +1171,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 55.13,
-      "impressions": 2493,
-      "clicks": 46,
-      "ctr": 1.845166,
-      "cpc": 1.198478,
+      "spend": 58.76,
+      "impressions": 2745,
+      "clicks": 49,
+      "ctr": 1.785064,
+      "cpc": 1.199184,
       "leads": 7,
-      "cost_per_lead": 7.875714285714286
+      "cost_per_lead": 8.394285714285713
     },
     {
       "date": "2026-11-20",
@@ -1185,13 +1185,13 @@
       "campaign_id": "120246911899740186",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 8.98,
-      "impressions": 1490,
-      "clicks": 88,
-      "ctr": 5.90604,
-      "cpc": 0.102045,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 21.52,
+      "impressions": 3649,
+      "clicks": 238,
+      "ctr": 6.522335,
+      "cpc": 0.09042,
+      "leads": 4,
+      "cost_per_lead": 5.38
     },
     {
       "date": "2026-11-20",
@@ -1199,11 +1199,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 14.72,
-      "impressions": 373,
-      "clicks": 9,
-      "ctr": 2.412869,
-      "cpc": 1.635556,
+      "spend": 16.59,
+      "impressions": 427,
+      "clicks": 11,
+      "ctr": 2.576112,
+      "cpc": 1.508182,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1213,13 +1213,13 @@
       "campaign_id": "120249316656350186",
       "campaign": "[Cadastro][Horizon Trade Center] - Formulário",
       "adset": "",
-      "spend": 11.26,
-      "impressions": 365,
+      "spend": 15.47,
+      "impressions": 493,
       "clicks": 9,
-      "ctr": 2.465753,
-      "cpc": 1.251111,
+      "ctr": 1.825558,
+      "cpc": 1.718889,
       "leads": 1,
-      "cost_per_lead": 11.26
+      "cost_per_lead": 15.47
     },
     {
       "date": "2026-11-20",
@@ -1227,11 +1227,81 @@
       "campaign_id": "120249317522920186",
       "campaign": "[Cadastro][Sun Beach Home] - Formulário",
       "adset": "",
-      "spend": 5.83,
-      "impressions": 214,
-      "clicks": 3,
-      "ctr": 1.401869,
-      "cpc": 1.943333,
+      "spend": 12.23,
+      "impressions": 364,
+      "clicks": 8,
+      "ctr": 2.197802,
+      "cpc": 1.52875,
+      "leads": 0,
+      "cost_per_lead": null
+    },
+    {
+      "date": "2026-11-21",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120230292508270186",
+      "campaign": "[Cadastro][Stella Maris] - Formulário",
+      "adset": "",
+      "spend": 1.96,
+      "impressions": 110,
+      "clicks": 2,
+      "ctr": 1.818182,
+      "cpc": 0.98,
+      "leads": 1,
+      "cost_per_lead": 1.96
+    },
+    {
+      "date": "2026-11-21",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120246911899740186",
+      "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
+      "adset": "",
+      "spend": 3.53,
+      "impressions": 965,
+      "clicks": 56,
+      "ctr": 5.803109,
+      "cpc": 0.063036,
+      "leads": 0,
+      "cost_per_lead": null
+    },
+    {
+      "date": "2026-11-21",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120248990091270186",
+      "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
+      "adset": "",
+      "spend": 0.88,
+      "impressions": 30,
+      "clicks": 0,
+      "ctr": 0,
+      "cpc": 0,
+      "leads": 0,
+      "cost_per_lead": null
+    },
+    {
+      "date": "2026-11-21",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120249316656350186",
+      "campaign": "[Cadastro][Horizon Trade Center] - Formulário",
+      "adset": "",
+      "spend": 1.12,
+      "impressions": 58,
+      "clicks": 1,
+      "ctr": 1.724138,
+      "cpc": 1.12,
+      "leads": 0,
+      "cost_per_lead": null
+    },
+    {
+      "date": "2026-11-21",
+      "account": "CA - LANÇAMENTOS",
+      "campaign_id": "120249317522920186",
+      "campaign": "[Cadastro][Sun Beach Home] - Formulário",
+      "adset": "",
+      "spend": 1.03,
+      "impressions": 27,
+      "clicks": 1,
+      "ctr": 3.703704,
+      "cpc": 1.03,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1241,8 +1311,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5802.05,
-        "funding_label": "Saldo disponível (R$5.802,05 BRL)"
+        "balance_available": 5759.98,
+        "funding_label": "Saldo disponível (R$5.759,98 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1260,7 +1330,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 2.97
+        "budget_remaining": 38.97
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1270,7 +1340,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 0.91
+        "budget_remaining": 38.88
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1290,7 +1360,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 5.28
+        "budget_remaining": 19.12
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1320,7 +1390,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 11.02
+        "budget_remaining": 16.47
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1500,7 +1570,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 0
+        "budget_remaining": 33.04
       },
       {
         "account": "CA - LANÇAMENTOS",
