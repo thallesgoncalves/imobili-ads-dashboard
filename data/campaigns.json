@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:03:14.914Z",
+  "generated_at": "2026-11-25T01:24:43.364Z",
   "source": "meta-marketing-api",
   "days_back": 90,
   "rows": [
@@ -1451,13 +1451,13 @@
       "campaign_id": "120230292508270186",
       "campaign": "[Cadastro][Stella Maris] - Formulário",
       "adset": "",
-      "spend": 21.1,
-      "impressions": 646,
-      "clicks": 16,
-      "ctr": 2.47678,
-      "cpc": 1.31875,
+      "spend": 36.97,
+      "impressions": 1244,
+      "clicks": 23,
+      "ctr": 1.848875,
+      "cpc": 1.607391,
       "leads": 3,
-      "cost_per_lead": 7.033333333333334
+      "cost_per_lead": 12.323333333333332
     },
     {
       "date": "2026-11-24",
@@ -1465,13 +1465,13 @@
       "campaign_id": "120246911899740186",
       "campaign": "[Cadastro][Sitges][Investidores] - Formulário",
       "adset": "",
-      "spend": 5.23,
-      "impressions": 1206,
-      "clicks": 69,
-      "ctr": 5.721393,
-      "cpc": 0.075797,
-      "leads": 0,
-      "cost_per_lead": null
+      "spend": 14.4,
+      "impressions": 3284,
+      "clicks": 202,
+      "ctr": 6.151035,
+      "cpc": 0.071287,
+      "leads": 3,
+      "cost_per_lead": 4.8
     },
     {
       "date": "2026-11-24",
@@ -1479,11 +1479,11 @@
       "campaign_id": "120248990091270186",
       "campaign": "[Cadastro][Terceiros] - Lote San Nicolas",
       "adset": "",
-      "spend": 10.22,
-      "impressions": 263,
-      "clicks": 4,
-      "ctr": 1.520913,
-      "cpc": 2.555,
+      "spend": 11.37,
+      "impressions": 291,
+      "clicks": 5,
+      "ctr": 1.718213,
+      "cpc": 2.274,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1493,11 +1493,11 @@
       "campaign_id": "120249316656350186",
       "campaign": "[Cadastro][Horizon Trade Center] - Formulário",
       "adset": "",
-      "spend": 15.42,
-      "impressions": 321,
-      "clicks": 4,
-      "ctr": 1.246106,
-      "cpc": 3.855,
+      "spend": 31.59,
+      "impressions": 586,
+      "clicks": 6,
+      "ctr": 1.023891,
+      "cpc": 5.265,
       "leads": 0,
       "cost_per_lead": null
     },
@@ -1507,11 +1507,11 @@
       "campaign_id": "120249317522920186",
       "campaign": "[Cadastro][Sun Beach Home] - Formulário",
       "adset": "",
-      "spend": 18.94,
-      "impressions": 509,
-      "clicks": 4,
-      "ctr": 0.785855,
-      "cpc": 4.735,
+      "spend": 33.73,
+      "impressions": 895,
+      "clicks": 9,
+      "ctr": 1.005587,
+      "cpc": 3.747778,
       "leads": 0,
       "cost_per_lead": null
     }
@@ -1521,8 +1521,8 @@
       {
         "account": "CA - LANÇAMENTOS",
         "currency": "BRL",
-        "balance_available": 5134.16,
-        "funding_label": "Saldo disponível (R$5.134,16 BRL)"
+        "balance_available": 5068.23,
+        "funding_label": "Saldo disponível (R$5.068,23 BRL)"
       },
       {
         "account": "CA - INSTITUCIONAL",
@@ -1540,7 +1540,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 21.06
+        "budget_remaining": 6.27
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1550,7 +1550,7 @@
         "daily_budget": 40,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 24.58
+        "budget_remaining": 8.41
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1566,11 +1566,11 @@
         "account": "CA - LANÇAMENTOS",
         "campaign_id": "120248990091270186",
         "name": "[Cadastro][Terceiros] - Lote San Nicolas",
-        "status": "ACTIVE",
+        "status": "PAUSED",
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 9.78
+        "budget_remaining": 8.63
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1600,7 +1600,7 @@
         "daily_budget": 20,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 14.77
+        "budget_remaining": 5.6
       },
       {
         "account": "CA - LANÇAMENTOS",
@@ -1780,7 +1780,7 @@
         "daily_budget": 35,
         "budget_level": "campaign",
         "lifetime_budget": null,
-        "budget_remaining": 13.9
+        "budget_remaining": 0
       },
       {
         "account": "CA - LANÇAMENTOS",
